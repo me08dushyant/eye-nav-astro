@@ -3,25 +3,127 @@ export interface Props {
     fullscreen: boolean;
     isHeader: boolean;
     height: string;
+    dark: boolean;
 }
 
-const { fullscreen, isHeader, height } = Astro.props;
+const { fullscreen, isHeader, height, dark } = Astro.props;
 ---
 
-<div class={` relative w-screen ${fullscreen && isHeader ? height : "h-auto"}`}>
+<div
+    x-data="{ open: false }"
+    @resize.window.debounce.100="width = window.innerWidth;  open =  width < 0 "
+>
     <div
-        class={`w-screen max-w-[1600px] px-[5vw] py-5 mx-auto ${
-            fullscreen && isHeader ? "text-white" : "text-violet-950"
+        class={` relative w-full z-20  ${
+            fullscreen || isHeader ? height : "h-auto"
         }`}
     >
-        <div class="w-full flex justify-between text-sm items-center">
-            <img class="w-[164px]" src="/images/eye-nav-logo.png" alt="" />
-            <ul class="hidden md:flex items-center gap-10">
+        <div
+            class={`w-full max-w-[1600px] px-[5vw] py-5 mx-auto ${
+                dark ? "text-white" : "text-violet-950"
+            }`}
+        >
+            <div class="w-full flex justify-between text-sm items-center">
+                <a href="/">
+                    <img
+                        class="w-[164px]"
+                        src="/images/eye-nav-logo.png"
+                        alt=""
+                    /></a
+                >
+                <ul class="hidden md:flex items-center gap-10 font-text">
+                    <li class="user last:border p-3 last:border-1 rounded">
+                        <a href="/concept">Our Concept</a>
+                    </li>
+                    <li class="user last:border p-3 last:border-1 rounded">
+                        <a href="/photography-style">Photography Style</a>
+                    </li>
+                    <li class="user last:border p-3 last:border-1 rounded">
+                        <a href="/">Format & Installation</a>
+                    </li>
+                    <li class="user last:border p-3 last:border-1 rounded">
+                        <a href="/">For Sales Team</a>
+                    </li>
+                    <li class="user last:border p-3 last:border-1 rounded">
+                        <a href="/clients-projects">Clients Projects</a>
+                    </li>
+
+                    <li class="user last:border p-3 last:border-1 rounded">
+                        <a href="/">Request a Quote</a>
+                    </li>
+                </ul>
+
+                <div class="relative">
+                    <button x-on:click="open = ! open">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-Width={1.5}
+                            stroke="currentColor"
+                            class="w-8 h-8 block md:hidden"
+                        >
+                            <path
+                                stroke-Linecap="round"
+                                stroke-Linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                            ></path>
+                        </svg></button
+                    >
+                </div>
+            </div>
+        </div>
+
+        {
+            isHeader && (
+                <div
+                    class={` w-full overflow-hidden flex justify-center items-center ${
+                        fullscreen || isHeader
+                            ? ` absolute top-0 -z-10 ${height}`
+                            : "h-[auto]"
+                    }`}
+                >
+                    <slot />
+                </div>
+            )
+        }
+    </div>
+    <div
+        x-show="open"
+        class="fixed top-0 left-0 flex flex-col w-screen h-screen max-w-[1600px] px-[5vw] py-5 mx-auto bg-purple text-white z-20"
+    >
+        <div class="flex justify-between text-sm items-center">
+            <a href="/">
+                <img class="w-[164px]" src="/images/eye-nav-logo.png" alt="" />
+            </a>
+
+            <div>
+                <button x-on:click="open = ! open">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-Width={1.5}
+                        stroke="currentColor"
+                        class="w-6 h-6"
+                    >
+                        <path
+                            stroke-Linecap="round"
+                            stroke-Linejoin="round"
+                            d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="grow flex items-center justify-center">
+            <ul
+                class="flex flex-col sm:flex-row sm:flex-wrap items-center gap-1 font-text"
+            >
                 <li class="user last:border p-3 last:border-1 rounded">
-                    <a href="/">Our Concept</a>
+                    <a href="/concept">Our Concept</a>
                 </li>
                 <li class="user last:border p-3 last:border-1 rounded">
-                    <a href="/">Photography Style</a>
+                    <a href="/photography-style">Photography Style</a>
                 </li>
                 <li class="user last:border p-3 last:border-1 rounded">
                     <a href="/">Format & Installation</a>
@@ -30,41 +132,13 @@ const { fullscreen, isHeader, height } = Astro.props;
                     <a href="/">For Sales Team</a>
                 </li>
                 <li class="user last:border p-3 last:border-1 rounded">
-                    <a href="/">Clients Projects</a>
+                    <a href="/clients-projects">Clients Projects</a>
                 </li>
-                <li class="user last:border p-3 last:border-1 rounded">
-                    <a href="/">Add-On Services</a>
-                </li>
+
                 <li class="user last:border p-3 last:border-1 rounded">
                     <a href="/">Request a Quote</a>
                 </li>
             </ul>
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-Width={1.5}
-                stroke="currentColor"
-                class="w-8 h-8 block md:hidden"
-            >
-                <path
-                    stroke-Linecap="round"
-                    stroke-Linejoin="round"
-                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
-            </svg>
         </div>
     </div>
-    {
-        isHeader && (
-            <div
-                class={` w-screen overflow-hidden flex justify-center items-center ${
-                    fullscreen && isHeader
-                        ? ` absolute top-0 -z-10 ${height}`
-                        : "h-[600px]"
-                }`}
-            >
-                <slot />
-            </div>
-        )
-    }
 </div>

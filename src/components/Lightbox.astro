@@ -1,0 +1,46 @@
+---
+export interface Props {
+    iframeURL: string;
+}
+const { iframeURL } = Astro.props;
+---
+
+<div
+    x-data=`{ open: ${$store.show.on} }`
+    x-show="open"
+    class="fixed top-0 left-0 w-screen h-screen backdrop-blur-lg backdrop-brightness-50 z-50 p-[5vw] md:p-[5vw] flex items-center justify-center"
+>
+    <div
+        class="bg-[black]/10 max-w-full h-full aspect-video rounded-xl drop-shadow-2xl mx-auto"
+    >
+        {
+            iframeURL && (
+                <iframe
+                    class="w-full h-full rounded-xl overflow-hidden"
+                    src={iframeURL}
+                />
+            )
+        }
+
+        <slot>
+            <div
+                class="absolute -right-3 -top-3 bg-purple rounded-full p-2"
+                x-on:click="open = ! open"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-Width={1.5}
+                    stroke="currentColor"
+                    class="w-6 h-6 text-white"
+                >
+                    <path
+                        stroke-Linecap="round"
+                        stroke-Linejoin="round"
+                        d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </div>
+        </slot>
+    </div>
+</div>

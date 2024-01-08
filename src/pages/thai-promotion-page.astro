@@ -1,0 +1,61 @@
+---
+import "../styles/globals.css";
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Nav from "../components/Nav.astro";
+import FeaturedProjects from "../components/FeaturedProjects.jsx";
+import Clients from "../components/Clients.astro";
+import WebsiteIntegration from "../components/WebsiteIntegration.astro";
+import OfflineApp from "../components/OfflineApp.astro";
+import Lightbox from "../components/Lightbox.jsx";
+import AutoplaySlider from "../components/AutoplaySlider.astro";
+import Footer from "../components/Footer.astro";
+import AdminsSolid from "../components/AdminsSolid.jsx";
+---
+
+<Layout title="Welcome to ">
+	<Nav fullscreen={false} isHeader={true} height="h-[450px]" dark={true}>
+		<div
+			class="bg-purple text-white white w-full h-full grid justify-center items-center"
+		>
+			<h1
+				class="font-heading font-black text-5xl md:text-6xl text-center px-5"
+			>
+				Thai Promotion Page
+			</h1>
+		</div>
+	</Nav>
+
+	<main class="grow bg-purple/10">
+		<div
+			class="max-w-[1400px] px-[5vw] mx-auto pt-20 pb-20 grid grid-cols-1 md:grid-cols-2 gap-10"
+		>
+			<div>
+				<img src="/images/thai-page.jpg" alt="" />
+			</div>
+			<p font-text text-lg>
+				สำหรับความสนใจของเจ้าของโรงแรมระดับ 2-4 ดาวและบูติครีสอร์ท
+				eyeNAV 360 เสนอแพ็คเกจพิเศษและแผนการชำระเงิน 2
+				ปีสำหรับโรงแรมชั้นเยี่ยมที่มีงบประมาณน้อย
+				เราสนุกกับการสร้างงานคุณภาพด้วยต้นทุนที่ถูกกว่ามากเมื่อเรารู้ว่าเรากำลังช่วยส่งเสริมการท่องเที่ยวไทย
+				ข้อเสนอนี้มุ่งเป้าไปที่โรงแรมบูติกในจุดหมายปลายทางระดับภูมิภาคของประเทศไทย
+				แพ็คเกจบริการของเราสำหรับเจ้าของคนไทยมีตั้งแต่ 40,000 บาทถึง
+				89,000 บาท และสามารถแบ่งชำระได้ 3 งวดในระยะเวลา 24 เดือน 40%
+				ของค่าแพ็คเกจจะออกใบแจ้งหนี้หลังจากถ่ายภาพ
+				ก่อนที่ขั้นตอนหลังการผลิตจะเริ่มต้นขึ้น 30% จะออกใบแจ้งหนี้ 12
+				เดือนหลังจากการผลิต 360
+				ขั้นสุดท้ายได้รับการโฮสต์และลิงก์ที่จัดเตรียมไว้สำหรับเว็บไซต์ลูกค้า
+				ยอดคงเหลือ 30% สุดท้ายจะชำระ 24 เดือนหลังจากการผลิตเสร็จสิ้น
+				หลังจาก 24 เดือน ลูกค้ามีตัวเลือกในการโฮสต์ 360 Tour
+				บนเซิร์ฟเวอร์เว็บไซต์ของตนเอง หรือจ่ายเงิน 10,000
+				บาทต่อปีต่อไปเพื่อเก็บไว้บน eyeNAV 360 Hosting
+				(พร้อมตัวเลือกอัปเดต แก้ไข และถ่ายทำใหม่)
+			</p>
+		</div>
+	</main>
+	<Footer />
+	<Lightbox
+		iframeURL="https://eyenavthailand.com/samujana/villa12/"
+		client:load
+	/>
+</Layout>

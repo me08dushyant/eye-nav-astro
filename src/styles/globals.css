@@ -2,11 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: lilitaa;
+  src: url("/public/fonts/Lilita_One/LilitaOne-Regular.ttf");
+}
+@font-face {
+font-family: nanum;
+src:url("/public/fonts/Nanum_Gothic/NanumGothic-Bold.ttf");
+}
+@font-face {
+  font-family: passion;
+  src:url("/public/fonts/Passion_One/P");
+  }
 @layer components {
   .btn-blue {
     @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
   }
+  .Atitle {
+    @apply font-heading text-5xl lg:text-6xl font-black drop-shadow-md pt-10
+  }
+  .Asubtitle{@apply font-text text-lg lg:text-xl max-w-[45ch] text-center  drop-shadow-md mx-auto mt-[50px] }
 }
+
+
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
@@ -43,3 +61,4 @@
   height: 100%;
   object-fit: cover;
 }
+

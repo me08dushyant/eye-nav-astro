@@ -7,20 +7,143 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 		<meta name="generator" content="Astro v2.5.6">
 		<title>Welcome to </title>
-	<link rel="stylesheet" href="/_astro/404.404b4607.css" /><script type="module" src="/_astro/hoisted.72633a08.js"></script></head>
+		<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Lilita+One&family=Nanum+Gothic:wght@400;700;800&family=Passion+One:wght@400;700;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/_astro/404.f9a2d785.css" />
+<link rel="stylesheet" href="/_astro/index.40685fa9.css" /><script type="module">new Swiper(".swiper-container",{direction:"horizontal",autoplay:{delay:2500,disableOnInteraction:!1},loop:!0,speed:800,mousewheel:!0,coverflowEffect:{rotate:30,slideShadows:!0},pagination:{el:".swiper-pagination"},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},scrollbar:{el:".swiper-scrollbar"}});
+</script></head>
 	<body>
 		<div class="flex flex-col min-h-screen">
 			
-	<div class=" relative w-screen h-[700px]">
-    <div class="w-screen max-w-[1600px] px-[5vw] py-5 mx-auto text-white">
-        <div class="w-full flex justify-between text-sm items-center">
-            <img class="w-[164px]" src="/images/eye-nav-logo.png" alt="">
-            <ul class="hidden md:flex items-center gap-10">
+	<div x-data="{ open: false }" @resize.window.debounce.100="width = window.innerWidth;  open =  width < 0 ">
+    <div class=" relative w-full z-20  h-screen md:h-[700px]">
+        <div class="w-full max-w-[1600px] px-[5vw] py-5 mx-auto text-white">
+            <div class="w-full flex justify-between text-sm items-center">
+                <a href="/">
+                    <img class="w-[164px]" src="/images/eye-nav-logo.png" alt=""></a>
+                <ul class="hidden md:flex items-center gap-10 font-text">
+                    <li class="user last:border p-3 last:border-1 rounded">
+                        <a href="/concept">Our Concept</a>
+                    </li>
+                    <li class="user last:border p-3 last:border-1 rounded">
+                        <a href="/photography-style">Photography Style</a>
+                    </li>
+                    <li class="user last:border p-3 last:border-1 rounded">
+                        <a href="/">Format & Installation</a>
+                    </li>
+                    <li class="user last:border p-3 last:border-1 rounded">
+                        <a href="/">For Sales Team</a>
+                    </li>
+                    <li class="user last:border p-3 last:border-1 rounded">
+                        <a href="/clients-projects">Clients Projects</a>
+                    </li>
+
+                    <li class="user last:border p-3 last:border-1 rounded">
+                        <a href="/">Request a Quote</a>
+                    </li>
+                </ul>
+
+                <div class="relative">
+                    <button x-on:click="open = ! open">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-Width="1.5" stroke="currentColor" class="w-8 h-8 block md:hidden">
+                            <path stroke-Linecap="round" stroke-Linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                        </svg></button>
+                </div>
+            </div>
+        </div>
+
+        <div class=" w-full overflow-hidden flex justify-center items-center  absolute top-0 -z-10 h-screen md:h-[700px]">
+                    
+		<div class="swiper-container astro-SMNSMCKJ">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper astro-SMNSMCKJ">
+        <!-- Slides -->
+        <div class="swiper-slide w-screen astro-SMNSMCKJ">
+            <div class="w-screen h-full bg-cover bg-center flex justify-center items-center astro-SMNSMCKJ" style="background-image:url(&#34;/images/01image.jpg&#34;)">
+                <div class="text-white px-[5vw] astro-SMNSMCKJ">
+                    <h1 class="Atitle astro-SMNSMCKJ">
+                         
+                        Eye-Catching Scenes
+                    </h1>
+                    <p class="Asubtitle astro-SMNSMCKJ">
+                        Since 2001, eyeNAV 360 has set the standard for
+                        professional 360° hotel & venue photography and
+                        innovated visual presentation tools for sales teams.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide astro-SMNSMCKJ">
+            <div class="w-screen h-full bg-cover bg-center flex justify-center items-center astro-SMNSMCKJ" style="background-image:url(&#34;/images/02image.jpg&#34;)">
+                <div class="font-inter text-white px-[5vw] astro-SMNSMCKJ">
+                    <h1 class="Atitle astro-SMNSMCKJ">
+                         
+                        Precise Photography
+                    </h1>
+                    <p class="Asubtitle astro-SMNSMCKJ">
+                        We help you turn more heads with brand standard 360°
+                        photography and bespoke installation support to ensure
+                        your business gets a great return for this investment.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide astro-SMNSMCKJ">
+            <div class="w-screen h-full bg-cover bg-center flex justify-center items-center astro-SMNSMCKJ" style="background-image:url(&#34;/images/03image.jpg&#34;)">
+                <div class="font-inter text-white px-[5vw] astro-SMNSMCKJ">
+                    <h1 class="Atitle astro-SMNSMCKJ">
+                         
+                        Professional Presentation
+                    </h1>
+                    <p class="Asubtitle astro-SMNSMCKJ">
+                        Engaging 360° views enhance our clients websites and we
+                        further develop cutting edge presentation tools for
+                        hotel & event sales professionals.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination astro-SMNSMCKJ"></div>
+
+    <!-- If we need navigation buttons
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+     -->
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar astro-SMNSMCKJ"></div>
+</div>
+	
+                </div>
+    </div>
+    <div x-show="open" class="fixed top-0 left-0 flex flex-col w-screen h-screen max-w-[1600px] px-[5vw] py-5 mx-auto bg-purple text-white z-20">
+        <div class="flex justify-between text-sm items-center">
+            <a href="/">
+                <img class="w-[164px]" src="/images/eye-nav-logo.png" alt="">
+            </a>
+
+            <div>
+                <button x-on:click="open = ! open">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-Width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-Linecap="round" stroke-Linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="grow flex items-center justify-center">
+            <ul class="flex flex-col sm:flex-row sm:flex-wrap items-center gap-1 font-text">
                 <li class="user last:border p-3 last:border-1 rounded">
-                    <a href="/">Our Concept</a>
+                    <a href="/concept">Our Concept</a>
                 </li>
                 <li class="user last:border p-3 last:border-1 rounded">
-                    <a href="/">Photography Style</a>
+                    <a href="/photography-style">Photography Style</a>
                 </li>
                 <li class="user last:border p-3 last:border-1 rounded">
                     <a href="/">Format & Installation</a>
@@ -29,155 +152,24 @@
                     <a href="/">For Sales Team</a>
                 </li>
                 <li class="user last:border p-3 last:border-1 rounded">
-                    <a href="/">Clients Projects</a>
+                    <a href="/clients-projects">Clients Projects</a>
                 </li>
-                <li class="user last:border p-3 last:border-1 rounded">
-                    <a href="/">Add-On Services</a>
-                </li>
+
                 <li class="user last:border p-3 last:border-1 rounded">
                     <a href="/">Request a Quote</a>
                 </li>
             </ul>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-Width="1.5" stroke="currentColor" class="w-8 h-8 block md:hidden">
-                <path stroke-Linecap="round" stroke-Linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
-            </svg>
         </div>
     </div>
-    <div class=" w-screen overflow-hidden flex justify-center items-center  absolute top-0 -z-10 h-[700px]">
-                
-		<div class="w-screen h-full bg-cover bg-center flex justify-center items-center" style="background-image:url(&#34;/images/banner.jpg&#34;)">
-			<div class="font-inter text-white px-[5vw]">
-				<h1 class="Atitle text-4xl lg:text-5xl font-bold drop-shadow-md py-3 text-center">
-					 
-					Precise Photography
-				</h1>
-				<p class="Asubtitle text-sm lg:text-lg max-w-[35ch] text-center font-semibold drop-shadow-md mx-auto">
-					We help you turn more heads with brand standard 360°
-					photography and bespoke installation support to ensure your
-					business gets a great return for this investment.
-				</p>
-			</div>
-		</div>
-	
-            </div>
 </div>
 
 	<main class="grow">
-		<div class="bg-purple text-white font-inter">
-	<div class="max-w-[1400px] px-[5vw] mx-auto pt-20 pb-20">
-		<div class="flex flex-col md:flex-row items-center mb-10 md:mb-20 gap-10">
-			<h2 class="font-bold text-4xl md:text-5xl text-center md:text-left">
-				Featured Projects
-			</h2>
-			<p class="max-w-[42ch]">
-				eyeNAV 360 increases conversion with a style of 360° photography
-				your customers will get excited about. Seeing inside a hotel or
-				venue builds confidence for making booking decisions.
-			</p>
-			<div class="grow hidden md:flex justify-end">
-				<a href="/projects" class="bg-orange text-white font-inter px-5 py-5 rounded-md">
-					See More Projects
-				</a>
-			</div>
-		</div>
-		<div class="grid md:grid-rows-2 grid-cols-1 md:grid-cols-3 gap-7">
-			<div class="grid bg-gray-100/50 rounded md:row-span-2 aspect-video md:aspect-[2/3] bg-cover bg-center ..." style="background-image:url(&#34;/images/InterContinental-Beppu-Japan.jpg&#34;)">
-				 
-				<div class="col-span-full row-span-full flex justify-start items-end p-3">
-					<a href="https://samujana.com/villas/villa-12/" target="_blank">
-						<div class="flex items-center gap-5">
-							<div class="bg-purple p-3 rounded-full">
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-									<path stroke-linecap="round" stroke-linejoin="round" d="M18.375 12.739l-7.693 7.693a4.5 4.5 0 01-6.364-6.364l10.94-10.94A3 3 0 1119.5 7.372L8.552 18.32m.009-.01l-.01.01m5.699-9.941l-7.81 7.81a1.5 1.5 0 002.112 2.13"></path>
-								</svg>
-							</div>
-							<h6 class="font-inter drop-shadow-lg">
-								InterContinental Beppu Japan
-							</h6>
-						</div>
-					</a>
-				</div>
-
-				<div class="col-span-full row-span-full">
-					<a class="w-full h-full block" href="https://www.eyenavasia.com/japan/ic_beppu/embed.htm" target="_blank">
-					</a>
-				</div>
-			</div>
-			<div class="grid bg-gray-100/50 rounded bg-cover bg-center aspect-video md:aspect-auto" style="background-image:url(&#34;/images/Ozone-Hotel-Kangaroo-Island.jpg&#34;)">
-				<div class="col-span-full row-span-full flex justify-start items-end p-3">
-					<a href="https://ozonehotelki.com.au/360-aurora-ozone-hotel-tour/" target="_blank">
-						<div class="flex items-center gap-5">
-							<div class="bg-purple p-3 rounded-full">
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-									<path stroke-linecap="round" stroke-linejoin="round" d="M18.375 12.739l-7.693 7.693a4.5 4.5 0 01-6.364-6.364l10.94-10.94A3 3 0 1119.5 7.372L8.552 18.32m.009-.01l-.01.01m5.699-9.941l-7.81 7.81a1.5 1.5 0 002.112 2.13"></path>
-								</svg>
-							</div>
-							<h6 class="font-inter drop-shadow-lg">
-								Ozone Hotel Kangaroo Island
-							</h6>
-						</div>
-					</a>
-				</div>
-				<div class="col-span-full row-span-full">
-					<a class="w-full h-full block" href="https://eyenavaustralia.com/aurora_ozone/" target="_blank">
-					</a>
-				</div>
-			</div>
-			<div class="grid bg-gray-100/50 rounded bg-cover bg-center aspect-video md:aspect-auto" style="background-image:url(&#34;/images/Royal-Phuket-Marina.jpg&#34;)">
-				<div class="col-span-full row-span-full flex justify-start items-end p-3">
-					<a href="https://www.royalphuketmarina.com/360-virtual-tour/" target="_blank">
-						<div class="flex items-center gap-5">
-							<div class="bg-purple p-3 rounded-full">
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-									<path stroke-linecap="round" stroke-linejoin="round" d="M18.375 12.739l-7.693 7.693a4.5 4.5 0 01-6.364-6.364l10.94-10.94A3 3 0 1119.5 7.372L8.552 18.32m.009-.01l-.01.01m5.699-9.941l-7.81 7.81a1.5 1.5 0 002.112 2.13"></path>
-								</svg>
-							</div>
-							<h6 class="font-inter drop-shadow-lg">
-								Royal Phuket Marina
-							</h6>
-						</div>
-					</a>
-				</div>
-				<div class="col-span-full row-span-full">
-					<a class="w-full h-full block" href="https://eyenavphuket.com/royalphuketmarina/" target="_blank">
-					</a>
-				</div>
-			</div>
-			<div class="grid bg-gray-100/50 rounded md:col-span-2 bg-cover bg-center aspect-video md:aspect-auto" style="background-image:url(&#34;/images/Samujana-Villas.jpg&#34;)">
-				<div class="col-span-full row-span-full flex justify-start items-end p-3">
-					<a href="https://eyenavthailand.com/samujana/villa12/" target="_blank">
-						<div class="flex items-center gap-5">
-							<div class="bg-purple p-3 rounded-full">
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-									<path stroke-linecap="round" stroke-linejoin="round" d="M18.375 12.739l-7.693 7.693a4.5 4.5 0 01-6.364-6.364l10.94-10.94A3 3 0 1119.5 7.372L8.552 18.32m.009-.01l-.01.01m5.699-9.941l-7.81 7.81a1.5 1.5 0 002.112 2.13"></path>
-								</svg>
-							</div>
-							<h6 class="font-inter drop-shadow-lg">
-								Samujana Villas
-							</h6>
-						</div>
-					</a>
-				</div>
-				<div class="col-span-full row-span-full">
-					<a class="w-full h-full block" href="https://eyenavthailand.com/samujana/villa12/" target="_blank">
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="flex md:hidden justify-center mt-10">
-			<a href="/projects" class="w-full inline-block">
-				<button class="bg-orange text-white font-inter px-5 py-5 rounded-md w-full">
-					See More Projects
-				</button>
-			</a>
-		</div>
-	</div>
-</div>
+		<style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();;(()=>{var l;{let c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;let[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;let s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(let r of n){let i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of s){let i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}let a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){let s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{let n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(let d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}})();</script><astro-island uid="Z4HIB4" data-solid-render-id="s0" component-url="/_astro/FeaturedProjects.b64feb90.js" component-export="default" renderer-url="/_astro/client.ab9a1550.js" props="{}" ssr="" client="load" opts="{&quot;name&quot;:&quot;FeaturedProjects&quot;,&quot;value&quot;:true}" await-children=""><div data-hk="s00-0" class="bg-purple text-white "><div class="max-w-[1400px] px-[5vw] mx-auto pt-20 pb-20"><div class="flex flex-col md:flex-row items-center mb-10 md:mb-20 gap-10"><h2 class=" font-heading font-black text-5xl text-center md:text-left">Featured Projects</h2><p class="max-w-[42ch] font-text text-lg tracking-wide">eyeNAV 360 increases conversion with a style of 360° photography your customers will get excited about. Seeing inside a hotel or venue builds confidence for making booking decisions.</p><div class="grow hidden md:flex justify-end"><a href="/projects" class="bg-orange text-white font-text font-semibold px-5 py-5 rounded-md">See More Projects</a></div></div><div class="grid md:grid-rows-2 grid-cols-1 md:grid-cols-3 gap-7"><div class="md:row-span-2 md:aspect-[2/3] aspect-video w-full h-full "><div data-hk="s00-1-0" class="grid bg-gray-100/50 rounded bg-cover bg-center w-full h-full ] " style="background-image: url(/images/InterContinental-Beppu-Japan.jpg)"><div class="col-span-full row-span-full flex justify-start items-end p-3"><a href="https://anaicbeppu.com/en/top/" target="_blank" class=" z-10 inline-block"><div class="flex items-center gap-5"><div class="bg-purple p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M18.375 12.739l-7.693 7.693a4.5 4.5 0 01-6.364-6.364l10.94-10.94A3 3 0 1119.5 7.372L8.552 18.32m.009-.01l-.01.01m5.699-9.941l-7.81 7.81a1.5 1.5 0 002.112 2.13"></path></svg></div><h6 class="font-inter drop-shadow-lg">InterContinental Beppu Japan</h6></div></a></div><div class="col-span-full row-span-full"></div></div></div><div class="md:aspect-auto aspect-video"><div data-hk="s00-2-0" class="grid bg-gray-100/50 rounded bg-cover bg-center w-full h-full ] " style="background-image: url(/images/Ozone-Hotel-Kangaroo-Island.jpg)"><div class="col-span-full row-span-full flex justify-start items-end p-3"><a href="https://ozonehotelki.com.au/360-aurora-ozone-hotel-tour/" target="_blank" class=" z-10 inline-block"><div class="flex items-center gap-5"><div class="bg-purple p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M18.375 12.739l-7.693 7.693a4.5 4.5 0 01-6.364-6.364l10.94-10.94A3 3 0 1119.5 7.372L8.552 18.32m.009-.01l-.01.01m5.699-9.941l-7.81 7.81a1.5 1.5 0 002.112 2.13"></path></svg></div><h6 class="font-inter drop-shadow-lg">Ozone Hotel Kangaroo Island</h6></div></a></div><div class="col-span-full row-span-full"></div></div></div><div class="aspect-video md:aspect-auto"><div data-hk="s00-3-0" class="grid bg-gray-100/50 rounded bg-cover bg-center w-full h-full ] " style="background-image: url(/images/Royal-Phuket-Marina.jpg)"><div class="col-span-full row-span-full flex justify-start items-end p-3"><a href="https://www.royalphuketmarina.com/360-virtual-tour/" target="_blank" class=" z-10 inline-block"><div class="flex items-center gap-5"><div class="bg-purple p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M18.375 12.739l-7.693 7.693a4.5 4.5 0 01-6.364-6.364l10.94-10.94A3 3 0 1119.5 7.372L8.552 18.32m.009-.01l-.01.01m5.699-9.941l-7.81 7.81a1.5 1.5 0 002.112 2.13"></path></svg></div><h6 class="font-inter drop-shadow-lg"> Royal Phuket Marina</h6></div></a></div><div class="col-span-full row-span-full"></div></div></div><div class="md:col-span-2 aspect-video md:aspect-auto"><div data-hk="s00-4-0" class="grid bg-gray-100/50 rounded bg-cover bg-center w-full h-full ] " style="background-image: url(/images/Samujana-Villas.jpg)"><div class="col-span-full row-span-full flex justify-start items-end p-3"><a href="https://samujana.com/villas/villa-12/" target="_blank" class=" z-10 inline-block"><div class="flex items-center gap-5"><div class="bg-purple p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M18.375 12.739l-7.693 7.693a4.5 4.5 0 01-6.364-6.364l10.94-10.94A3 3 0 1119.5 7.372L8.552 18.32m.009-.01l-.01.01m5.699-9.941l-7.81 7.81a1.5 1.5 0 002.112 2.13"></path></svg></div><h6 class="font-inter drop-shadow-lg">Samujana Villas</h6></div></a></div><div class="col-span-full row-span-full"></div></div></div></div><div class="flex md:hidden justify-center mt-10"><a href="/projects" class="w-full inline-block"><button class="bg-orange text-white font-text font-semibold px-5 py-5 rounded-md w-full">See More Projects</button></a></div></div></div></astro-island>
 		<div class="max-w-[1400px] mx-auto px-[5vw] font-inter mb-20">
-    <h2 class="text-purple text-5xl font-extrabold text-center mt-20">
+    <h2 class="text-purple font-heading font-black text-5xl text-center mt-20">
         Our Clients
     </h2>
-    <p class="text-gray-600 text-center mt-2 font-semibold">
+    <p class="text-gray-600 text-center mt-2 font-text text-lg font-semibold">
         Meet Our Happy Clients
     </p>
     <div class="grid grid-cols-2 md:grid-cols-6 divide-x divide-y mt-20 bg-gray-300">
@@ -225,17 +217,17 @@
             <img src="/images/laptop-screen.png" alt="">
         </div>
         <div>
-            <h2 class="text-white text-4xl md:text-5xl font-extrabold mb-10 text-center md:text-left">
+            <h2 class="text-heading text-white text-5xl font-extrabold mb-10 text-center md:text-left">
                 Website Integration
             </h2>
-            <p class="text-white md:max-w-[30ch] leading-relaxed text-center md:text-left">
+            <p class="font-text text-lg text-white md:max-w-[30ch] leading-relaxed text-center md:text-left">
                 Sometimes it is the simple things that make a difference. Our
                 service includes technical support and follow through with
                 agencies / web developers and clients to ensure our 360° visual
                 content is installed on websites to maximise its effectiveness. 
             </p>
             <div class="flex justify-center md:justify-start">
-                <div class="px-8 py-3 text-white mt-10 font-bold border border-white rounded">
+                <div class="px-8 py-3 text-white mt-10 font-text font-bold border border-white rounded">
                     Read More
                 </div>
             </div>
@@ -246,21 +238,21 @@
     <div class="max-w-[1400px] mx-auto px-[5vw] font-inter flex flex-col md:flex-row gap-10 items-center">
         <div class="md:min-w-[400px]">
              
-            <h2 class="text-gray-800 text-4xl md:text-5xl font-extrabold mb-10 text-center md:text-left">
+            <h2 class="text-heading text-gray-800 text-5xl font-extrabold mb-10 text-center md:text-left">
                 Google Integration
             </h2>
-            <p class="text-gray-800 md:max-w-[36ch] leading-relaxed text-center md:text-left font-bold text-lg mb-5">
+            <p class="font-text text-xl text-gray-800 md:max-w-[36ch] leading-relaxed text-center md:text-left font-bold mb-5">
                 Enhance your Business online profile with our Google 360
                 Installation service.
             </p>
-            <p class="text-gray-800 md:max-w-[36ch] leading-relaxed text-center md:text-left">
+            <p class="font-text text-gray-800 text-lg md:max-w-[36ch] leading-relaxed text-center md:text-left">
                 Placing high-quality and linked 360° photos on your Google My
                 Business Listing (GMB) means they are also visible on Google
                 Maps and Search. Some of the 360 photos we have published for
                 our client listings have reached over 300,000 views!
             </p>
             <div class="flex justify-center md:justify-start">
-                <div class="px-8 py-3 text-gray-800 mt-10 font-bold border border-gray-800 rounded">
+                <div class="px-8 py-3 font-text text-gray-800 mt-10 font-bold border border-gray-800 rounded">
                     Read More
                 </div>
             </div>
@@ -293,16 +285,16 @@
     <div class="max-w-[1400px] mx-auto px-[5vw] font-inter flex flex-col md:flex-row gap-10 md:gap-20 items-center justify-center">
         <div class="md:min-w-[400px] md:order-2">
              
-            <h2 class="text-gray-800 text-4xl md:text-5xl font-extrabold mb-10 text-center md:text-left">
+            <h2 class="font-heading text-gray-800 text-5xl font-extrabold mb-10 text-center md:text-left">
                 Offline APP Access
             </h2>
-            <p class="text-gray-800 md:max-w-[36ch] leading-relaxed text-center md:text-left">
+            <p class="font-text text-lg text-gray-800 md:max-w-[36ch] leading-relaxed text-center md:text-left">
                 This App provides our premier hotel clients further exposure on
                 the APP Stores and it is primary function provides the ability
                 to seamlessly download & present eyeNAV 360° hotel & venue
                 presentations on any iOS or Android device.
             </p>
-            <p class="text-gray-800 md:max-w-[36ch] leading-relaxed text-center md:text-left mt-5">
+            <p class="font-text text-lg text-gray-800 md:max-w-[36ch] leading-relaxed text-center md:text-left mt-5">
                 Our Clients are provided a Tour ID code which enables
                 downloading their hotel 360° Presentation independentaly from
                 the hotel portfolio. The download function has proven very
@@ -322,81 +314,101 @@
 </div>
 	</main>
 	<div class="bg-violet-50/50">
-	<div class="max-w-[1400px] mx-auto px-[5vw] font-inter text-sm">
-		<div class="pt-10 flex flex-wrap justify-between gap-10">
-			<div class="w-full md:w-[40%] flex flex-col gap-5">
-				<div>
-					 
-					<img class="w-[164px]" src="/images/eye-nav-logo.png" alt="">
-				</div>
+  <div class="max-w-[1400px] mx-auto px-[5vw] font-text text-sm">
+    <div class="pt-10 flex flex-wrap justify-between gap-10">
+      <div class="w-full md:w-[40%] flex flex-col gap-5">
+        <div>
+           
+          <div>
+            <a href="/">
+              <img class="w-[164px]" src="/images/eye-nav-logo.png" alt="">
+            </a>
+          </div>
+        </div>
 
-				<div>
-					<p class="text-gray-700 font-bold mb-2">Contact Details:</p>
-					<p class="text-gray-700">Email: sales@eyenav.com</p>
-					<p class="text-gray-700">
-						WhatsApp Link: 
-						<a class="text-blue-500" href="https://wa.me/614489375782">
-							+61 4489 375 782
-						</a>
-					</p>
-					<p class="text-gray-700">LINE ID: eyenav360</p>
-				</div>
-				<div class="font-inter text-purple font-semibold">
-					<p>
-						<a href="https://goo.gl/maps/cqt1ryPWGake5ini8" target="_blank">
-							eyeNAV 360 Multimedia (Asia)
-						</a>
-					</p>
-					<p class="mt-2">
-						 
-						<a href="https://goo.gl/maps/DFtR5jhw4s8gjZS18" target="_blank">
-							eyeNAV 360 Australia
-						</a>
-					</p>
-				</div>
-				<ul class="flex gap-5">
-					<li class="border-2 rounded-full p-2 bg-gray-50 hover:invert">
-						<img class="w-[15px]" src="/images/facebook.svg" alt="">
-					</li>
-					<li class="border-2 rounded-full p-2 bg-gray-50 hover:invert">
-						<img class="w-[15px]" src="/images/twitter.svg" alt="">
-					</li>
-					<li class="border-2 rounded-full p-2 bg-gray-50 hover:invert">
-						<img class="w-[15px]" src="/images/instagram.svg" alt="">
-					</li>
-					<li class="border-2 rounded-full p-2 bg-gray-50 hover:invert">
-						<img class="w-[15px]" src="/images/github.svg" alt="">
-					</li>
-				</ul>
-			</div>
-			<div class="w-full md:w-[50%] flex justify-end gap-5 md:gap-10">
-				<div class="flex flex-col gap-7">
-					<img src="/images/thailand.jpg" alt="">
-					<p>าคาโปรโมชั่นสำหรับเจ้าของโรงแรมในประเทศไทย</p>
-				</div>
-				<div class="flex flex-col gap-7">
-					<a href="https://birdeye.golf/mt_osmond" target="_blank">
-						 
-						<img src="/images/golf.jpg" alt=""> 
-					</a>
-					<p>Proudly affiliated with Birdeye.golf</p>
-				</div>
-			</div>
-		</div>
-		<div class="py-5 md:py-10"></div>
-		<div class="flex flex-col md:flex-row justify-between items-center gap-7 py-10 border-t border-t-gray/20">
-			<div class="text-gray-500">
-				All rights reserved | eyeNAV 360 MULTIMEDIA | 2023
-			</div>
-			<ul class="flex justify-center gap-5 text-purple font-semibold">
-				<li>Australian Business Number: 69965604985</li>
-				<li>
-					หมายเลขประจำตัวผู้เสียภาษีบริษัทในประเทศไทย : 3930100135273
-				</li>
-			</ul>
-		</div>
-	</div>
+        <div>
+          <p class="text-gray-700 font-bold mb-2">Contact Details:</p>
+          <p class="text-gray-700">Email: sales@eyenav.com</p>
+
+          <script type="text/javascript">
+            window.onload = function () {
+              (function (d, script) {
+                script = d.createElement("script");
+                script.type = "text/javascript";
+                script.async = true;
+                script.src = "https://w.app/widget-v1/1U2vF6.js";
+                d.getElementsByTagName("head")[0].appendChild(script);
+              })(document);
+            };
+          </script>
+
+          <p class="text-gray-700">
+            WhatsApp Link: 
+            <a class="text-blue-500 font-semibold" href="https://w.app/eyeNAV360Birdeye">
+              +61 4489 375 782
+            </a>
+          </p>
+          <p class="text-gray-700">LINE ID: eyenav360</p>
+        </div>
+        <div>
+          <a href="https://w.app/eyeNAV360Birdeye">
+            <img class="w-32" src="/images/TomJanzow.png" alt="">
+          </a>
+        </div>
+        <div class="font-inter text-purple font-semibold">
+          <p>
+            <a href="https://goo.gl/maps/cqt1ryPWGake5ini8" target="_blank">
+              eyeNAV 360 Multimedia (Asia)
+            </a>
+          </p>
+          <p class="mt-2">
+             
+            <a href="https://goo.gl/maps/DFtR5jhw4s8gjZS18" target="_blank">
+              eyeNAV 360 Australia
+            </a>
+          </p>
+        </div>
+        <ul class="flex gap-5">
+          <li class="border-2 rounded-full p-2 bg-gray-50 hover:invert">
+            <img class="w-[15px]" src="/images/facebook.svg" alt="">
+          </li>
+          <li class="border-2 rounded-full p-2 bg-gray-50 hover:invert">
+            <img class="w-[15px]" src="/images/yt.svg" alt="">
+          </li>
+          <li class="border-2 rounded-full p-2 bg-gray-50 hover:invert">
+            <img class="w-[15px]" src="/images/instagram.svg" alt="">
+          </li>
+        </ul>
+      </div>
+      <div class="w-full md:w-[50%] flex justify-end gap-5 md:gap-10 font-text font-semibold text-purple">
+        <div class="flex flex-col gap-7 font-semibold text-purple">
+          <a href="/thai-promotion-page">
+            <img src="/images/thailand.jpg" alt="">
+          </a>
+          <p>Thai Promo Page</p>
+        </div>
+        <div class="flex flex-col gap-7">
+          <a href="https://birdeye.golf/mt_osmond" target="_blank">
+             
+            <img src="/images/golf.jpg" alt=""> 
+          </a>
+          <p>Proudly Affiliated with Birdeye Golf</p>
+        </div>
+      </div>
+    </div>
+    <div class="py-5 md:py-10"></div>
+    <div class="flex flex-col md:flex-row justify-between items-center gap-7 py-10 border-t border-t-gray/20">
+      <div class="text-gray-500">
+        All rights reserved | eyeNAV 360 MULTIMEDIA | 2023
+      </div>
+      <ul class="flex justify-center gap-5 text-purple font-semibold">
+        <li>Australian Business Number: 69965604985</li>
+        <li>หมายเลขประจำตัวผู้เสียภาษีบริษัทในประเทศไทย : 3930100135273</li>
+      </ul>
+    </div>
+  </div>
 </div>
+	<astro-island uid="1lrteL" data-solid-render-id="s1" component-url="/_astro/Lightbox.6d2a54f9.js" component-export="default" renderer-url="/_astro/client.ab9a1550.js" props="{&quot;iframeURL&quot;:[0,&quot;https://eyenavthailand.com/samujana/villa12/&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;Lightbox&quot;,&quot;value&quot;:true}" await-children=""><div data-hk="s10-0" class="fixed top-0 left-0 w-screen h-screen backdrop-blur-lg backdrop-brightness-50 z-50 p-[5vw] md:p-[5vw] hidden items-center justify-center"><div class="bg-purple max-w-full h-full aspect-video rounded-xl drop-shadow-2xl mx-auto"><!--#--><iframe data-hk="s10-1" class="w-full h-full rounded-xl overflow-hidden" src=""></iframe><!--/--><slot><div class="absolute -right-3 -top-3 bg-purple rounded-full p-2 pointer-events-auto"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-Width="1.5" stroke="currentColor" class="w-6 h-6 text-white"><path stroke-Linecap="round" stroke-Linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg></div></slot></div></div></astro-island>
 
 		</div>
 	</body></html>

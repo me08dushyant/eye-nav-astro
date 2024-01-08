@@ -1,0 +1,113 @@
+<div class="fixed top-0 w-[100vw] h-[100vh] z-20">
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper w-screen">
+            <!-- Slides -->
+            <div class="swiper-slide bg-gray-950/90 p-10 md:p-32">
+                <div class="overflow-hidden">
+                    <img
+                        class="object-contain"
+                        src="/images/02image.jpg"
+                        alt=""
+                    />
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div
+                    class="w-screen h-full bg-cover bg-center flex justify-center items-center"
+                    style={{
+                        backgroundImage: 'url("/images/02image.jpg")',
+                    }}
+                >
+                    <div class="font-inter text-white px-[5vw]">
+                        <h1 class="Atitle">
+                            {" "}
+                            Precise Photography
+                        </h1>
+                        <p class="Asubtitle">
+                            We help you turn more heads with brand standard 360°
+                            photography and bespoke installation support to
+                            ensure your business gets a great return for this
+                            investment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div
+                    class="w-screen h-full bg-cover bg-center flex justify-center items-center"
+                    style={{
+                        backgroundImage: 'url("/images/03image.jpg")',
+                    }}
+                >
+                    <div class="font-inter text-white px-[5vw]">
+                        <h1 class="Atitle">
+                            {" "}
+                            Professional Presentation
+                        </h1>
+                        <p class="Asubtitle">
+                            Engaging 360° views enhance our clients websites and
+                            we further develop cutting edge presentation tools
+                            for hotel & event sales professionals.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- If we need pagination 
+        <div class="swiper-pagination"></div>
+        -->
+
+        <div class="swiper-button-prev left-10"></div>
+        <div class="swiper-button-next right-12"></div>
+
+        <!-- If we need scrollbar 
+        <div class="swiper-scrollbar"></div>
+        -->
+    </div>
+</div>
+<style>
+    .swiper-container {
+        width: 100vw;
+        height: 100vh;
+        /*     background: #fd5; */
+    }
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+
+<script>
+    const mySwiper = new Swiper(".swiper-container", {
+        // Optional parameters
+        direction: "horizontal",
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        speed: 800,
+        mousewheel: true,
+        coverflowEffect: {
+            rotate: 30,
+            slideShadows: true,
+        },
+        // If we need pagination
+        pagination: {
+            el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: ".swiper-scrollbar",
+        },
+    });
+</script>

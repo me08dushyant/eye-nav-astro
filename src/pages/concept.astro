@@ -1,0 +1,277 @@
+---
+import "../styles/globals.css";
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Nav from "../components/Nav.astro";
+import FeaturedProjects from "../components/FeaturedProjects.jsx";
+import Clients from "../components/Clients.astro";
+import WebsiteIntegration from "../components/WebsiteIntegration.astro";
+import OfflineApp from "../components/OfflineApp.astro";
+import Lightbox from "../components/Lightbox.jsx";
+import AutoplaySlider from "../components/AutoplaySlider.astro";
+import Gallery from "../components/Gallery.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Welcome to ">
+  <Nav
+    fullscreen={false}
+    isHeader={false}
+    height="h-screen md:h-[700px]"
+    dark={false}
+  />
+
+  <main class="grow bg-purple/10">
+    <div x-data="{ mainText:false }" class="grid grid-cols-2">
+      <div class="col-span-2 row-start-1 col-start-1 z-0">
+        <div
+          class="max-w-[1400px] mx-auto px-[5vw] grid md:grid-cols-2 bg-purple md:bg-gray-600/0"
+        >
+          <div
+            class="flex flex-col gap-10 py-20 md:px-10 bg-gray-600/0 md:bg-purple/95"
+          >
+            {" "}
+            <h1 class="text-white text-4xl font-bold">
+              {" "}
+              Seeing is Believing...
+            </h1>
+            <div class="relative z-0">
+              <p class="sm:text-xl font-inter text-gray-50">
+                <em>
+                  We produce high quality 360° photography which becomes
+                  engaging website and social media & OTA content for our
+                  clients. We further develop this into presentation tools for
+                  their sales activities.
+                </em>
+              </p>
+            </div>
+            <p
+              :class="mainText ? 'line-clamp-none' : 'line-clamp-4'"
+              class={`}font-inter text-gray-50 `}
+            >
+              eyeNAV 360 is not a set & forget production service and we prefer
+              to think of our work as creating a digital asset for our clients.
+              We help to maximise ROI and offer long-term support to ensure our
+              photography stays visible on our clients latest websites and is
+              used on other channels. Our 360° Tour packaging can be updated to
+              ensure it has a long shelf life, evolving with your brand, and
+              being hands-on sales visual tool for years after we first deliver
+              it. <br />
+              <br />
+              Our longer term clients of 5+ years are testament to our commitment
+              of keeping their visual 360 tool maintained and current. We provide
+              editing of room category captions, removal or replacement of out-dated
+              360 photos; we make custom URLs for specific campaigns and can update
+              PPT slides into existing 360 presentations for our client’s sales trips.
+              Even when our client’s change their website or re-brand we make every
+              effort to keep the visual asset usable.
+            </p>
+            <div
+              @click="mainText=! mainText"
+              class="text-right text-white font-semibold -mt-5"
+            >
+              <p x-show="!mainText">Read More</p>
+              <p x-show="mainText">Read Less</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="hidden md:block col-start-1 row-start-1 col-span-2 bg-gray-200 bg-[url('/images/04image.jpg')] bg-cover bg-center"
+      >
+      </div>
+    </div>
+
+    <div class="max-w-[1400px] mx-auto px-[5vw] py-16">
+      <div class="pb-20" x-data="{mainText:false}">
+        <div
+          class="md:float-left aspect-video overflow-hidden w-full md:w-1/2 pr-none md:pr-10 mb-10 md:mb-5 flex justify-center items-center"
+        >
+          <img class="" src="/images/fish-eye.jpg" />
+        </div>
+        <h2
+          class="text-gray-800 text-4xl md:text-5xl font-extrabold mb-10 text-center md:text-left"
+        >
+          360° Photography with Professional Results
+        </h2>
+        <p
+          :class="mainText ? 'line-clamp-none' : 'line-clamp-6'"
+          class="text-gray-800 leading-relaxed text-justify md:text-left font-inter"
+        >
+          Using DSLR cameras with fisheye lenses might seem over the top these
+          days with so many DIY solutions for capturing a 360° view. For us it’s
+          certainly a process, capturing multiple exposures and blending these
+          manually to get sharp and beautifully lit ‘scenes’ is what ensures our
+          work will meet your hotels marketing brand standards.{" "}
+          <br />
+          Especially for luxury hotels and bespoke venues with guests, our photographers
+          will finalise a shoot schedule with your team and ensure communication
+          to relevant department heads. This all happens well before the tripod comes
+          out.
+          <br />
+          We believe our pre-shoot planning is a vital detail and also the beginning
+          of our creative process. A solid shoot schedule enables our clients and
+          the relative departments to having areas / facilities tidy and setup as
+          agreed and for a specific time slot. The plan makes the actual photography
+          at each location relatively fast and efficient.
+          <br />
+          Like all plans, flexibility is key and for photography sometimes sunlight
+          & clouds are driving factors.
+          <br />
+          We aim to maximise the results of the photos with play on ambient natural
+          light and styling where appropriate, whilst maintaining a strict ethic
+          on minimising effect to operations and that guest experience always comes
+          first.
+          <br />
+          <br />
+          <strong>Detailed Post Production and Image Re-touching</strong>
+          <br />
+          As you would expect, for us to achieve stunning 360° images for your business,
+          they do not come straight from the camera. In fact most of our work is
+          in the post production phase utilizing manual exposure blending, careful
+          shadow and highlight adjustment and detailed retouching.
+          <br />
+          Our workflow takes days not hours to ensure our 360 degree photo scenes
+          look ultra-realistic and convincing. Especially suited to Luxury Resorts,
+          Sunset Venues or Retreats at sunrise, our style and method will produce
+          vibrant and well lit images that truly capture the essence of your business.
+        </p>
+        <div
+          class="text-center md:text-right text-gray-900 font-semibold mt-2"
+          @click="mainText=! mainText"
+        >
+          <p x-show="!mainText">Read More</p>
+          <p x-show="mainText">Read Less</p>
+        </div>
+      </div>
+
+      <div class="pb-20" x-data="{mainText:false}">
+        <div
+          class="md:float-right aspect-video overflow-hidden w-full md:w-1/2 pr-none md:pl-10 mb-10 md:mb-5 flex justify-center items-center"
+        >
+          <img class="" src="/images/Rang-Noi-Private-Island.jpg" />
+        </div>
+        <h2
+          class="text-gray-800 text-4xl md:text-5xl font-extrabold mb-10 text-center md:text-left"
+        >
+          Building Interactive Tours & Presentations
+        </h2>
+        <p
+          :class="mainText ? 'line-clamp-none' : 'line-clamp-6'"
+          class="text-gray-800 leading-relaxed text-justify md:text-left font-inter"
+        >
+          Our custom branded 360° Interactive Tours are the packaging we provide
+          with our Panoramic Photography. We will create a bespoke virtual tour
+          with an option of different user interfaces, allowing viewers to
+          explore your property in an intuitive way.
+          <br /> The 360 Tour with its hosted URLs will be used on your website and
+          for sales whereas the panoramic photos are polished and exported in.JPG
+          format for other installations like Google Booking.com and Facebook.
+          <br />
+          eyeNAV 360° Interactive Tours 360 are built to highlight all the features
+          of your property, while enabling a visual story to the consumer. We implement
+          hotspots and navigation menus that give your potential customers easy access
+          to see what makes it unique.
+          <br /> With our Interactive 360° Tours, you can experience the highest
+          level of engagement & visibility possible.
+        </p>
+        <div
+          class="text-center md:text-right text-gray-900 font-semibold mt-2"
+          @click="mainText=! mainText"
+        >
+          <p x-show="!mainText">Read More</p>
+          <p x-show="mainText">Read Less</p>
+        </div>
+      </div>
+
+      <div class="pb-20" x-data="{mainText:false}">
+        <div
+          class="md:float-left aspect-video overflow-hidden w-full md:w-1/2 pr-none md:pr-10 mb-10 md:mb-5 flex justify-center items-center"
+        >
+          <img class="" src="/images/drone.jpg" />
+        </div>
+        <h2
+          class="text-gray-800 text-4xl md:text-5xl font-extrabold mb-10 text-center md:text-left"
+        >
+          Drone 360° Photography for Unique Perspectives
+        </h2>
+        <p
+          :class="mainText ? 'line-clamp-none' : 'line-clamp-6'"
+          class="text-gray-800 leading-relaxed text-justify md:text-left font-inter"
+        >
+          Our Journey into panoramic photo capture from the skies started with
+          SkyCAM in 2004 utilizing giant kites and Helium balloons. Great effort
+          and strength went into capturing a Bird-eye perspective for our
+          productions. We were pioneered the use of fisheye lenses and taking a
+          series of shots via remote controlled gimbals to make the first ever
+          the stunning 360° views over the resort coastline of Phuket. Later
+          SkyCAM built custom drones with the payload needed for our DSLR
+          cameras and now, well that is all changed as you know…
+          <br /> This experience only makes us more passionate and creative with
+          our drone 360° overview photography to enhance the navigation and impression
+          of the presentations we build for our clients.
+          <br /> eyeNAV 360 aerial photography service showcases venues and property
+          layouts with a unique perspective and we dont need to fly high to do this.
+          Effectively we like to call the drone our Tripod in the Sky.
+        </p>
+        <div
+          class="text-center md:text-right text-gray-900 font-semibold mt-2"
+          @click="mainText=! mainText"
+        >
+          <p x-show="!mainText">Read More</p>
+          <p x-show="mainText">Read Less</p>
+        </div>
+      </div>
+
+      <div class="pb-20">
+        <div
+          class="md:float-right aspect-video overflow-hidden w-full md:w-1/2 pr-none md:pl-10 mb-10 md:mb-5 flex justify-center items-center"
+        >
+          <img class="" src="/images/DSC_1983p.jpg" />
+        </div>
+        <h2
+          class="text-gray-800 text-4xl md:text-5xl font-extrabold mb-10 text-center md:text-left"
+        >
+          Stills Photography for Hotels – add On Service
+        </h2>
+        <p
+          class={`text-gray-800  leading-relaxed text-justify md:text-left font-inter   `}
+        >
+          As part of our 360° Photography service we are able to provide some
+          options for still photos. If you require selected areas to be captured
+          with still photos we can supplement these in your project shoot list.
+          <br /> For clients requiring an entire hotel shoots in still photography
+          we will ensure a seasoned hotel brand experienced photographer can support
+          both your 360 capture and still frame images.
+        </p>
+      </div>
+
+      <div class="pb-20">
+        <div
+          class="md:float-left aspect-video overflow-hidden w-full md:w-1/2 pr-none md:pr-10 mb-10 md:mb-5 flex justify-center items-center"
+        >
+          <img class="" src="/images/hosting.jpg" />
+        </div>
+        <h2
+          class="text-gray-800 text-4xl md:text-5xl font-extrabold mb-10 text-center md:text-left"
+        >
+          Hosting & Sales Support – Optional Subscription
+        </h2>
+        <p
+          class={`text-gray-800  leading-relaxed text-justify md:text-left font-inter  `}
+        >
+          Hosting Is an important part of eyeNAV 360 which is recognised for
+          delivering 360° Views to hundreds of hotel websites. Our biggest
+          clients receive on average over 1,500 hits on their 360 links which we
+          host and maintain. Hosting this content means there is no extra
+          bandwidth placed on your website and we are able to update the
+          software files to maintain browser and mobile compatibility and
+          importantly we can edit the visual for you when required.
+        </p>
+      </div>
+    </div>
+    <div></div>
+  </main>
+
+  <Footer />
+</Layout>

@@ -1,0 +1,69 @@
+---
+import "../styles/globals.css";
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Nav from "../components/Nav.astro";
+import FeaturedProjects from "../components/FeaturedProjects.jsx";
+import Clients from "../components/Clients.astro";
+import WebsiteIntegration from "../components/WebsiteIntegration.astro";
+import OfflineApp from "../components/OfflineApp.astro";
+import Lightbox from "../components/Lightbox.jsx";
+import AutoplaySlider from "../components/AutoplaySlider.astro";
+import Footer from "../components/Footer.astro";
+import MoreProjects from "../components/MoreProjects.jsx";
+
+import _ from "lodash";
+import { projects } from "../store/data";
+const resortProjects = _.filter(projects, { cat: "resort" });
+const villaProjects = _.filter(projects, { cat: "villa" });
+const venueProjects = _.filter(projects, { cat: "venue" });
+const yachtProjects = _.filter(projects, { cat: "yacht" });
+const parkProjects = _.filter(projects, { cat: "park" });
+---
+
+<Layout title="Welcome to ">
+	<Nav fullscreen={false} isHeader={false} height="h-[450px]" dark={false} />
+
+	<main class="grow bg-purple/10">
+		<iframe
+			class="w-full h-[600px] bg-purple"
+			src="https://eyenavphuket.com/royalphuketmarina/"
+			frameborder="0"></iframe>
+		<h2
+			class="font-heading text-5xl font-black text-purple text-center mt-10"
+		>
+			Resorts
+		</h2>
+		<MoreProjects projectData={resortProjects} client:load />
+		<h2
+			class="font-heading text-5xl font-black text-purple text-center mt-10"
+		>
+			Villas & Property
+		</h2>
+		<MoreProjects projectData={villaProjects} client:load />
+
+		<h2
+			class="font-heading text-5xl font-black text-purple text-center mt-10"
+		>
+			Venues & Restaurants
+		</h2>
+		<MoreProjects projectData={venueProjects} client:load />
+		<h2
+			class="font-heading text-5xl font-black text-purple text-center mt-10"
+		>
+			Yachts & Marinas
+		</h2>
+		<MoreProjects projectData={yachtProjects} client:load />
+		<h2
+			class="font-heading text-5xl font-black text-purple text-center mt-10"
+		>
+			Parks & Councils
+		</h2>
+		<MoreProjects projectData={parkProjects} client:load />
+	</main>
+	<Footer />
+	<Lightbox
+		iframeURL="https://eyenavthailand.com/samujana/villa12/"
+		client:load
+	/>
+</Layout>

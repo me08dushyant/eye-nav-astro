@@ -3,44 +3,35 @@ import "../styles/globals.css";
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Nav from "../components/Nav.astro";
-import FeaturedProjects from "../components/FeaturedProjects.astro";
+import FeaturedProjects from "../components/FeaturedProjects.jsx";
 import Clients from "../components/Clients.astro";
 import WebsiteIntegration from "../components/WebsiteIntegration.astro";
 import OfflineApp from "../components/OfflineApp.astro";
+import Lightbox from "../components/Lightbox.jsx";
+import AutoplaySlider from "../components/AutoplaySlider.astro";
 import Footer from "../components/Footer.astro";
+import AdminsSolid from "../components/AdminsSolid.jsx";
 ---
 
 <Layout title="Welcome to ">
-	<Nav fullscreen={true} isHeader={true} height="h-[700px]">
-		<div
-			class="w-screen h-full bg-cover bg-center flex justify-center items-center"
-			style={{
-				backgroundImage: 'url("/images/banner.jpg")',
-			}}
-		>
-			<div class="font-inter text-white px-[5vw]">
-				<h1
-					class="Atitle text-4xl lg:text-5xl font-bold drop-shadow-md py-3 text-center"
-				>
-					{" "}
-					Precise Photography
-				</h1>
-				<p
-					class="Asubtitle text-sm lg:text-lg max-w-[35ch] text-center font-semibold drop-shadow-md mx-auto"
-				>
-					We help you turn more heads with brand standard 360°
-					photography and bespoke installation support to ensure your
-					business gets a great return for this investment.
-				</p>
-			</div>
-		</div>
+	<Nav
+		fullscreen={true}
+		isHeader={true}
+		height="h-screen md:h-[700px]"
+		dark={true}
+	>
+		<AutoplaySlider />
 	</Nav>
 
 	<main class="grow">
-		<FeaturedProjects />
+		<FeaturedProjects client:load />
 		<Clients />
 		<WebsiteIntegration />
 		<OfflineApp />
 	</main>
 	<Footer />
+	<Lightbox
+		iframeURL="https://eyenavthailand.com/samujana/villa12/"
+		client:load
+	/>
 </Layout>
