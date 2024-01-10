@@ -3,27 +3,19 @@ const ProjectThumb = ({ title, bgImage, projectLink, webLink }) => {
   return (
     <>
       <div
-        class={`grid bg-gray-100/50 rounded bg-cover bg-center w-full h-full ]  `}
+        class={`grid bg-gray-100/50 rounded bg-cover bg-center w-full h-full animated  `}
         style={`background-image: url(${bgImage})`}
       >
         <div class="col-span-full row-span-full flex justify-start items-end p-3">
           <a href={webLink} target="_blank" class=" z-10 inline-block">
             <div class="flex items-center gap-5">
               <div class="bg-purple p-3 rounded-full">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width={1.5}
-                  stroke="currentColor"
-                  class="w-5 h-5"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M18.375 12.739l-7.693 7.693a4.5 4.5 0 01-6.364-6.364l10.94-10.94A3 3 0 1119.5 7.372L8.552 18.32m.009-.01l-.01.01m5.699-9.941l-7.81 7.81a1.5 1.5 0 002.112 2.13"
-                  ></path>
-                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59" />
+</svg>
+
+
               </div>
               <h6 class="font-inter drop-shadow-lg">{title}</h6>
             </div>

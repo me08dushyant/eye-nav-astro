@@ -26,7 +26,7 @@ const FeaturedProjects = () => {
               </a>
             </div>
           </div>
-          <div class="grid md:grid-rows-2 grid-cols-1 md:grid-cols-3 gap-7">
+          <div class="grid  grid-cols-1 md:grid-rows-3 md:grid-cols-3 gap-7">
             <div class="md:row-span-2 md:aspect-[2/3] aspect-video w-full h-full ">
               <ProjectThumb
                 title={homeProjects[0].title}
@@ -58,6 +58,27 @@ const FeaturedProjects = () => {
                 webLink={homeProjects[3].webLink}
               />
             </div>
+            <div class=" md:aspect-auto aspect-video">
+              <ProjectThumb
+                title={homeProjects[1].title}
+                bgImage={homeProjects[1].bgImage}
+                webLink={homeProjects[1].webLink}
+              />
+            </div>
+            <div class=" md:aspect-auto aspect-video">
+              <ProjectThumb
+                title={homeProjects[1].title}
+                bgImage={homeProjects[1].bgImage}
+                webLink={homeProjects[1].webLink}
+              />
+            </div>
+            <div class=" md:aspect-auto aspect-video">
+              <ProjectThumb
+                title={homeProjects[1].title}
+                bgImage={homeProjects[1].bgImage}
+                webLink={homeProjects[1].webLink}
+              />
+            </div>
           </div>
           <div class="flex md:hidden justify-center mt-10">
             <a href="/projects" class="w-full inline-block">
@@ -66,6 +87,9 @@ const FeaturedProjects = () => {
               </button>
             </a>
           </div>
+
+      
+          
         </div>
       </div>
     </>
