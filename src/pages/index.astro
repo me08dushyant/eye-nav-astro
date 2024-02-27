@@ -11,21 +11,23 @@ import Lightbox from "../components/Lightbox.jsx";
 import AutoplaySlider from "../components/AutoplaySlider.astro";
 import Footer from "../components/Footer.astro";
 import AdminsSolid from "../components/AdminsSolid.jsx";
+import VRHeader from "../components/VRHeader.jsx";
+import OpeningHomeText from "../components/OpeningHomeText.astro";
+import WhyChooseEyeNav from "../components/WhyChooseEyeNav.astro";
+import FullService from "../components/FullService.astro";
 ---
 
 <Layout title="Welcome to ">
-	<Nav
-		fullscreen={true}
-		isHeader={true}
-		height="h-screen md:h-[700px]"
-		dark={true}
-	>
-		<AutoplaySlider />
+	<Nav fullscreen={true} isHeader={true} height="h-screen" dark={true}>
+		<VRHeader />
 	</Nav>
 
 	<main class="grow">
+		<OpeningHomeText />
 		<FeaturedProjects client:load />
+		<WhyChooseEyeNav />
 		<Clients />
+		<FullService />
 		<WebsiteIntegration />
 		<OfflineApp />
 	</main>

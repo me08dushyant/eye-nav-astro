@@ -1,0 +1,43 @@
+<div class="font-inter bg-purple/10" x-data="{mainText:false} ">
+    <div class="max-w-[1400px] px-[5vw] mx-auto pt-20 pb-10">
+        <div class="flex gap-5 flex-col items-center">
+            <h1
+                class="font-heading font-black text-5xl text-center md:text-left"
+            >
+                Why Choose eyeNav 360
+            </h1>
+            <p class="max-w-[62ch] font-text text-lg tracking-wide pt-10">
+                We make our clients stand-out with 360° photography that sells.
+            </p>
+            <p class="max-w-[62ch] font-text text-lg tracking-wide">
+                eyeNAV 360 further develops 360° imagery into interactive tools
+                for sales teams with a tailored marketing solution.
+            </p>
+            <p x-show="mainText" class="max-w-[62ch] font-text text-lg tracking-wide">
+                We understand brand standards & styling which aligns our work
+                with brand Videos and Image Galleries.
+            </p>
+            <p x-show="mainText" class="max-w-[62ch] font-text text-lg tracking-wide">
+                eyeNAV’s approach utilises ambient light and a detailed post
+                production process.
+            </p>
+            <p x-show="mainText" class="max-w-[62ch] font-text text-lg tracking-wide">
+                We guarantee professional looking 360° photography to qualify
+                the high standard of your accommodation & facilities which
+                supports booking decisions.
+            </p>
+            <p x-show="mainText" class="max-w-[62ch] font-text text-lg tracking-wide">
+                We maintain, update, edit, re-brand our work when required
+                providing a long shelf-life for the photography.
+            </p>
+
+            <div
+                class="text-center md:text-right text-gray-900 font-bold mt-2 border p-5 rounded-md"
+                @click="mainText=! mainText"
+            >
+                <p x-show="!mainText">Read More</p>
+                <p x-show="mainText">Read Less</p>
+            </div>
+        </div>
+    </div>
+</div>
