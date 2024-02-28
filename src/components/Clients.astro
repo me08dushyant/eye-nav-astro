@@ -1,52 +1,64 @@
+---
+import Testimonial from "./Testimonial.astro";
+---
+
 <div class="max-w-[1400px] mx-auto px-[5vw] font-inter mb-20">
-    <h2 class="text-purple font-heading font-black text-5xl text-center mt-20">
-        Our Clients
-    </h2>
-    <p class="text-gray-600 text-center mt-2 font-text text-lg font-semibold">
-        Meet Our Happy Clients
+  <h2 class="text-purple font-heading font-black text-5xl text-center mt-20">
+    Our Clients
+  </h2>
+  <p class="text-gray-600 text-center mt-2 font-text text-lg font-semibold">
+    Meet Our Happy Clients
+  </p>
+  <div
+    class="grid grid-cols-2 md:grid-cols-6 divide-x divide-y mt-20 bg-gray-300"
+  >
+    <div class="flex animated justify-center items-center p-10">
+      <img src="/images/clients/Crowne-Plaza.png" alt="" />
+    </div>
+    <div class="flex animated justify-center items-center p-10">
+      <img src="/images/clients/Dusit-Hotels.png" alt="" />
+    </div>
+    <div class="flex animated justify-center items-center p-10">
+      <img src="/images/clients/Holiday-Inn.png" alt="" />
+    </div>
+    <div class="flex animated justify-center items-center p-10">
+      <img src="/images/clients/InterContinental Hotels.png" alt="" />
+    </div>
+    <div class="flex animated justify-center items-center p-10">
+      <img src="/images/clients/JW-Marriott.png" alt="" />
+    </div>
+    <div class="flex animated justify-center items-center p-10">
+      <img src="/images/clients/LeMeridien.png" alt="" />
+    </div>
+    <div class="flex animated justify-center items-center p-10">
+      <img src="/images/clients/Marriott.png" alt="" />
+    </div>
+    <div class="flex animated justify-center items-center p-10">
+      <img src="/images/clients/Ramada.png" alt="" />
+    </div>
+    <div class="flex animated justify-center items-center p-10">
+      <img src="/images/clients/Sequoia-Lodge.png" alt="" />
+    </div>
+    <div class="flex animated justify-center items-center p-10">
+      <img src="/images/clients/OzoneKI.png" alt="" />
+    </div>
+    <div class="flex animated justify-center items-center p-10">
+      <img src="/images/clients/ReefHouse.png" alt="" />
+    </div>
+    <div class="flex animated justify-center items-center p-10">
+      <img src="/images/clients/DiamondCliff.png" alt="" />
+    </div>
+  </div>
+
+  <Testimonial>
+    <p class="text-right pt-5 font-bold" slot="author">
+      Marriott Manila General Manager - Richard M. Saul
     </p>
-    <div
-        class="grid grid-cols-2 md:grid-cols-6 divide-x divide-y mt-20 bg-gray-300"
-    >
-        <div class="flex animated justify-center items-center p-10">
-            <img src="/images/clients/Crowne-Plaza.png" alt="" />
-        </div>
-        <div class="flex animated justify-center items-center p-10">
-            <img src="/images/clients/Dusit-Hotels.png" alt="" />
-        </div>
-        <div class="flex animated justify-center items-center p-10">
-            <img src="/images/clients/Holiday-Inn.png" alt="" />
-        </div>
-        <div class="flex animated justify-center items-center p-10">
-            <img src="/images/clients/InterContinental Hotels.png" alt="" />
-        </div>
-        <div class="flex animated justify-center items-center p-10">
-            <img src="/images/clients/JW-Marriott.png" alt="" />
-        </div>
-        <div class="flex animated justify-center items-center p-10">
-            <img src="/images/clients/LeMeridien.png" alt="" />
-        </div>
-        <div class="flex animated justify-center items-center p-10">
-            <img src="/images/clients/Marriott.png" alt="" />
-        </div>
-        <div class="flex animated justify-center items-center p-10">
-            <img src="/images/clients/Ramada.png" alt="" />
-        </div>
-        <div class="flex animated justify-center items-center p-10">
-            <img src="/images/clients/Sequoia-Lodge.png" alt="" />
-        </div>
-        <div class="flex animated justify-center items-center p-10">
-            <img src="/images/clients/OzoneKI.png" alt="" />
-        </div>
-        <div class="flex animated justify-center items-center p-10">
-            <img src="/images/clients/ReefHouse.png" alt="" />
-        </div>
-        <div class="flex animated justify-center items-center p-10">
-            <img src="/images/clients/DiamondCliff.png" alt="" />
-        </div>
-    </div>
-    <div class="p-5 max-w-[72ch] mx-auto">
-        <p class="font-text text-lg tracking-wide pt-20">Tom’s eyeNAV 360 photography showcases our facilities brilliantly when doing sales  presentations. He facilitated in getting our 360 photos on Booking.com and showed us how  to post them on Facebook. The fees are reasonable for the high quality of work</p>
-    <p class="text-right pt-5">Marriott Manila General Manager - Richard M. Saul </p>
-    </div>
+    <p class="font-text text-lg tracking-wide relative" slot="content">
+      Tom’s eyeNAV 360 photography showcases our facilities brilliantly when
+      doing sales presentations. He facilitated in getting our 360 photos on
+      Booking.com and showed us how to post them on Facebook. The fees are
+      reasonable for the high quality of work
+    </p>
+  </Testimonial>
 </div>

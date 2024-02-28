@@ -22,48 +22,42 @@ const parkProjects = _.filter(projects, { cat: "park" });
 ---
 
 <Layout title="Welcome to ">
-	<Nav fullscreen={false} isHeader={false} height="h-[450px]" dark={false} />
+  <Nav fullscreen={false} isHeader={false} height="h-[450px]" dark={false} />
 
-	<main class="grow bg-purple/10">
-		<iframe
-			class="w-full h-[600px] bg-purple"
-			src="https://eyenavphuket.com/royalphuketmarina/"
-			frameborder="0"></iframe>
-		<h2
-			class="font-heading text-5xl font-black text-purple text-center mt-10"
-		>
-			Resorts
-		</h2>
-		<MoreProjects projectData={resortProjects} client:load />
-		<h2
-			class="font-heading text-5xl font-black text-purple text-center mt-10"
-		>
-			Villas & Property
-		</h2>
-		<MoreProjects projectData={villaProjects} client:load />
+  <main class="grow bg-purple/10">
+    <iframe
+      class="w-full h-[600px] bg-purple"
+      src="https://eyenavphuket.com/royalphuketmarina/"
+      frameborder="0"></iframe>
+    <h2 class="font-heading text-5xl font-black text-purple text-center mt-10">
+      Resorts
+    </h2>
+    <MoreProjects projectData={resortProjects} client:load />
+    <h2 class="font-heading text-5xl font-black text-purple text-center mt-10">
+      Villas & Property
+    </h2>
+    <MoreProjects projectData={villaProjects} client:load />
 
-		<h2
-			class="font-heading text-5xl font-black text-purple text-center mt-10"
-		>
-			Venues & Restaurants
-		</h2>
-		<MoreProjects projectData={venueProjects} client:load />
-		<h2
-			class="font-heading text-5xl font-black text-purple text-center mt-10"
-		>
-			Yachts & Marinas
-		</h2>
-		<MoreProjects projectData={yachtProjects} client:load />
-		<h2
-			class="font-heading text-5xl font-black text-purple text-center mt-10"
-		>
-			Parks & Councils
-		</h2>
-		<MoreProjects projectData={parkProjects} client:load />
-	</main>
-	<Footer />
-	<Lightbox
-		iframeURL="https://eyenavthailand.com/samujana/villa12/"
-		client:load
-	/>
+    <h2 class="font-heading text-5xl font-black text-purple text-center mt-10">
+      Venues & Restaurants
+    </h2>
+    <MoreProjects projectData={venueProjects} client:load />
+    <h2 class="font-heading text-5xl font-black text-purple text-center mt-10">
+      Yachts & Marinas
+    </h2>
+    <MoreProjects projectData={yachtProjects} client:load />
+    <h2 class="font-heading text-5xl font-black text-purple text-center mt-10">
+      Parks & Councils
+    </h2>
+    <MoreProjects projectData={parkProjects} client:load />
+  </main>
+  <div>
+    <div class="max-w-[1400px] px-[5vw] mx-auto pt-10">sdsdsd</div>
+  </div>
+
+  <Footer />
+  <Lightbox
+    iframeURL="https://eyenavthailand.com/samujana/villa12/"
+    client:load
+  />
 </Layout>

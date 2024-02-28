@@ -18,22 +18,22 @@ import FullService from "../components/FullService.astro";
 ---
 
 <Layout title="Welcome to ">
-	<Nav fullscreen={true} isHeader={true} height="h-screen" dark={true}>
-		<VRHeader />
-	</Nav>
+  <Nav fullscreen={true} isHeader={true} height="h-screen" dark={true}>
+    <VRHeader />
+  </Nav>
 
-	<main class="grow">
-		<OpeningHomeText />
-		<FeaturedProjects client:load />
-		<WhyChooseEyeNav />
-		<Clients />
-		<FullService />
-		<WebsiteIntegration />
-		<OfflineApp />
-	</main>
-	<Footer />
-	<Lightbox
-		iframeURL="https://eyenavthailand.com/samujana/villa12/"
-		client:load
-	/>
+  <main class="grow">
+    <OpeningHomeText />
+    <FeaturedProjects client:load />
+    <WhyChooseEyeNav />
+    <Clients />
+    <FullService />
+    <WebsiteIntegration />
+    <OfflineApp />
+  </main>
+  <Footer />
+  <Lightbox
+    iframeURL="https://eyenavthailand.com/samujana/villa12/"
+    client:load
+  />
 </Layout>
