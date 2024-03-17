@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Astro description">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="generator" content="Astro v2.5.6">
+    <title>Welcome to </title>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Lilita+One&family=Nanum+Gothic:wght@400;700;800&family=Passion+One:wght@400;700;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/_astro/404.b76d1cb7.css" /></head>
+  <body>
+    <div class="flex flex-col min-h-screen">
+      
+  <div x-data="{ open: false }" @resize.window.debounce.100="width = window.innerWidth;  open =  width < 0 ">
+  <div class=" relative w-full z-20 min-h-[400px] [400px]">
+    <div class="backdrop-blur-2xl bg-white/10">
+      <div class="w-full max-w-[1600px] px-[5vw] py-5 mx-auto text-white">
+        <div class="w-full flex justify-between text-sm items-center">
+          <a href="/">
+            <img class="w-[164px]" src="/images/eye-nav-logo.png" alt=""></a>
+          <ul class="hidden md:flex items-center gap-10 font-text">
+            <li class="user last:border p-3 last:border-1 rounded">
+              <a href="/concept">Our Concept</a>
+            </li>
+            <li class="user last:border p-3 last:border-1 rounded">
+              <a href="/photography-style">Photography Style</a>
+            </li>
+            <li class="user last:border p-3 last:border-1 rounded">
+              <a href="/">Format & Installation</a>
+            </li>
+            <li class="user last:border p-3 last:border-1 rounded">
+              <a href="/">For Sales Team</a>
+            </li>
+            <li class="user last:border p-3 last:border-1 rounded">
+              <a href="/clients-projects">Clients Projects</a>
+            </li>
+
+            <li class="user last:border p-3 last:border-1 rounded">
+              <a href="/request-qoute">Request a Quote</a>
+            </li>
+          </ul>
+
+          <div class="relative">
+            <button x-on:click="open = ! open">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-Width="1.5" stroke="currentColor" class="w-8 h-8 block md:hidden">
+                <path stroke-Linecap="round" stroke-Linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+              </svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class=" w-full overflow-hidden flex justify-center items-center  absolute top-0 -z-10 [400px]">
+          
+    <iframe data-hk="0-0" class="h-full w-full min-h-[400px] " src="/header/vtour/index.html">VR HEader</iframe>
+    <h1 class="title absolute text-white font-bold text-5xl pt-12">
+      Request Qoute
+    </h1>
+  
+        </div>
+  </div>
+  <div x-show="open" class="fixed top-0 left-0 flex flex-col w-screen h-screen max-w-[1600px] px-[5vw] py-5 mx-auto bg-purple text-white z-20">
+    <div class="flex justify-between text-sm items-center">
+      <a href="/">
+        <img class="w-[164px]" src="/images/eye-nav-logo.png" alt="">
+      </a>
+
+      <div>
+        <button x-on:click="open = ! open">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-Width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-Linecap="round" stroke-Linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="grow flex items-center justify-center">
+      <ul class="flex flex-col sm:flex-row sm:flex-wrap items-center gap-1 font-text">
+        <li class="user last:border p-3 last:border-1 rounded">
+          <a href="/concept">Our Concept</a>
+        </li>
+        <li class="user last:border p-3 last:border-1 rounded">
+          <a href="/photography-style">Photography Style</a>
+        </li>
+        <li class="user last:border p-3 last:border-1 rounded">
+          <a href="/">Format & Installation</a>
+        </li>
+        <li class="user last:border p-3 last:border-1 rounded">
+          <a href="/">For Sales Team</a>
+        </li>
+        <li class="user last:border p-3 last:border-1 rounded">
+          <a href="/clients-projects">Clients Projects</a>
+        </li>
+
+        <li class="user last:border p-3 last:border-1 rounded">
+          <a href="/request-qoute">Request a Quote</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <main class="grow relative">
+    <div class="md:grid grid-cols-2">
+      <div class="bg-[url(/images/profile.jpg)] bg-cover bg-no-repeat bg-purple bg-blend-screen">
+        <div class="w-full h-full p-10 bg-purple/80 grid justify-center items-center text-white">
+          <p class="text-white max-w-[50ch] text-lg leading-tight">
+            To provide you an accurate quotation we will review your website and
+            assess how many 360 photos would be required to make a sound
+            presentation to showcase your venue.<br><br>
+            We consider how many accommodation types you have, how they are laid
+            out, and if some of the bathrooms should also be included. <br><br>
+            It’s important to consider your event and meeting space which should
+            be shown with some of your popular setups and sometimes for larger venues,
+            showing an empty ballroom is also useful for sales.<br><br>
+            How many leisure facilities you have such as a spa, swimming pools, and
+            of course your outlets such as fine dining, private dining, and your
+            breakfast offering is useful for potential guests to see.<br><br>
+            Please get in touch with us for a conversation or fill out the form below
+            to receive a no-obligation quote. We will need your company contact details
+            and the website of your hotel/venue/resort.
+          </p>
+          <div class="pt-10">
+            <div>sales@eyenav.com</div>
+            <div>WhatsApp Link : +66 605 1933</div>
+            <div>LINE ID: eyenav360</div>
+          </div>
+        </div>
+      </div>
+      <div class="p-10 bg-gray-50">
+        <form class="max-w-2xl" action="https://formsubmit.co/me08dushyant@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="http://localhost:3000/">
+
+          <div class="grid gap-1 pb-5">
+            <label for="name">Hotel / Venue / Resort Name</label>
+            <input type="text" id="name" class="bg-gray-50 border-b w-full border-b-gray-300 focus:outline-0 focus:border-b-gray-400" name="name">
+            <br>
+            <label for="website">Website</label>
+            <input type="text" id="website" name="website" class="bg-gray-50 border-b w-full border-b-gray-300 focus:outline-0 focus:border-b-gray-400">
+          </div>
+          <br>
+          <div class="grid md:grid-cols-2 gap-5">
+            <div class="">
+              <label for="room_types">Number of Room / Suite / Villa types</label>
+              <input type="number" id="room_types" name="room_types" min="1" class="bg-gray-50 border-b w-full border-b-gray-300 focus:outline-0 focus:border-b-gray-400">
+            </div>
+            <div>
+              <label for="outlets">Number of Outlets:</label>
+              <input type="number" id="outlets" name="outlets" min="1" class="bg-gray-50 border-b w-full border-b-gray-300 focus:outline-0 focus:border-b-gray-400">
+            </div>
+          </div>
+          <br>
+          <label for="event_spaces">Event Spaces and Setups:</label>
+          <input type="number" id="event_spaces" name="event_spaces" min="1" class="bg-gray-50 border-b w-full border-b-gray-300 focus:outline-0 focus:border-b-gray-400"><br>
+          <br>
+          <div class="grid md:grid-cols-2 gap-5">
+            <div class="flex gap-5">
+              <label for="spa">Do you have a Spa?</label>
+              <div>
+                <input type="radio" id="spa_yes" name="spa" value="yes">
+                <label for="spa_yes" class="pr-2">Yes</label>
+                <input type="radio" id="spa_no" name="spa" value="no">
+                <label for="spa_no">No</label>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <label for="fitness_facility">Do you have a Fitness Facility?</label>
+              <div>
+                <input type="radio" id="fitness_yes" name="fitness_facility" value="yes">
+                <label for="fitness_yes" class="pr-2">Yes</label>
+                <input type="radio" id="fitness_no" name="fitness_facility" value="no">
+                <label for="fitness_no">No</label>
+              </div>
+            </div>
+          </div>
+          <br>
+          <label for="swimming_pools">Swimming Pools</label>
+          <input type="number" id="swimming_pools" name="swimming_pools" min="1" class="bg-gray-50 border-b w-full border-b-gray-300 focus:outline-0 focus:border-b-gray-400">
+          <br>
+          <br>
+          <div class="flex gap-5">
+            <label for="beach_frontage" class="max-w-[20ch] md:max-w-[50ch]">Do you have Beach Frontage?</label>
+            <div>
+              <input type="radio" id="beach_yes" name="beach_frontage" value="yes">
+              <label for="beach_yes" class="pr-2">Yes</label>
+              <input type="radio" id="beach_no" name="beach_frontage" value="no">
+              <label for="beach_no">No</label><br>
+            </div>
+          </div>
+          <br>
+          <label for="selling_point">What is the best selling point of your Hotel / Venue / Resort?</label><br>
+          <textarea id="selling_point" name="selling_point" rows="3" cols="50" class="bg-gray-50 border-b w-full border-b-gray-300 focus:outline-0 focus:border-b-gray-400"></textarea><br>
+          <br>
+          <div class="flex gap-5">
+            <label for="budget" class="max-w-[25ch] md:max-w-[50ch]">Do you have a budget allocated for this project?</label>
+            <div>
+              <input type="radio" id="budget_yes" name="budget" value="yes">
+              <label for="budget_yes" class="pr-2">Yes</label>
+              <input type="radio" id="budget_no" name="budget" value="no">
+              <label for="budget_no">No</label><br>
+            </div>
+          </div>
+          <br>
+          <label for="contact_email">Your Company Contact Email</label>
+          <input type="email" id="contact_email" name="contact_email" class="bg-gray-50 border-b w-full border-b-gray-300 focus:outline-0 focus:border-b-gray-400">
+          <br>
+          <br>
+          <label for="phone_number">Your Phone Number</label>
+          <input type="tel" id="phone_number" name="phone_number" class="bg-gray-50 border-b w-full border-b-gray-300 focus:outline-0 focus:border-b-gray-400">
+          <br>
+          <input type="submit" class="bg-orange text-white font-text font-semibold px-10 py-5 rounded-md text-lg mt-10" value="Submit">
+        </form>
+      </div>
+    </div>
+  </main>
+  <div class="bg-violet-50/50">
+  <div class="max-w-[1400px] mx-auto px-[5vw] font-text text-sm">
+    <div class="pt-10 flex flex-wrap justify-between gap-10">
+      <div class="w-full md:w-[40%] flex flex-col gap-5">
+        <div>
+           
+          <div>
+            <a href="/">
+              <img class="w-[164px]" src="/images/eye-nav-logo.png" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <p class="text-gray-700 font-bold mb-2">Contact Details:</p>
+          <p class="text-gray-700">Email: sales@eyenav.com</p>
+
+          <script type="text/javascript">
+            window.onload = function () {
+              (function (d, script) {
+                script = d.createElement("script");
+                script.type = "text/javascript";
+                script.async = true;
+                script.src = "https://w.app/widget-v1/1U2vF6.js";
+                d.getElementsByTagName("head")[0].appendChild(script);
+              })(document);
+            };
+          </script>
+
+          <p class="text-gray-700">
+            WhatsApp Link: 
+            <a class="text-blue-500 font-semibold" href="https://w.app/eyeNAV360Birdeye">
+              +61 4489 375 782
+            </a>
+          </p>
+          <p class="text-gray-700">LINE ID: eyenav360</p>
+        </div>
+        <div>
+          <a href="https://w.app/eyeNAV360Birdeye">
+            <img class="w-32" src="/images/TomJanzow.png" alt="">
+          </a>
+        </div>
+        <div class="font-inter text-purple font-semibold">
+          <p>
+            <a href="https://goo.gl/maps/cqt1ryPWGake5ini8" target="_blank">
+              eyeNAV 360 Multimedia (Asia)
+            </a>
+          </p>
+          <p class="mt-2">
+             
+            <a href="https://goo.gl/maps/DFtR5jhw4s8gjZS18" target="_blank">
+              eyeNAV 360 Australia
+            </a>
+          </p>
+        </div>
+        <ul class="flex gap-5">
+          <li class="border-2 rounded-full p-2 bg-gray-50 hover:invert">
+            <img class="w-[15px]" src="/images/facebook.svg" alt="">
+          </li>
+          <li class="border-2 rounded-full p-2 bg-gray-50 hover:invert">
+            <img class="w-[15px]" src="/images/yt.svg" alt="">
+          </li>
+          <li class="border-2 rounded-full p-2 bg-gray-50 hover:invert">
+            <img class="w-[15px]" src="/images/instagram.svg" alt="">
+          </li>
+        </ul>
+      </div>
+      <div class="w-full md:w-[50%] flex justify-end gap-5 md:gap-10 font-text font-semibold text-purple">
+        <div class="flex flex-col gap-7 font-semibold text-purple">
+          <a href="/thai-promotion-page">
+            <img src="/images/thailand.jpg" alt="">
+          </a>
+          <p>Thai Promo Page</p>
+        </div>
+        <div class="flex flex-col gap-7">
+          <a href="https://birdeye.golf/mt_osmond" target="_blank">
+             
+            <img src="/images/golf.jpg" alt=""> 
+          </a>
+          <p>Proudly Affiliated with Birdeye Golf</p>
+        </div>
+      </div>
+    </div>
+    <div class="py-5 md:py-10"></div>
+    <div class="flex flex-col md:flex-row justify-between items-center gap-7 py-10 border-t border-t-gray/20">
+      <div class="text-gray-500">
+        All rights reserved | eyeNAV 360 MULTIMEDIA | 2023
+      </div>
+      <ul class="flex justify-center gap-5 text-purple font-semibold">
+        <li>Australian Business Number: 69965604985</li>
+        <li>หมายเลขประจำตัวผู้เสียภาษีบริษัทในประเทศไทย : 3930100135273</li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();;(()=>{var l;{let c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;let[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;let s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(let r of n){let i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of s){let i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}let a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){let s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{let n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(let d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}})();</script><astro-island uid="Z1IW9uS" data-solid-render-id="s0" component-url="/_astro/Lightbox.b67955c7.js" component-export="default" renderer-url="/_astro/client.30fe0f1d.js" props="{&quot;iframeURL&quot;:[0,&quot;https://eyenavthailand.com/samujana/villa12/&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;Lightbox&quot;,&quot;value&quot;:true}" await-children=""><div data-hk="s00-0" class="fixed top-0 left-0 w-screen h-screen backdrop-blur-lg backdrop-brightness-50 z-50  p-[5px] pb-[20px] md:p-[20px]    hidden items-center justify-center"><div class="bg-purple w-full h-full rounded-xl drop-shadow-2xl "><!--#--><iframe data-hk="s00-1" class="w-full h-full rounded-xl overflow-hidden" src=""></iframe><!--/--><slot><div class="absolute w-10 h-10 right-1/2 -mr-5 md:mr-0 -bottom-3 md:bottom-3 md:-top-3 md:-right-3 bg-purple rounded-full p-2 pointer-events-auto"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-Width="1.5" stroke="currentColor" class="w-6 h-6 text-white"><path stroke-Linecap="round" stroke-Linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg></div></slot></div></div></astro-island>
+
+    </div>
+  </body></html>

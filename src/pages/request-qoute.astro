@@ -1,0 +1,241 @@
+---
+import "../styles/globals.css";
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Nav from "../components/Nav.astro";
+import FeaturedProjects from "../components/FeaturedProjects.jsx";
+import Clients from "../components/Clients.astro";
+import WebsiteIntegration from "../components/WebsiteIntegration.astro";
+import OfflineApp from "../components/OfflineApp.astro";
+import Lightbox from "../components/Lightbox.jsx";
+import AutoplaySlider from "../components/AutoplaySlider.astro";
+import Footer from "../components/Footer.astro";
+import AdminsSolid from "../components/AdminsSolid.jsx";
+import VRHeader from "../components/VRHeader.jsx";
+import OpeningHomeText from "../components/OpeningHomeText.astro";
+import WhyChooseEyeNav from "../components/WhyChooseEyeNav.astro";
+import FullService from "../components/FullService.astro";
+---
+
+<Layout title="Welcome to ">
+  <Nav fullscreen={true} isHeader={true} height="[400px]" dark={true}>
+    <VRHeader tourLink="/header/vtour/index.html" />
+    <h1 class="title absolute text-white font-bold text-5xl pt-12">
+      Request Qoute
+    </h1>
+  </Nav>
+
+  <main class="grow relative">
+    <div class="md:grid grid-cols-2">
+      <div
+        class="bg-[url(/images/profile.jpg)] bg-cover bg-no-repeat bg-purple bg-blend-screen"
+      >
+        <div
+          class="w-full h-full p-10 bg-purple/80 grid justify-center items-center text-white"
+        >
+          <p class="text-white max-w-[50ch] text-lg leading-tight">
+            To provide you an accurate quotation we will review your website and
+            assess how many 360 photos would be required to make a sound
+            presentation to showcase your venue.<br /><br />
+            We consider how many accommodation types you have, how they are laid
+            out, and if some of the bathrooms should also be included. <br /><br
+            />
+            It’s important to consider your event and meeting space which should
+            be shown with some of your popular setups and sometimes for larger venues,
+            showing an empty ballroom is also useful for sales.<br /><br />
+            How many leisure facilities you have such as a spa, swimming pools, and
+            of course your outlets such as fine dining, private dining, and your
+            breakfast offering is useful for potential guests to see.<br /><br
+            />
+            Please get in touch with us for a conversation or fill out the form below
+            to receive a no-obligation quote. We will need your company contact details
+            and the website of your hotel/venue/resort.
+          </p>
+          <div class="pt-10">
+            <div>sales@eyenav.com</div>
+            <div>WhatsApp Link : +66 605 1933</div>
+            <div>LINE ID: eyenav360</div>
+          </div>
+        </div>
+      </div>
+      <div class="p-10 bg-gray-50">
+        <form
+          class="max-w-2xl"
+          action="https://formsubmit.co/me08dushyant@gmail.com"
+          method="POST"
+        >
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="http://localhost:3000/" />
+
+          <div class="grid gap-1 pb-5">
+            <label for="name">Hotel / Venue / Resort Name</label>
+            <input
+              type="text"
+              id="name"
+              class="bg-gray-50 border-b w-full border-b-gray-300 focus:outline-0 focus:border-b-gray-400"
+              name="name"
+            />
+            <br />
+            <label for="website">Website</label>
+            <input
+              type="text"
+              id="website"
+              name="website"
+              class="bg-gray-50 border-b w-full border-b-gray-300 focus:outline-0 focus:border-b-gray-400"
+            />
+          </div>
+          <br />
+          <div class="grid md:grid-cols-2 gap-5">
+            <div class="">
+              <label for="room_types"
+                >Number of Room / Suite / Villa types</label
+              >
+              <input
+                type="number"
+                id="room_types"
+                name="room_types"
+                min="1"
+                class="bg-gray-50 border-b w-full border-b-gray-300 focus:outline-0 focus:border-b-gray-400"
+              />
+            </div>
+            <div>
+              <label for="outlets">Number of Outlets:</label>
+              <input
+                type="number"
+                id="outlets"
+                name="outlets"
+                min="1"
+                class="bg-gray-50 border-b w-full border-b-gray-300 focus:outline-0 focus:border-b-gray-400"
+              />
+            </div>
+          </div>
+          <br />
+          <label for="event_spaces">Event Spaces and Setups:</label>
+          <input
+            type="number"
+            id="event_spaces"
+            name="event_spaces"
+            min="1"
+            class="bg-gray-50 border-b w-full border-b-gray-300 focus:outline-0 focus:border-b-gray-400"
+          /><br />
+          <br />
+          <div class="grid md:grid-cols-2 gap-5">
+            <div class="flex gap-5">
+              <label for="spa">Do you have a Spa?</label>
+              <div>
+                <input type="radio" id="spa_yes" name="spa" value="yes" />
+                <label for="spa_yes" class="pr-2">Yes</label>
+                <input type="radio" id="spa_no" name="spa" value="no" />
+                <label for="spa_no">No</label>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <label for="fitness_facility"
+                >Do you have a Fitness Facility?</label
+              >
+              <div>
+                <input
+                  type="radio"
+                  id="fitness_yes"
+                  name="fitness_facility"
+                  value="yes"
+                />
+                <label for="fitness_yes" class="pr-2">Yes</label>
+                <input
+                  type="radio"
+                  id="fitness_no"
+                  name="fitness_facility"
+                  value="no"
+                />
+                <label for="fitness_no">No</label>
+              </div>
+            </div>
+          </div>
+          <br />
+          <label for="swimming_pools">Swimming Pools</label>
+          <input
+            type="number"
+            id="swimming_pools"
+            name="swimming_pools"
+            min="1"
+            class="bg-gray-50 border-b w-full border-b-gray-300 focus:outline-0 focus:border-b-gray-400"
+          />
+          <br />
+          <br />
+          <div class="flex gap-5">
+            <label for="beach_frontage" class="max-w-[20ch] md:max-w-[50ch]"
+              >Do you have Beach Frontage?</label
+            >
+            <div>
+              <input
+                type="radio"
+                id="beach_yes"
+                name="beach_frontage"
+                value="yes"
+              />
+              <label for="beach_yes" class="pr-2">Yes</label>
+              <input
+                type="radio"
+                id="beach_no"
+                name="beach_frontage"
+                value="no"
+              />
+              <label for="beach_no">No</label><br />
+            </div>
+          </div>
+          <br />
+          <label for="selling_point"
+            >What is the best selling point of your Hotel / Venue / Resort?</label
+          ><br />
+          <textarea
+            id="selling_point"
+            name="selling_point"
+            rows="3"
+            cols="50"
+            class="bg-gray-50 border-b w-full border-b-gray-300 focus:outline-0 focus:border-b-gray-400"
+          ></textarea><br />
+          <br />
+          <div class="flex gap-5">
+            <label for="budget" class="max-w-[25ch] md:max-w-[50ch]"
+              >Do you have a budget allocated for this project?</label
+            >
+            <div>
+              <input type="radio" id="budget_yes" name="budget" value="yes" />
+              <label for="budget_yes" class="pr-2">Yes</label>
+              <input type="radio" id="budget_no" name="budget" value="no" />
+              <label for="budget_no">No</label><br />
+            </div>
+          </div>
+          <br />
+          <label for="contact_email">Your Company Contact Email</label>
+          <input
+            type="email"
+            id="contact_email"
+            name="contact_email"
+            class="bg-gray-50 border-b w-full border-b-gray-300 focus:outline-0 focus:border-b-gray-400"
+          />
+          <br />
+          <br />
+          <label for="phone_number">Your Phone Number</label>
+          <input
+            type="tel"
+            id="phone_number"
+            name="phone_number"
+            class="bg-gray-50 border-b w-full border-b-gray-300 focus:outline-0 focus:border-b-gray-400"
+          />
+          <br />
+          <input
+            type="submit"
+            class="bg-orange text-white font-text font-semibold px-10 py-5 rounded-md text-lg mt-10"
+            value="Submit"
+          />
+        </form>
+      </div>
+    </div>
+  </main>
+  <Footer />
+  <Lightbox
+    iframeURL="https://eyenavthailand.com/samujana/villa12/"
+    client:load
+  />
+</Layout>

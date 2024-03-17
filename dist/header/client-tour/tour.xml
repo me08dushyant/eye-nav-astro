@@ -1,0 +1,455 @@
+<krpano version="1.19" title="" onstart="set(showerrors,false);startup();">
+
+
+	<!-- include the menu -->
+	<include url="plugins/showtext.xml" />	
+
+<!-- Skin Tooltips Textstyle -->
+	<textstyle name="SKIN_TOOLTIPS" font="Montserrat" fontsize="18" bold="false" italic="false" background="false" border="false" textcolor="0xFFFFFF" effect="dropshadow(2,45,0x000000,4,1);" fadeintime="0.1" fadetime="0.05" />
+	
+
+<style name="spot" url="skin/meh.png" align="lefttop" alpha="0.0" oy="4" />  
+	
+
+<autorotate enabled="true"
+        waittime="2.5" 
+        speed="4.0" 
+        horizon="0.0" 
+        tofov="105"		 
+            
+           
+            />	
+	
+
+	<style name="hotspot_ani_white"
+	       url="skin/hotspot_ani_white_64x64x20.png"
+	       crop="0|0|64|64"
+	       scale="1.8"
+		   frames="50" framewidth="64" frameheight="64" frame="0"
+	       onloaded="hotspot_animate();"
+	       altonloaded="if(isphone, mul(scale,2)); onloaded();"
+		   onclick="if(linkedscene, tween(scale,0.01,0.2); tween(oy,-20,0.5); tween(alpha,0,0.05); looktohotspot(); loadscene(get(linkedscene),null,MERGE,BLEND(1));  );"
+	       onhover="if(skin_settings.tooltips_hotspots, if(linkedscene, showtext(get(scene[get(linkedscene)].title),SKIN_TOOLTIPS)) );"
+	       />
+
+	<style name="skin_hotspotstyle3" 
+	url="%SWFPATH%/skin/drone_hotspot.png" 
+	scale="0.5" 
+	edge="top" 
+	oy="0"
+	distorted="true"
+	 onclick="if(linkedscene, tween(scale,0.25,0.5); tween(oy,-20,0.5); tween(alpha,0,0.5); looktohotspot(); loadscene(get(linkedscene),null,MERGE,BLEND(1)); skin_updatescroll(); );"
+	       onhover="if(skin_settings.tooltips_hotspots, if(linkedscene, showtext(get(scene[get(linkedscene)].title),SKIN_TOOLTIPS)) );"
+	       />  	       
+	
+		   
+	<action name="hotspot_animate">
+		inc(frame,1,get(frames),0);
+		mul(ypos,frame,frameheight);
+		txtadd(crop,'0|',get(ypos),'|',get(framewidth),'|',get(frameheight));
+		delayedcall(0.06, hotspot_animate() );
+	</action>	
+
+
+
+	
+	<action name="startup">
+		if(startscene === null, copy(startscene,scene[0].name));
+		loadscene(get(startscene), null, MERGE);
+	</action>	
+
+
+<!-- BELOW IS ALL SCENES CODE WITH POPUPS -->
+
+		<scene name="scene_showcase" title="eyeNAV 360 APP Showcase" onstart="" thumburl="panos/PANO_APP_Showcase.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-60" vlookat="-2.5" fovtype="MFOV" fov="90" maxpixelzoom="2.0" fovmin="70" fovmax="105" limitview="auto" />
+
+		<preview url="panos/showcase.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/showcase.tiles/pano_%s.jpg" />
+			<mobile>
+				<cube url="panos/showcase.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+		<hotspot name="spot1" style="skin_hotspotstyle3" ath="249" atv="-22" linkedscene="scene_MVC_paradise" onclick="webFn1();" />
+		<hotspot name="spot2" style="skin_hotspotstyle3" ath="235" atv="-25" linkedscene="scene_marriott_suk" onclick="webFn2();" />
+		<hotspot name="spot3" style="skin_hotspotstyle3" ath="235" atv="-12" linkedscene="scene_MVC_maikhao" onclick="webFn3();" />
+		<hotspot name="spot4" style="skin_hotspotstyle3" ath="249" atv="-10" linkedscene="scene_dusit_krabi" onclick="webFn4();" />
+		<hotspot name="spot5" style="skin_hotspotstyle3" ath="235" atv="3" linkedscene="scene_wyndham_seapearl" onclick="webFn5();" />
+		<hotspot name="spot6" style="skin_hotspotstyle3" ath="249" atv="2" linkedscene="scene_ramada_khaolak" onclick="webFn6();" />
+		<hotspot name="spot7" style="skin_hotspotstyle3" ath="235" atv="17" linkedscene="scene_mt_lofty" onclick="webFn7();" />
+		<hotspot name="spot8" style="skin_hotspotstyle3" ath="249" atv="14" linkedscene="scene_reef_house" onclick="webFn8();" />
+
+		<hotspot name="spot9" style="skin_hotspotstyle3" ath="263" atv="-22" linkedscene="scene_thavorn_palm" onclick="webFn9();" />
+		<hotspot name="spot10" style="skin_hotspotstyle3" ath="277" atv="-25" linkedscene="scene_thavorn_beach" onclick="webFn10();" />
+		<hotspot name="spot11" style="skin_hotspotstyle3" ath="263" atv="-10.5" linkedscene="scene_bandara_phuket_beach" onclick="webFn11();" />
+		<hotspot name="spot12" style="skin_hotspotstyle3" ath="277" atv="-12" linkedscene="scene_bandara_phuket_villa" onclick="webFn12();" />
+		<hotspot name="spot13" style="skin_hotspotstyle3" ath="263" atv="2" linkedscene="scene_bandara_samui" onclick="webFn13();" />
+		<hotspot name="spot14" style="skin_hotspotstyle3" ath="277" atv="3" linkedscene="scene_bandara_bangkok" onclick="webFn14();" />
+		<hotspot name="spot15" style="skin_hotspotstyle3" ath="263" atv="15" linkedscene="scene_anantara_riverside" onclick="webFn15();" />
+		<hotspot name="spot16" style="skin_hotspotstyle3" ath="277" atv="17" linkedscene="scene_krabi_resort" onclick="webFn16();" />
+
+		<hotspot name="spot17" style="skin_hotspotstyle3" ath="326" atv="-24" linkedscene="scene_red_ginger" onclick="webFn17();" />
+		<hotspot name="spot18" style="skin_hotspotstyle3" ath="339" atv="-22" linkedscene="scene_pp_village" onclick="webFn18();" />
+		<hotspot name="spot19" style="skin_hotspotstyle3" ath="326" atv="-11" linkedscene="scene_diamond_cliff" onclick="webFn19();" />
+		<hotspot name="spot20" style="skin_hotspotstyle3" ath="339" atv="-10" linkedscene="scene_thara_patong" onclick="webFn20();" />
+		<hotspot name="spot21" style="skin_hotspotstyle3" ath="326" atv="3" linkedscene="scene_the_sarojin" onclick="webFn21();" />
+		<hotspot name="spot22" style="skin_hotspotstyle3" ath="339" atv="2" linkedscene="scene_santiburi" onclick="webFn22();" />
+		<hotspot name="spot23" style="skin_hotspotstyle3" ath="326" atv="17" linkedscene="scene_chura_samui" onclick="webFn23();" />
+		<hotspot name="spot24" style="skin_hotspotstyle3" ath="339" atv="15" linkedscene="scene_lampam_resort" onclick="webFn24();" />
+
+		<hotspot name="spot25" style="skin_hotspotstyle3" ath="351" atv="-22" linkedscene="scene_villa_padma" onclick="webFn25();" />
+		<hotspot name="spot26" style="skin_hotspotstyle3" ath="5" atv="-25" linkedscene="scene_samsara_villa" onclick="webFn26();" />
+		<hotspot name="spot27" style="skin_hotspotstyle3" ath="351" atv="-10" linkedscene="scene_samujana" onclick="webFn27();" />
+		<hotspot name="spot28" style="skin_hotspotstyle3" ath="5" atv="-11" linkedscene="scene_villa_camina" onclick="webFn28();" />
+		<hotspot name="spot29" style="skin_hotspotstyle3" ath="351" atv="2" linkedscene="scene_villa_azalea" onclick="webFn29();" />
+		<hotspot name="spot30" style="skin_hotspotstyle3" ath="5" atv="3" linkedscene="scene_uplands" onclick="webFn30();" />
+		<hotspot name="spot31" style="skin_hotspotstyle3" ath="351" atv="14" linkedscene="scene_paradise_island" onclick="webFn31();" />
+		<hotspot name="spot32" style="skin_hotspotstyle3" ath="5" atv="17" linkedscene="scene_byd_loft" onclick="webFn32();" />
+
+		<hotspot name="spot33" style="skin_hotspotstyle3" ath="55" atv="-25" linkedscene="scene_aleenta_phuket" onclick="webFn33();" />
+		<hotspot name="spot34" style="skin_hotspotstyle3" ath="68" atv="-22" linkedscene="scene_aleenta_huahin" onclick="webFn34();" />
+		<hotspot name="spot35" style="skin_hotspotstyle3" ath="55" atv="-11" linkedscene="scene_akyra_manor" onclick="webFn35();" />
+		<hotspot name="spot36" style="skin_hotspotstyle3" ath="68" atv="-10" linkedscene="scene_apulit_island" onclick="webFn36();" />
+		<hotspot name="spot37" style="skin_hotspotstyle3" ath="55" atv="3" linkedscene="scene_lagen_island" onclick="webFn37();" />
+		<hotspot name="spot38" style="skin_hotspotstyle3" ath="68" atv="2" linkedscene="scene_miniloc_island" onclick="webFn38();" />
+		<hotspot name="spot39" style="skin_hotspotstyle3" ath="55" atv="17" linkedscene="scene_pangulasian_island" onclick="webFn39();" />
+		<hotspot name="spot40" style="skin_hotspotstyle3" ath="68" atv="15" linkedscene="scene_misibis_bay" onclick="webFn40();" />
+
+		<hotspot name="spot41" style="skin_hotspotstyle3" ath="82" atv="-23" linkedscene="scene_rangnoi_island" onclick="webFn41();" />
+		<hotspot name="spot42" style="skin_hotspotstyle3" ath="96" atv="-26" linkedscene="scene_krabi_resort" onclick="webFn42();" />
+		<hotspot name="spot43" style="skin_hotspotstyle3" ath="82" atv="-13" linkedscene="scene_jw_phuket" onclick="webFn43();" />
+		<hotspot name="spot44" style="skin_hotspotstyle3" ath="96" atv="-15" linkedscene="scene_apulit_island" onclick="webFn44();" />
+		<hotspot name="spot45" style="skin_hotspotstyle3" ath="82" atv="-3" linkedscene="scene_lagen_island" onclick="webFn45();" />
+		<hotspot name="spot46" style="skin_hotspotstyle3" ath="98" atv="-3" linkedscene="scene_miniloc_island" onclick="webFn46();" />
+		<hotspot name="spot48" style="skin_hotspotstyle3" ath="96" atv="9" linkedscene="scene_the_park_brisbane" onclick="webFn48();" />		
+		<hotspot name="spot49" style="skin_hotspotstyle3" ath="82" atv="17" linkedscene="scene_pangulasian_island" onclick="webFn49();" />
+		<hotspot name="spot50" style="skin_hotspotstyle3" ath="96.5" atv="19.5" linkedscene="scene_ic_phu_quoc" onclick="webFn50();" />
+		
+
+		<hotspot name="spot51" style="skin_hotspotstyle3" ath="145" atv="-25" linkedscene="scene_ic_beppu" onclick="webFn51();" />
+		<hotspot name="spot52" style="skin_hotspotstyle3" ath="159" atv="-22" linkedscene="scene_ic_landmark72" onclick="webFn52();" />
+		<hotspot name="spot53" style="skin_hotspotstyle3" ath="145" atv="-11" linkedscene="scene_ic_danang" onclick="webFn53();" />
+		<hotspot name="spot54" style="skin_hotspotstyle3" ath="159" atv="-10" linkedscene="scene_ic_samui" onclick="webFn54();" />
+		<hotspot name="spot55" style="skin_hotspotstyle3" ath="145" atv="3" linkedscene="scene_ic_adelaide" onclick="webFn55();" />
+		<hotspot name="spot56" style="skin_hotspotstyle3" ath="159" atv="2" linkedscene="scene_cp_vientiane" onclick="webFn56();" />
+		<hotspot name="spot57" style="skin_hotspotstyle3" ath="145" atv="16.5" linkedscene="scene_hi_vananava" onclick="webFn57();" />
+		<hotspot name="spot58" style="skin_hotspotstyle3" ath="159" atv="14" linkedscene="scene_hi_sukhumvit" onclick="webFn58();" />
+
+		<hotspot name="spot59" style="skin_hotspotstyle3" ath="173" atv="-23" linkedscene="scene_hi_pattaya" onclick="webFn59();" />
+		<hotspot name="spot60" style="skin_hotspotstyle3" ath="188" atv="-25" linkedscene="scene_hi_maikhao" onclick="webFn60();" />
+		<hotspot name="spot61" style="skin_hotspotstyle3" ath="173" atv="-11" linkedscene="scene_hi_phiphi" onclick="webFn61();" />
+		<hotspot name="spot62" style="skin_hotspotstyle3" ath="188" atv="-12" linkedscene="scene_jw_phuket" onclick="webFn62();" />
+		<hotspot name="spot63" style="skin_hotspotstyle3" ath="173" atv="2" linkedscene="scene_jw_khaolak" onclick="webFn63();" />
+		<hotspot name="spot64" style="skin_hotspotstyle3" ath="188" atv="3" linkedscene="scene_Lemeridien_phuket" onclick="webFn64();" />
+		<hotspot name="spot65" style="skin_hotspotstyle3" ath="173" atv="15" linkedscene="scene_marriott_merlin" onclick="webFn65();" />
+		<hotspot name="spot66" style="skin_hotspotstyle3" ath="188" atv="17" linkedscene="scene_marriott_naiyang" onclick="webFn66();" />
+		
+		
+		<hotspot name="spot67" style="skin_hotspotstyle3" ath="30" atv="-15" linkedscene="scene_accommodation" onclick="webFn67();" />
+		<hotspot name="spot68" style="skin_hotspotstyle3" ath="22" atv="10" linkedscene="scene_event_proposal" onclick="webFn68();" />
+		<hotspot name="spot69" style="skin_hotspotstyle3" ath="30" atv="18" linkedscene="scene_contact" onclick="emailFn1();" />
+		<hotspot name="spot70" style="skin_hotspotstyle3" ath="306" atv="3" linkedscene="scene_google_map" onclick="webFn70();" />
+		<hotspot name="spot71" style="skin_hotspotstyle3" ath="306" atv="10" linkedscene="scene_facebook" onclick="webFn71();" />
+		<hotspot name="spot72" style="skin_hotspotstyle3" ath="306" atv="16" linkedscene="scene_booking" onclick="webFn72();" />
+		<hotspot name="spot73" style="skin_hotspotstyle3" ath="115" atv="6" linkedscene="scene_app" onclick="webFn73();" />
+		<hotspot name="spot74" style="skin_hotspotstyle3" ath="210" atv="17" linkedscene="scene_Lemeridien_phuket" onclick="webFn64();" />
+		<hotspot name="spot75" style="skin_hotspotstyle3" ath="210" atv="10" linkedscene="scene_ic_phu_quoc" onclick="webFn50();" />
+		
+	</scene>
+
+	<scene name="scene_fb" title="fb" onstart="" thumburl="panos/fb.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="112" maxpixelzoom="2.0" fovmin="70" fovmax="115" limitview="auto" />
+
+		<preview url="panos/fb.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/fb.tiles/pano_%s.jpg" />
+			<mobile>
+				<cube url="panos/fb.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+
+<action name="webFn1">
+   openurl('http://www.eyenavaustralia.com/mvc/surfers_paradise/',_blank); 
+</action>
+
+<action name="webFn2">
+   openurl('https://www.eyenavthailand.com/marriott_sukhumvit/',_blank); 
+</action>
+
+<action name="webFn3">
+   openurl('http://eyenavphuket.com/mvc/maikhao_beach/',_blank); 
+</action>
+
+<action name="webFn4">
+   openurl('https://www.eyenavthailand.com/dusit_krabi/',_blank); 
+</action>
+
+<action name="webFn5">
+   openurl('http://www.eyenavphuket.com/wyndham_seapearl/',_blank); 
+</action>
+
+<action name="webFn6">
+   openurl('https://www.eyenavthailand.com/ramada_khaolak/',_blank); 
+</action>
+
+<action name="webFn7">
+   openurl('http://www.eyenavaustralia.com/mtlofty_house/',_blank); 
+</action>
+
+<action name="webFn8">
+   openurl('http://www.eyenavaustralia.com/reef_house/',_blank); 
+</action>
+
+<action name="webFn9">
+   openurl('http://www.eyenavphuket.com/thavorn_palm/',_blank); 
+</action>
+
+<action name="webFn10">
+   openurl('http://www.eyenavphuket.com/thavorn_beach/',_blank); 
+</action>
+
+<action name="webFn11">
+   openurl('http://www.eyenavphuket.com/XXbandara_beachXX/',_blank); 
+</action>
+
+<action name="webFn12">
+   openurl('http://www.eyenavphuket.com/bandara_villas/',_blank); 
+</action>
+
+<action name="webFn13">
+   openurl('https://www.eyenavthailand.com/Xbandara_samui/',_blank); 
+</action>
+
+<action name="webFn14">
+   openurl('https://www.eyenavthailand.com/bandara_bangkok/',_blank); 
+</action>
+
+<action name="webFn15">
+   openurl('https://www.eyenavthailand.com/anantara_riverside/',_blank); 
+</action>
+
+<action name="webFn16">
+   openurl('https://www.eyenavthailand.com/krabi_resort/',_blank); 
+</action>
+
+<action name="webFn17">
+   openurl('http://www.eyenavphuket.com/express/hotels/red_ginger/index_app.htm',_blank); 
+</action>
+
+<action name="webFn18">
+   openurl('https://www.eyenavthailand.com/phiphi_village/',_blank); 
+</action>
+
+<action name="webFn19">
+   openurl('http://www.eyenavphuket.com/diamond_cliff/',_blank); 
+</action>
+
+<action name="webFn20">
+   openurl('https://www.eyenavthailand.com/XXthara_patongXX/',_blank); 
+</action>
+
+<action name="webFn21">
+   openurl('https://www.eyenavthailand.com/the_sarojin/',_blank); 
+</action>
+
+<action name="webFn22">
+   openurl('https://www.eyenavthailand.com/santiburi_samui/',_blank); 
+</action>
+
+<action name="webFn23">
+   openurl('https://www.eyenavthailand.com/Xchura_samuiX',_blank); 
+</action>
+
+<action name="webFn24">
+   openurl('https://www.eyenavthailand.com/lampam_resort',_blank); 
+</action>
+
+<action name="webFn25">
+   openurl('https://www.eyenavthailand.com/villa_padma/',_blank); 
+</action>
+
+<action name="webFn26">
+   openurl('http://www.eyenavphuket.com/samsara/villa5/',_blank); 
+</action>
+
+<action name="webFn27">
+   openurl('https://www.eyenavthailand.com/samujana/',_blank); 
+</action>
+
+<action name="webFn28">
+   openurl('https://www.eyenav.com/projects/villa_carmina/',_blank); 
+</action>
+
+<action name="webFn29">
+   openurl('https://www.eyenav.com/projects/villa_azalea/',_blank); 
+</action>
+
+<action name="webFn30">
+   openurl('https://www.eyenav.com/projects/uplands/',_blank); 
+</action>
+
+<action name="webFn31">
+   openurl('http://www.eyenavphuket.com/triple_diamond/rang_yai/',_blank); 
+</action>
+
+<action name="webFn32">
+   openurl('https://www.eyenavthailand.com/Xbyd_loftsX/',_blank); 
+</action>
+
+<action name="webFn33">
+   openurl('http://www.eyenavphuket.com/Xaleenta_phuketX/',_blank); 
+</action>
+
+<action name="webFn34">
+   openurl('https://www.eyenavthailand.com/Xaleenta_huahinX/',_blank); 
+</action>
+
+<action name="webFn35">
+   openurl('https://www.eyenavthailand.com/Xakyra_manorX/',_blank); 
+</action>
+
+<action name="webFn36">
+   openurl('http://www.eyenavasia.com/philippines/el_nido/apulit.html',_blank); 
+</action>
+
+<action name="webFn37">
+   openurl('https://www.eyenavasia.com/philippines/el_nido/lagen.html',_blank); 
+</action>
+
+<action name="webFn38">
+   openurl('https://www.eyenavasia.com/philippines/el_nido/miniloc.html',_blank); 
+</action>
+
+<action name="webFn39">
+   openurl('https://www.eyenavasia.com/philippines/el_nido/pangulasian.html',_blank); 
+</action>
+
+<action name="webFn40">
+   openurl('https://www.eyenavasia.com/philippines/misibis_bay/',_blank); 
+</action>
+
+<action name="webFn41">
+   openurl('http://www.eyenavphuket.com/rangnoi_island/',_blank); 
+</action>
+
+<action name="webFn48">
+   openurl('http://www.eyenavaustralia.com/rydges/park_hotel/embed.htm',_blank); 
+</action>
+
+<action name="webFn50 ">
+   openurl('https://www.eyenavasia.com/vietnam/ic_phuquoc/embed.htm',_blank); 
+</action>
+
+<action name="webFn51">
+   openurl('https://www.eyenavasia.com/japan/ic_beppu/embed.htm',_blank); 
+</action>  
+      
+<action name="webFn52">
+   openurl('https://www.eyenavasia.com/vietnam/ic_landmark72/embed.html',_blank); 
+</action>
+
+<action name="webFn53">
+   openurl('https://www.eyenavasia.com/vietnam/ic_danang/presentation/embed.html',_blank); 
+</action>
+
+<action name="webFn54">
+   openurl('https://www.eyenavthailand.com/Xic_samuiXX/',_blank); 
+</action>
+
+<action name="webFn55">
+   openurl('http://www.eyenavaustralia.com/ic_adelaide/',_blank); 
+</action>
+
+<action name="webFn56">
+   openurl('https://www.eyenavasia.com/laos/cp_vientiane/tour/index1.html',_blank); 
+</action>
+
+<action name="webFn57">
+   openurl('https://www.eyenavthailand.com/hir_vananava/',_blank); 
+</action>
+
+<action name="webFn58">
+   openurl('https://www.eyenavthailand.com/hi_sukhumvit/event.html',_blank); 
+</action>
+
+<action name="webFn59">
+   openurl('https://www.eyenavthailand.com/XXhi_pattayaXX/',_blank); 
+</action>
+
+<action name="webFn60">
+   openurl('http://www.eyenavphuket.com/hir_maikhao/',_blank); 
+</action>
+
+<action name="webFn61">
+   openurl('https://www.eyenavthailand.com/XXphiphi_holidayXX/',_blank); 
+</action>
+
+<action name="webFn62">
+   openurl('http://www.eyenavphuket.com/jw_phuket/',_blank); 
+</action>
+
+<action name="webFn63">
+   openurl('https://eyenavthailand.com/X!jw_khaolak!X/',_blank); 
+</action>
+
+<action name="webFn64">
+   openurl('http://www.eyenavphuket.com/le_meridien/tour/index1.htm',_blank); 
+</action>
+
+<action name="webFn65">
+   openurl('http://www.eyenavphuket.com/marriott_merlin/',_blank); 
+</action>
+
+<action name="webFn66">
+   openurl('http://www.eyenavphuket.com/marriott_naiyang/',_blank); 
+</action>
+
+
+<action name="webFn67">
+   openurl('http://www.krabiresort.net/tropical-pool-villa.php',_blank); 
+</action>
+<action name="webFn68">
+   openurl('https://www.eyenavasia.com/vietnam/ic_phuquoc/ballroom.htm',_blank); 
+</action>
+
+<action name="emailFn1">
+    openurl('mailto:stay@villacarmina.com?subject=360 Tour Inquiry | Villa Carmina |'); 
+ </action>
+
+<action name="webFn70">
+   openurl('https://goo.gl/maps/A5zbepxLPUTVeeJ3A/',_blank); 
+</action>
+<action name="webFn71">
+   openurl('https://www.facebook.com/eyenav360/',_blank); 
+</action>
+<action name="webFn72">
+   openurl('https://www.youtube.com/watch?v=z5TB_7l4a64/',_blank); 
+</action>
+<action name="webFn73">
+   openurl('https://apps.apple.com/th/app/eyenav-360-asia-luxury-hotels/id1118731433?l=th',_blank); 
+</action>
+<action name="webFn74">
+   openurl('http://www.eyenavphuket.com/marriott_naiyang/',_blank); 
+</action>
+<action name="webFn75">
+   openurl('http://www.eyenavphuket.com/marriott_naiyang/',_blank); 
+</action>
+
+<!-- END ALL SCENES CODE WITH POPUPS -->
+
+
+	
+</krpano>

@@ -64,7 +64,7 @@
 	-->
 	<!-- <include url="skin/vtourskin_design_flat_light.xml"  /> -->
 	<!-- <include url="skin/vtourskin_design_glass.xml"       /> -->
-	<!-- <include url="skin/vtourskin_design_ultra_light.xml" /> -->
+	 <include url="skin/vtourskin_design_ultra_light.xml" />
 	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
 	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
 	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
@@ -79,7 +79,8 @@
 
 
 	
-	<scene name="scene_01image" title="01image" onstart="" thumburl="panos/01image.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_01image" title="Eye-Catching Scenes" caption="
+eyeNAV 360 sets the standard with professional 360° photography for luxury hotels and presentation tools for sales teams." onstart="" thumburl="panos/01image.tiles/thumb.jpg" lat="" lng="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -94,7 +95,7 @@
 
 	</scene>
 
-	<scene name="scene_02image" title="02image" onstart="" thumburl="panos/02image.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_02image" title="Precise Photography" caption="We help you turn more heads with brand standard 360° photography and bespoke installation support to ensure your business gets a great return for this investment." onstart="" thumburl="panos/02image.tiles/thumb.jpg" lat="" lng="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -109,7 +110,9 @@
 
 	</scene>
 
-	<scene name="scene_03image" title="03image" onstart="" thumburl="panos/03image.tiles/thumb.jpg" lat="7.96410278" lng="98.45023000" heading="0.0">
+	<scene name="scene_03image" title="Professional Presentation" caption="
+
+Engaging 360° views enhance our client's websites and we further develop cutting edge presentation tools for hotel and event sales professionals." onstart="" thumburl="panos/03image.tiles/thumb.jpg" lat="7.96410278" lng="98.45023000" heading="0.0">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -124,7 +127,7 @@
 
 	</scene>
 
-	<scene name="scene_04image" title="04image" onstart="" thumburl="panos/04image.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_04image" title="Tripod in the Sky" caption="Our world of aerial 360° photography started with Giant Kites and Helium Balloons in 2005. We're so passionate about our drone panoramas and detailed post-production to highlight layouts and location for our clients. " onstart="" thumburl="panos/04image.tiles/thumb.jpg" lat="" lng="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -139,7 +142,10 @@
 
 	</scene>
 
-	<scene name="scene_05image" title="05image" onstart="" thumburl="panos/05image.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_05image" title="Seeing is Believing " caption="
+
+If your venue is a place your customers will love then let us help you show it.
+Give your event sales a boost by immersing potential customers in the entire space and showcase your setups." onstart="" thumburl="panos/05image.tiles/thumb.jpg" lat="" lng="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -154,7 +160,7 @@
 
 	</scene>
 
-	<scene name="scene_06image" title="06image" onstart="" thumburl="panos/06image.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_06image" title="Visual Solution" caption=" Different from a set and forget linear video, eyeNAV 360 is a soloution for showing places, event venues and accommodation products with ultra realism which is what consumers need to make booking decisions." onstart="" thumburl="panos/06image.tiles/thumb.jpg" lat="" lng="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 

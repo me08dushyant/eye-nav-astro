@@ -1,100 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="description" content="Astro description">
-		<meta name="viewport" content="width=device-width">
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-		<meta name="generator" content="Astro v2.5.6">
-		<title>Welcome to </title>
-		<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Astro description">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="generator" content="Astro v2.5.6">
+    <title>Welcome to </title>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Lilita+One&family=Nanum+Gothic:wght@400;700;800&family=Passion+One:wght@400;700;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="/_astro/404.9b3fb639.css" /></head>
-	<body>
-		<div class="flex flex-col min-h-screen">
-			
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Lilita+One&family=Nanum+Gothic:wght@400;700;800&family=Passion+One:wght@400;700;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/_astro/404.b76d1cb7.css" /></head>
+  <body>
+    <div class="flex flex-col min-h-screen">
+      
 	<div x-data="{ open: false }" @resize.window.debounce.100="width = window.innerWidth;  open =  width < 0 ">
-    <div class=" relative w-full z-20  h-auto">
-        <div class="w-full max-w-[1600px] px-[5vw] py-5 mx-auto text-violet-950">
-            <div class="w-full flex justify-between text-sm items-center">
-                <a href="/">
-                    <img class="w-[164px]" src="/images/eye-nav-logo.png" alt=""></a>
-                <ul class="hidden md:flex items-center gap-10 font-text">
-                    <li class="user last:border p-3 last:border-1 rounded">
-                        <a href="/concept">Our Concept</a>
-                    </li>
-                    <li class="user last:border p-3 last:border-1 rounded">
-                        <a href="/photography-style">Photography Style</a>
-                    </li>
-                    <li class="user last:border p-3 last:border-1 rounded">
-                        <a href="/">Format & Installation</a>
-                    </li>
-                    <li class="user last:border p-3 last:border-1 rounded">
-                        <a href="/">For Sales Team</a>
-                    </li>
-                    <li class="user last:border p-3 last:border-1 rounded">
-                        <a href="/clients-projects">Clients Projects</a>
-                    </li>
+  <div class=" relative w-full z-20 min-h-[400px] h-auto">
+    <div class="backdrop-blur-2xl bg-white/10">
+      <div class="w-full max-w-[1600px] px-[5vw] py-5 mx-auto text-violet-950">
+        <div class="w-full flex justify-between text-sm items-center">
+          <a href="/">
+            <img class="w-[164px]" src="/images/eye-nav-logo.png" alt=""></a>
+          <ul class="hidden md:flex items-center gap-10 font-text">
+            <li class="user last:border p-3 last:border-1 rounded">
+              <a href="/concept">Our Concept</a>
+            </li>
+            <li class="user last:border p-3 last:border-1 rounded">
+              <a href="/photography-style">Photography Style</a>
+            </li>
+            <li class="user last:border p-3 last:border-1 rounded">
+              <a href="/">Format & Installation</a>
+            </li>
+            <li class="user last:border p-3 last:border-1 rounded">
+              <a href="/">For Sales Team</a>
+            </li>
+            <li class="user last:border p-3 last:border-1 rounded">
+              <a href="/clients-projects">Clients Projects</a>
+            </li>
 
-                    <li class="user last:border p-3 last:border-1 rounded">
-                        <a href="/">Request a Quote</a>
-                    </li>
-                </ul>
+            <li class="user last:border p-3 last:border-1 rounded">
+              <a href="/request-qoute">Request a Quote</a>
+            </li>
+          </ul>
 
-                <div class="relative">
-                    <button x-on:click="open = ! open">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-Width="1.5" stroke="currentColor" class="w-8 h-8 block md:hidden">
-                            <path stroke-Linecap="round" stroke-Linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
-                        </svg></button>
-                </div>
-            </div>
+          <div class="relative">
+            <button x-on:click="open = ! open">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-Width="1.5" stroke="currentColor" class="w-8 h-8 block md:hidden">
+                <path stroke-Linecap="round" stroke-Linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+              </svg></button>
+          </div>
         </div>
-
-        
+      </div>
     </div>
-    <div x-show="open" class="fixed top-0 left-0 flex flex-col w-screen h-screen max-w-[1600px] px-[5vw] py-5 mx-auto bg-purple text-white z-20">
-        <div class="flex justify-between text-sm items-center">
-            <a href="/">
-                <img class="w-[164px]" src="/images/eye-nav-logo.png" alt="">
-            </a>
 
-            <div>
-                <button x-on:click="open = ! open">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-Width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-Linecap="round" stroke-Linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <div class="grow flex items-center justify-center">
-            <ul class="flex flex-col sm:flex-row sm:flex-wrap items-center gap-1 font-text">
-                <li class="user last:border p-3 last:border-1 rounded">
-                    <a href="/concept">Our Concept</a>
-                </li>
-                <li class="user last:border p-3 last:border-1 rounded">
-                    <a href="/photography-style">Photography Style</a>
-                </li>
-                <li class="user last:border p-3 last:border-1 rounded">
-                    <a href="/">Format & Installation</a>
-                </li>
-                <li class="user last:border p-3 last:border-1 rounded">
-                    <a href="/">For Sales Team</a>
-                </li>
-                <li class="user last:border p-3 last:border-1 rounded">
-                    <a href="/clients-projects">Clients Projects</a>
-                </li>
+    
+  </div>
+  <div x-show="open" class="fixed top-0 left-0 flex flex-col w-screen h-screen max-w-[1600px] px-[5vw] py-5 mx-auto bg-purple text-white z-20">
+    <div class="flex justify-between text-sm items-center">
+      <a href="/">
+        <img class="w-[164px]" src="/images/eye-nav-logo.png" alt="">
+      </a>
 
-                <li class="user last:border p-3 last:border-1 rounded">
-                    <a href="/">Request a Quote</a>
-                </li>
-            </ul>
-        </div>
+      <div>
+        <button x-on:click="open = ! open">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-Width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-Linecap="round" stroke-Linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
     </div>
+    <div class="grow flex items-center justify-center">
+      <ul class="flex flex-col sm:flex-row sm:flex-wrap items-center gap-1 font-text">
+        <li class="user last:border p-3 last:border-1 rounded">
+          <a href="/concept">Our Concept</a>
+        </li>
+        <li class="user last:border p-3 last:border-1 rounded">
+          <a href="/photography-style">Photography Style</a>
+        </li>
+        <li class="user last:border p-3 last:border-1 rounded">
+          <a href="/">Format & Installation</a>
+        </li>
+        <li class="user last:border p-3 last:border-1 rounded">
+          <a href="/">For Sales Team</a>
+        </li>
+        <li class="user last:border p-3 last:border-1 rounded">
+          <a href="/clients-projects">Clients Projects</a>
+        </li>
+
+        <li class="user last:border p-3 last:border-1 rounded">
+          <a href="/request-qoute">Request a Quote</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 
 	<main class="grow bg-purple/10">
@@ -199,5 +201,5 @@
 </div>
 	<astro-island uid="nuurw" data-solid-render-id="s1" component-url="/_astro/Lightbox.b67955c7.js" component-export="default" renderer-url="/_astro/client.30fe0f1d.js" props="{&quot;iframeURL&quot;:[0,&quot;https://eyenavthailand.com/samujana/villa12/&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;Lightbox&quot;,&quot;value&quot;:true}" await-children=""><div data-hk="s10-0" class="fixed top-0 left-0 w-screen h-screen backdrop-blur-lg backdrop-brightness-50 z-50  p-[5px] pb-[20px] md:p-[20px]    hidden items-center justify-center"><div class="bg-purple w-full h-full rounded-xl drop-shadow-2xl "><!--#--><iframe data-hk="s10-1" class="w-full h-full rounded-xl overflow-hidden" src=""></iframe><!--/--><slot><div class="absolute w-10 h-10 right-1/2 -mr-5 md:mr-0 -bottom-3 md:bottom-3 md:-top-3 md:-right-3 bg-purple rounded-full p-2 pointer-events-auto"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-Width="1.5" stroke="currentColor" class="w-6 h-6 text-white"><path stroke-Linecap="round" stroke-Linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg></div></slot></div></div></astro-island>
 
-		</div>
-	</body></html>
+    </div>
+  </body></html>

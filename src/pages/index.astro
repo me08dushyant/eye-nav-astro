@@ -19,7 +19,20 @@ import FullService from "../components/FullService.astro";
 
 <Layout title="Welcome to ">
   <Nav fullscreen={true} isHeader={true} height="h-screen" dark={true}>
-    <VRHeader />
+    <VRHeader tourLink="/header/vtour/index.html" />
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="w-8 h-8 absolute bottom-5 text-white animate-bounce"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"></path>
+    </svg>
   </Nav>
 
   <main class="grow">
