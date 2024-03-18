@@ -1,0 +1,289 @@
+﻿<krpano version="1.20.11" title="Virtual Tour">
+
+	<include url="skin/vtourskin.xml" />
+
+	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
+	<skin_settings maps="false"
+	               maps_type="google"
+	               maps_bing_api_key=""
+	               maps_google_api_key=""
+	               maps_zoombuttons="false"
+	               maps_loadonfirstuse="true"
+	               gyro="true"
+	               gyro_keeplookingdirection="false"
+	               webvr="true"
+	               webvr_keeplookingdirection="true"
+	               webvr_prev_next_hotspots="true"
+	               autotour="false"
+	               littleplanetintro="false"
+	               followmousecontrol="false"
+	               title="true"
+	               thumbs="true"
+	               thumbs_width="120" thumbs_height="80" thumbs_padding="10" thumbs_crop="0|40|240|160"
+	               thumbs_opened="false"
+	               thumbs_text="false"
+	               thumbs_dragging="true"
+	               thumbs_onhoverscrolling="false"
+	               thumbs_scrollbuttons="false"
+	               thumbs_scrollindicator="false"
+	               thumbs_loop="false"
+	               tooltips_buttons="false"
+	               tooltips_thumbs="false"
+	               tooltips_hotspots="false"
+	               tooltips_mapspots="false"
+	               deeplinking="false"
+	               loadscene_flags="MERGE"
+	               loadscene_blend="OPENBLEND(0.5, 0.0, 0.75, 0.05, linear)"
+	               loadscene_blend_prev="SLIDEBLEND(0.5, 180, 0.75, linear)"
+	               loadscene_blend_next="SLIDEBLEND(0.5,   0, 0.75, linear)"
+	               loadingtext=""
+	               layout_width="100%"
+	               layout_maxwidth="814"
+	               controlbar_width="-24"
+	               controlbar_height="40"
+	               controlbar_offset="20"
+	               controlbar_offset_closed="-40"
+	               controlbar_overlap.no-fractionalscaling="10"
+	               controlbar_overlap.fractionalscaling="0"
+	               design_skin_images="vtourskin.png"
+	               design_bgcolor="0x2D3E50"
+	               design_bgalpha="0.8"
+	               design_bgborder="0"
+	               design_bgroundedge="1"
+	               design_bgshadow="0 4 10 0x000000 0.3"
+	               design_thumbborder_bgborder="3 0xFFFFFF 1.0"
+	               design_thumbborder_padding="2"
+	               design_thumbborder_bgroundedge="0"
+	               design_text_css="color:#FFFFFF; font-family:Arial;"
+	               design_text_shadow="1"
+	               />
+
+	<!--
+	    For an alternative skin design either change the <skin_settings> values 
+	    from above or optionally include one of the predefined designs from below.
+	-->
+	<!-- <include url="skin/vtourskin_design_flat_light.xml"  /> -->
+	<!-- <include url="skin/vtourskin_design_glass.xml"       /> -->
+	<!-- <include url="skin/vtourskin_design_ultra_light.xml" /> -->
+	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
+	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
+	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
+	 <include url="skin/vtourskin_design_ultra_light.xml" />
+	<action name="startup" autorun="onstart">
+		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
+		loadscene(get(startscene), null, MERGE);
+		if(startactions !== null, startactions() );
+	</action>
+	
+	<scene name="scene_Aerial_KRN" title="Aerial_KRN" onstart="" thumburl="panos/Aerial_KRN.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Aerial_KRN.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Aerial_KRN.tiles/pano_%s.jpg" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_DiamondCliff_Spa" title="DiamondCliff_Spa" onstart="" thumburl="panos/DiamondCliff_Spa.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/DiamondCliff_Spa.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/DiamondCliff_Spa.tiles/pano_%s.jpg" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_HIR_VanaNava" title="HIR_VanaNava" onstart="" thumburl="panos/HIR_VanaNava.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/HIR_VanaNava.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/HIR_VanaNava.tiles/pano_%s.jpg" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Ink360_ICPQ" title="Ink360_ICPQ" onstart="" thumburl="panos/Ink360_ICPQ.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Ink360_ICPQ.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Ink360_ICPQ.tiles/pano_%s.jpg" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_InterContinental_Phu_Quoc" title="InterContinental Phu Quoc" onstart="" thumburl="panos/InterContinental_Phu_Quoc.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/InterContinental_Phu_Quoc.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/InterContinental_Phu_Quoc.tiles/pano_%s.jpg" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_InterContinental_Beppu" title="InterContinental_Beppu" onstart="" thumburl="panos/InterContinental_Beppu.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/InterContinental_Beppu.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/InterContinental_Beppu.tiles/pano_%s.jpg" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_KRN_karoke" title="KRN_karoke" onstart="" thumburl="panos/KRN_karoke.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/KRN_karoke.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/KRN_karoke.tiles/pano_%s.jpg" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_LMeridPkt_ballroom" title="LMeridPkt_ballroom" onstart="" thumburl="panos/LMeridPkt_ballroom.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/LMeridPkt_ballroom.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/LMeridPkt_ballroom.tiles/pano_%s.jpg" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Marriott_Merlin_Phuket" title="Marriott_Merlin_Phuket" onstart="" thumburl="panos/Marriott_Merlin_Phuket.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Marriott_Merlin_Phuket.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Marriott_Merlin_Phuket.tiles/pano_%s.jpg" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_RangNoi_pier" title="RangNoi_pier" onstart="" thumburl="panos/RangNoi_pier.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/RangNoi_pier.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/RangNoi_pier.tiles/pano_%s.jpg" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Royal_Phuket_Marina2" title="Royal Phuket Marina2" onstart="" thumburl="panos/Royal_Phuket_Marina2.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Royal_Phuket_Marina2.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Royal_Phuket_Marina2.tiles/pano_%s.jpg" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Royal_Phuket_Marina" title="Royal_Phuket_Marina" onstart="" thumburl="panos/Royal_Phuket_Marina.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Royal_Phuket_Marina.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Royal_Phuket_Marina.tiles/pano_%s.jpg" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Santiburi_Samui" title="Santiburi_Samui" onstart="" thumburl="panos/Santiburi_Samui.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Santiburi_Samui.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Santiburi_Samui.tiles/pano_%s.jpg" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_SMJ_V29" title="SMJ_V29" onstart="" thumburl="panos/SMJ_V29.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/SMJ_V29.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/SMJ_V29.tiles/pano_%s.jpg" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_Uplands_Imax" title="Uplands_Imax" onstart="" thumburl="panos/Uplands_Imax.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Uplands_Imax.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Uplands_Imax.tiles/pano_%s.jpg" />
+		</image>
+
+	</scene>
+
+
+</krpano>

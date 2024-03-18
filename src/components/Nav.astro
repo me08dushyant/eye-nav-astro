@@ -30,19 +30,13 @@ const { fullscreen, isHeader, height, dark } = Astro.props;
           >
           <ul class="hidden md:flex items-center gap-10 font-text">
             <li class="user last:border p-3 last:border-1 rounded">
-              <a href="/concept">Our Concept</a>
+              <a href="/clients-projects">Portfolio</a>
             </li>
             <li class="user last:border p-3 last:border-1 rounded">
-              <a href="/photography-style">Photography Style</a>
+              <a href="/services">Service</a>
             </li>
             <li class="user last:border p-3 last:border-1 rounded">
-              <a href="/">Format & Installation</a>
-            </li>
-            <li class="user last:border p-3 last:border-1 rounded">
-              <a href="/">For Sales Team</a>
-            </li>
-            <li class="user last:border p-3 last:border-1 rounded">
-              <a href="/clients-projects">Clients Projects</a>
+              <a href="/concept">History</a>
             </li>
 
             <li class="user last:border p-3 last:border-1 rounded">
@@ -50,7 +44,7 @@ const { fullscreen, isHeader, height, dark } = Astro.props;
             </li>
           </ul>
 
-          <div class="relative">
+          <div class="relative md:hidden">
             <button x-on:click="open = ! open">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -117,19 +111,13 @@ const { fullscreen, isHeader, height, dark } = Astro.props;
         class="flex flex-col sm:flex-row sm:flex-wrap items-center gap-1 font-text"
       >
         <li class="user last:border p-3 last:border-1 rounded">
-          <a href="/concept">Our Concept</a>
+          <a href="/clients-projects">Portfolio</a>
         </li>
         <li class="user last:border p-3 last:border-1 rounded">
-          <a href="/photography-style">Photography Style</a>
+          <a href="/services">Service</a>
         </li>
         <li class="user last:border p-3 last:border-1 rounded">
-          <a href="/">Format & Installation</a>
-        </li>
-        <li class="user last:border p-3 last:border-1 rounded">
-          <a href="/">For Sales Team</a>
-        </li>
-        <li class="user last:border p-3 last:border-1 rounded">
-          <a href="/clients-projects">Clients Projects</a>
+          <a href="/concept">History</a>
         </li>
 
         <li class="user last:border p-3 last:border-1 rounded">

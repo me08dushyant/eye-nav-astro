@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Astro description">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="generator" content="Astro v2.5.6">
+    <title>Welcome to </title>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Lilita+One&family=Nanum+Gothic:wght@400;700;800&family=Passion+One:wght@400;700;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/_astro/404.fbfbf475.css" /></head>
+  <body>
+    <div class="flex flex-col min-h-screen">
+      
+  <div x-data="{ open: false }" @resize.window.debounce.100="width = window.innerWidth;  open =  width < 0 ">
+  <div class=" relative w-full z-20 min-h-[400px] [400px]">
+    <div class="backdrop-blur-2xl bg-white/10">
+      <div class="w-full max-w-[1600px] px-[5vw] py-5 mx-auto text-white">
+        <div class="w-full flex justify-between text-sm items-center">
+          <a href="/">
+            <img class="w-[164px]" src="/images/eye-nav-logo.png" alt=""></a>
+          <ul class="hidden md:flex items-center gap-10 font-text">
+            <li class="user last:border p-3 last:border-1 rounded">
+              <a href="/clients-projects">Portfolio</a>
+            </li>
+            <li class="user last:border p-3 last:border-1 rounded">
+              <a href="/services">Service</a>
+            </li>
+            <li class="user last:border p-3 last:border-1 rounded">
+              <a href="/concept">History</a>
+            </li>
+
+            <li class="user last:border p-3 last:border-1 rounded">
+              <a href="/request-qoute">Request a Quote</a>
+            </li>
+          </ul>
+
+          <div class="relative md:hidden">
+            <button x-on:click="open = ! open">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-Width="1.5" stroke="currentColor" class="w-8 h-8 block md:hidden">
+                <path stroke-Linecap="round" stroke-Linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+              </svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class=" w-full overflow-hidden flex justify-center items-center  absolute top-0 -z-10 [400px]">
+          
+    <iframe data-hk="0-0" class="h-full w-full min-h-[400px] " src="/header/sub/index.html">VR HEader</iframe>
+    <h1 class="title absolute text-white font-bold text-5xl pt-12">Services</h1>
+  
+        </div>
+  </div>
+  <div x-show="open" class="fixed top-0 left-0 flex flex-col w-screen h-screen max-w-[1600px] px-[5vw] py-5 mx-auto bg-purple text-white z-20">
+    <div class="flex justify-between text-sm items-center">
+      <a href="/">
+        <img class="w-[164px]" src="/images/eye-nav-logo.png" alt="">
+      </a>
+
+      <div>
+        <button x-on:click="open = ! open">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-Width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-Linecap="round" stroke-Linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="grow flex items-center justify-center">
+      <ul class="flex flex-col sm:flex-row sm:flex-wrap items-center gap-1 font-text">
+        <li class="user last:border p-3 last:border-1 rounded">
+          <a href="/clients-projects">Portfolio</a>
+        </li>
+        <li class="user last:border p-3 last:border-1 rounded">
+          <a href="/services">Service</a>
+        </li>
+        <li class="user last:border p-3 last:border-1 rounded">
+          <a href="/concept">History</a>
+        </li>
+
+        <li class="user last:border p-3 last:border-1 rounded">
+          <a href="/request-qoute">Request a Quote</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <main class="grow bg-purple/10">
+    <div class="grid grid-cols-2">
+      <div class="col-span-2 row-start-1 col-start-1 z-0">
+        <div class="max-w-[1400px] mx-auto px-[5vw] grid md:grid-cols-2 bg-purple md:bg-gray-600/0">
+          <div class="flex flex-col gap-10 py-20 md:px-10 bg-gray-600/0 md:bg-purple/95">
+             
+            <h1 class="font-heading text-white text-4xl font-black">
+               
+              Precise 360° Photography
+            </h1>
+            <div class="relative z-0">
+              <p class="sm:text-xl font-text text-gray-50">
+                <em>
+                  Our 360ﾟ photography sets out to represent a space or facility
+                  in its best light with WoW factor or careful setups which make
+                  consumers feel like being there. In the same way as
+                  professional hotel still photography is done, an eyeNAV360
+                  shoot is all in the preparation and timing.
+                </em>
+              </p>
+            </div>
+            <p class="font-text text-gray-50">
+              There is no Fuss & No extra lighting, we carefully plan the shots
+              with our clients and make sure they feature their brand standard
+              setups. We use natural ambient light and avoid harsh daytime sun,
+              executing most of our shoots during at early mornings and early
+              evenings.
+            </p>
+            <p class="font-text text-gray-50">
+              Care is taken to ensure our scheduled photo shoots bring minimal
+              challenges to your operations and no effect on guest experience.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="hidden md:block col-start-1 row-start-1 col-span-2 bg-cover bg-center" style="background-image:url(&#34;/images/Royal_Phuket_Marina.jpg&#34;)">
+      </div>
+    </div>
+    <div>
+      <div class="font-inter pt-20">
+        <div class="max-w-[1400px] mx-auto px-[5vw] font-inter flex flex-col md:grid md:grid-cols-2 gap-10 items-center">
+          <div class="order-2 md:order-1">
+            <img class="animated" src="/images/drone.jpg" alt="">
+          </div>
+          <div class="order-1 md:order-2">
+            <h2 class="text-gray-800 text-4xl md:text-5xl font-extrabold mb-10 text-center md:text-left">
+              Drone 360ﾟ photography
+            </h2>
+            <p class="font-text text-md text-gray-800 leading-relaxed text-center md:text-left">
+              Our drones represent a tripod mounted perfectly steady at an ideal
+              position above. <br>
+              We are passionate about our drone panorama capture and are interested
+              in detailed views from low altitudes.
+              <br>
+              Ultras detailed post-production is required for these scenes to look
+              neat and tidy, highlighting the layout or location of the property.
+              We consider ourselves lucky to adopt safe and reliable drones today
+              because our Aerial 360° Photography days started with Giant Kites and
+              Helium Balloons lifting heavy cameras in 2005.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="font-inter pt-20">
+        <div class="max-w-[1400px] mx-auto px-[5vw] font-inter flex flex-col md:grid md:grid-cols-2 gap-10 items-center">
+          <div class="order-2 md:order-2">
+            <img class="animated" src="/images/photography.jpg" alt="">
+          </div>
+          <div class="">
+            <h2 class="text-gray-800 text-4xl md:text-5xl font-extrabold mb-10 text-center md:text-left">
+              Still Frame Photography
+            </h2>
+            <p class="font-text text-md text-gray-800 leading-relaxed text-center md:text-left">
+              Refined Hotel Brand Photography & Photos for Sales Collateral are
+              available by our experienced travel photographers as an additional
+              service for your Sales & Marketing needs.
+              <br>
+              360 Capture - Due to the high quality of our 360ﾟ panorama construction
+              we are also able to export still photos from our 360s. In many cases
+              these images are adequate for the clients needs.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="font-inter py-20">
+        <div class="max-w-[1400px] mx-auto px-[5vw] font-inter flex flex-col md:grid md:grid-cols-2 gap-10 items-center">
+          <div class="order-2 md:order-1">
+            <iframe class="w-full aspect-video animated" src="https://www.youtube.com/embed/uUvgq00Q1l0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="order-1 md:order-2">
+            <h2 class="text-gray-800 text-4xl md:text-5xl font-extrabold mb-10 text-center md:text-left">
+              Linear Video
+            </h2>
+            <p class="font-text text-md text-gray-800 leading-relaxed text-center md:text-left">
+              Where practical, we are able to capture short video clips with our
+              drones as a complimentary add-on when we are capturing 360°
+              Panoramic Views of your property. This extra footage, fly-outs &
+              fly-overs can be provided as basic clips for your social media
+              channels.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="bg-violet-50/50">
+  <div class="max-w-[1400px] mx-auto px-[5vw] font-text text-sm">
+    <div class="pt-10 flex flex-wrap justify-between gap-10">
+      <div class="w-full md:w-[40%] flex flex-col gap-5">
+        <div>
+           
+          <div>
+            <a href="/">
+              <img class="w-[164px]" src="/images/eye-nav-logo.png" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <p class="text-gray-700 font-bold mb-2">Contact Details:</p>
+          <p class="text-gray-700">Email: sales@eyenav.com</p>
+
+          <script type="text/javascript">
+            window.onload = function () {
+              (function (d, script) {
+                script = d.createElement("script");
+                script.type = "text/javascript";
+                script.async = true;
+                script.src = "https://w.app/widget-v1/1U2vF6.js";
+                d.getElementsByTagName("head")[0].appendChild(script);
+              })(document);
+            };
+          </script>
+
+          <p class="text-gray-700">
+            WhatsApp Link: 
+            <a class="text-blue-500 font-semibold" href="https://w.app/eyeNAV360Birdeye">
+              +61 4489 375 782
+            </a>
+          </p>
+          <p class="text-gray-700">LINE ID: eyenav360</p>
+        </div>
+        <div>
+          <a href="https://w.app/eyeNAV360Birdeye">
+            <img class="w-32" src="/images/TomJanzow.png" alt="">
+          </a>
+        </div>
+        <div class="font-inter text-purple font-semibold">
+          <p>
+            <a href="https://goo.gl/maps/cqt1ryPWGake5ini8" target="_blank">
+              eyeNAV 360 Multimedia (Asia)
+            </a>
+          </p>
+          <p class="mt-2">
+             
+            <a href="https://goo.gl/maps/DFtR5jhw4s8gjZS18" target="_blank">
+              eyeNAV 360 Australia
+            </a>
+          </p>
+        </div>
+        <ul class="flex gap-5">
+          <li class="border-2 rounded-full p-2 bg-gray-50 hover:invert">
+            <img class="w-[15px]" src="/images/facebook.svg" alt="">
+          </li>
+          <li class="border-2 rounded-full p-2 bg-gray-50 hover:invert">
+            <img class="w-[15px]" src="/images/yt.svg" alt="">
+          </li>
+          <li class="border-2 rounded-full p-2 bg-gray-50 hover:invert">
+            <img class="w-[15px]" src="/images/instagram.svg" alt="">
+          </li>
+        </ul>
+      </div>
+      <div class="w-full md:w-[50%] flex justify-end gap-5 md:gap-10 font-text font-semibold text-purple">
+        <div class="flex flex-col gap-7 font-semibold text-purple">
+          <a href="/thai-promotion-page">
+            <img src="/images/thailand.jpg" alt="">
+          </a>
+          <p>Thai Promo Page</p>
+        </div>
+        <div class="flex flex-col gap-7">
+          <a href="https://birdeye.golf/mt_osmond" target="_blank">
+             
+            <img src="/images/golf.jpg" alt=""> 
+          </a>
+          <p>Proudly Affiliated with Birdeye Golf</p>
+        </div>
+      </div>
+    </div>
+    <div class="py-5 md:py-10"></div>
+    <div class="flex flex-col md:flex-row justify-between items-center gap-7 py-10 border-t border-t-gray/20">
+      <div class="text-gray-500">
+        All rights reserved | eyeNAV 360 MULTIMEDIA | 2023
+      </div>
+      <ul class="flex justify-center gap-5 text-purple font-semibold">
+        <li>Australian Business Number: 69965604985</li>
+        <li>หมายเลขประจำตัวผู้เสียภาษีบริษัทในประเทศไทย : 3930100135273</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </body></html>
