@@ -11,26 +11,26 @@ import Lightbox from "../components/Lightbox.jsx";
 import AutoplaySlider from "../components/AutoplaySlider.astro";
 import Footer from "../components/Footer.astro";
 import MoreProjects from "../components/MoreProjects.jsx";
-
+import VRHeader from "../components/VRHeader.jsx";
 import _ from "lodash";
 import { projects } from "../store/data";
 const moreProjects = _.filter(projects, { type: "more" });
 ---
 
 <Layout title="Welcome to ">
-	<Nav fullscreen={false} isHeader={false} height="h-[450px]" dark={false} />
+  <Nav fullscreen={true} isHeader={true} height="[400px]" dark={true}>
+    <VRHeader tourLink="/header/sub/index.html" />
+    <h1 class="title absolute text-white font-bold text-5xl pt-12">
+      More Projects
+    </h1>
+  </Nav>
 
-	<main class="grow bg-purple/10">
-		<iframe
-			class="w-full h-[600px] bg-purple"
-			src="https://eyenavphuket.com/royalphuketmarina/"
-			frameborder="0"></iframe>
-
-		<MoreProjects projectData={moreProjects} client:load />
-	</main>
-	<Footer />
-	<Lightbox
-		iframeURL="https://eyenavthailand.com/samujana/villa12/"
-		client:load
-	/>
+  <main class="grow bg-purple/10">
+    <MoreProjects projectData={moreProjects} client:load />
+  </main>
+  <Footer />
+  <Lightbox
+    iframeURL="https://eyenavthailand.com/samujana/villa12/"
+    client:load
+  />
 </Layout>
