@@ -60,23 +60,23 @@ const FeaturedProjects = () => {
             </div>
             <div class=" md:aspect-auto aspect-video">
               <ProjectThumb
-                title={homeProjects[1].title}
-                bgImage={homeProjects[1].bgImage}
-                webLink={homeProjects[1].webLink}
+                title={homeProjects[4].title}
+                bgImage={homeProjects[4].bgImage}
+                webLink={homeProjects[4].webLink}
               />
             </div>
             <div class=" md:aspect-auto aspect-video">
               <ProjectThumb
-                title={homeProjects[1].title}
-                bgImage={homeProjects[1].bgImage}
-                webLink={homeProjects[1].webLink}
+                title={homeProjects[5].title}
+                bgImage={homeProjects[5].bgImage}
+                webLink={homeProjects[5].webLink}
               />
             </div>
             <div class=" md:aspect-auto aspect-video">
               <ProjectThumb
-                title={homeProjects[1].title}
-                bgImage={homeProjects[1].bgImage}
-                webLink={homeProjects[1].webLink}
+                title={homeProjects[6].title}
+                bgImage={homeProjects[6].bgImage}
+                webLink={homeProjects[6].webLink}
               />
             </div>
           </div>
@@ -87,9 +87,6 @@ const FeaturedProjects = () => {
               </button>
             </a>
           </div>
-
-      
-          
         </div>
       </div>
     </>

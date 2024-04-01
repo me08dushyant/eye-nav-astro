@@ -1,0 +1,393 @@
+﻿<krpano>
+<autorotate enabled="true"
+            waittime="1.5"
+            accel="1.0"
+            speed="10.0"
+            horizon="0.0"
+            tofov="off"
+            oneroundrange="360.0"
+            zoomslowdown="true"
+            interruptionevents="userviewchange|layers|keyboard"
+            />
+
+<layer name="start-layer" keep="true" type="container" x="0" y="0" align="lefttop" width="100%" height="100%" bgcolor="0Xffffff" bgalpha="1" zorder="100" >
+	<layer name="start-logo" url="img/start-logo.png" align="center" alpha="0" scale=".5"  onloaded="startAnim();" />
+</layer>
+
+
+<action name="startAnim">
+
+tween(layer[start-logo].alpha, 1);
+tween(layer[start-logo].scale, 1);
+delayedcall(1, tween(layer[start-layer].alpha, 0,.5,linear, set(layer[start-layer].visible,false););
+tween(layer[start-logo].scale, 1.5);)
+</action >
+	<layer name="menu-head-1" style="menu-heading"  />
+	
+	
+	<layer name="menu-head-2" style="menu-heading"  />
+	<layer name="menu-head-3" style="menu-heading"  />
+	<layer name="menu-head-4" style="menu-heading"  />
+	<layer name="menu-head-5" style="menu-heading"  />
+	<layer name="menu-head-6" style="menu-heading"  />
+	<layer name="menu-head-7" style="menu-heading"  />
+	<layer name="menu-head-8" style="menu-heading"  />
+	<style name="menu-heading" visible="false" url="%SWFPATH%/plugins/textfield.swf"  keep="true" align="lefttop" edge=""  width="100%" autoheight="true"
+	bgcolor="0Xc88643" bgalpha=".5" x="-10" y="0" zorder="4" enabled="false" alpha="1" background="true" border="false" roundedge="0" 	    
+	shadow="0.0" shadowrange="4.0" shadowangle="45" shadowcolor="0x000000" shadowalpha="1" textshadow="1" textshadowrange="6.0" textshadowangle="90"
+	textshadowcolor="0x000000" textshadowalpha="0"	     
+	css="text-align:left; padding-left:10px; padding-block:5px; color:#ffffff; font-family:Arial; font-weight:normal; font-size:18px;"
+ 
+	html="Tooltip Headline" parent="skin_mobilethumb"      	   	/>
+				<layer name="skin_num" keep="true" type="text" align="topright" edge="topright" x="10" y="10" zorder="4" html="asasas" enabled="false" bg="false" css="calc:skin_settings.design_text_css + ' text-align:center; font-size:20px; text-transform: uppercase;'" textshadow="get:skin_settings.design_text_shadow" visible="true" onautosized="skin_video_updateseekbarwidth();" />
+	
+	
+<layer name="mobile-thumbs-con" type="container" active="1" keep="true" alpha="1"  visible="true"  align="lefttop" edge="righttop"  ox="0"  x="0"   y="0" width="get:skin_settings.menu_width"    height="100%" bgcolor="0x000000" bgalpha=".85" zorder="-100" maskchildren="false"   onloaded="">
+<layer name="mobile-header-bg2" type="container" keep="true" visible="true" alpha="1" align="topcenter" width="100%" height="100" x="-10" y="0" bgcolor="0x202020" bgalpha="0"  zorder="-1" >
+<layer name="mobile-header2" url="img/logo.png"  keep="true" align="center" x="0" y="0" scale="1" zorder="100" visible="true" alpha="1"  />
+</layer>
+<layer name="mobilethumbs-con" keep="true" type="container" align="lefttop" width="100%" height="90%" bgcolor="0x000000" bgalpha="0" y="100"  >
+<layer name="skin_mobilethumb" url="%SWFPATH%/plugins/scrollarea.swf" alturl="%SWFPATH%/plugins/scrollarea.js" align="lefttop" x="10"  width="500" height="3300" direction="v" handcursor="false"  onloaded="setcenter(0,0);">
+
+
+<layer name="mobile-header-bg" type="container" keep="true" visible="true" alpha="1" align="topcenter" width="100%" height="75" x="-10" y="0" bgcolor="0x202020" bgalpha="1"  >
+<layer name="mobile-header" url="img/mobile-header.jpg"  keep="true" align="center" x="0" y="0" scale=".45" zorder="100" visible="true" alpha="1"   />
+</layer> 
+
+<layer name="mobile-back-bg" type="container"  keep="true" alpha="0"  visible="false" align="lefttop" x="0" y="0" width="100%" height="100%" bgcolor="0x000000" bgalpha="0" zorder="2" />
+</layer>
+</layer>
+</layer>
+
+<hotspot name="round-logo" keep="true" ath="0" atv="90" scale=".5" url="img/round-logo.png" distorted="true" enabled="false" />
+
+
+<layer name="btn_menu" keep="true" visible="true" alpha="1"  type="container" align="righttop" width="35" height="35" ox="35" x="" oy="0" y="0" parent="mobile-thumbs-con" bgcolor="0X336fa4" bgalpha="0" bgcapture="true" active="1" onoverr="if(active, close-anim_over(); );" onoutt="if(active, close-anim_out(); );" onclick="switch(layer[mobile-thumbs-con].active); menuio();" >	
+
+<layer name="close-bar-up" keep="true" type="container" align="center" width="30" height="2" edge="center" ox="0" x="0" oy="0" y="10" bgcolor="0Xffffff" bgalpha="1"  
+       bgshadow="0 0 3 0X000000 .65 "
+       />
+
+<layer name="close-bar-cntr" keep="true" type="container" align="center" width="30" height="2"  edge="center" ox="0" x="0" oy="0" y="0" bgcolor="0Xffffff" bgalpha="1"  bgshadow="0 0 3 0X000000 .65 " />
+		<layer name="close-bar-dwn" keep="true" type="container" align="center" width="30" height="2"   edge="center" ox="0" x="0" oy="0" y="-10" bgcolor="0Xffffff" bgalpha="1"  bgshadow="0 0 3 0X000000 .65 " />	
+	</layer>
+	
+	
+<style name="skin_mobilethumbtext_style" 	url="%SWFPATH%/plugins/textfield.swf" 	align="leftcenter" width="100%" autoheight="false" autowidth="true" x="130" y="20" enabled="false" background="false" border="false" css="calc:skin_settings.design_text_css + ' text-align:left; font-size:15px;'" textshadow="get:skin_settings.design_text_shadow" />
+
+
+<action name="mobile_menu" devices="html5"  >
+
+for(set(i,0), i LT scene.count, inc(i),
+				txtadd(mobilethumbname,'skin_mobilethumb_',get(i));
+				addlayer(get(mobilethumbname));
+				copy(layer[get(mobilethumbname)].url, scene[get(i)].thumburl);
+				set(layer[get(mobilethumbname)].keep, true);
+				set(layer[get(mobilethumbname)].parent, 'skin_mobilethumb');
+				set(layer[get(mobilethumbname)].align, lefttop);
+				set(layer[get(mobilethumbname)].alpha, 1);
+				set(layer[get(mobilethumbname)].scale, .75);
+				copy(layer[get(mobilethumbname)].width, 170);
+				copy(layer[get(mobilethumbname)].height, 170);
+				copy(layer[get(mobilethumbname)].crop, skin_settings.thumbs_crop);
+				set(layer[get(mobilethumbname)].parentname, get(mobilethumbname));	
+					
+					txtadd(mobilethumbtext, 'skin_mobilethumbtxt_', get(i));
+					addlayer(get(mobilethumbtext));
+					layer[get(mobilethumbtext)].loadstyle(skin_mobilethumbtext_style);
+					set(layer[get(mobilethumbtext)].keep, true);
+					set(layer[get(mobilethumbtext)].enabled, true);
+					set(layer[get(mobilethumbtext)].parent, get(mobilethumbname));
+				
+					set(layer[get(mobilethumbtext)].align, center);
+					set(layer[get(mobilethumbtext)].y, 220);
+					set(layer[get(mobilethumbtext)].x, 0);
+					set(layer[get(mobilethumbtext)].html, get(scene[get(i)].title));
+					set(layer[get(mobilethumbtext)].llinkedscene, get(scene[get(i)].name) );
+					set(layer[get(mobilethumbtext)].onclick,  loadscene(get(llinkedscene),null,get(skin_settings.loadscene_flags),get(skin_settings.loadscene_blend)); if(device.mobile, mobile-menu(); ); );
+					
+				txtadd(mobilethumb_visited,'skin_mobilethumb_visited_',get(i));
+				addlayer(get(mobilethumb_visited));	
+				set(layer[get(mobilethumb_visited)].url, '%SWFPATH%/skin/img/visited.png' );
+				set(layer[get(mobilethumb_visited)].keep, true);
+				set(layer[get(mobilethumb_visited)].visible, true);
+				set(layer[get(mobilethumb_visited)].parent, get(layer[get(mobilethumbname)].parentname));
+				set(layer[get(mobilethumb_visited)].align, righttop);	
+				set(layer[get(mobilethumb_visited)].scale, 0.35);	
+				set(layer[get(mobilethumb_visited)].x, 10);
+				set(layer[get(mobilethumb_visited)].y, 10);
+				set(layer[get(mobilethumb_visited)].enabled, false);				
+				set(layer[get(mobilethumb_visited)].alpha, 0);
+				set(layer[get(mobilethumb_visited)].zordera, 10);
+				
+				add(j,get(i),0);
+				mul(mobilethumby, get(j), 170);
+				
+				set(yoffset, 0 );
+				add(mobilethumby, get(yoffset));
+	if(skin_settings.menu_section_one_title == false,
+				set(layer[menu-head-1].visible, false);
+				add(mobilethumby, 10);
+				,
+				set(layer[menu-head-1].visible, true);
+				set(layer[menu-head-1].html, get(skin_settings.menu_section_one_title));
+				set(layer[menu-head-1].y, get(yoffset) );
+				add(mobilethumby, 50);				
+				if(skin_settings.menu_section_two_title == false,
+				
+				set(layer[menu-head-2].visible, false);
+				
+				,
+				set(layer[menu-head-2].visible,true);
+				set(layer[menu-head-2].html,get(skin_settings.menu_section_two_title));
+				
+				
+				if(i LT skin_settings.menu_section_one_num , ,  
+				mul(menu_head_pos, get(skin_settings.menu_section_one_num), 170 );
+				add(menu_head_pos, get(yoffset)); add(menu_head_pos, 50); add(mobilethumby, 50); );
+				
+				set(layer[menu-head-2].y, get(menu_head_pos));
+				
+				
+				if(skin_settings.menu_section_three_title == false,
+				
+				set(layer[menu-head-3].visible, false);
+				
+				,
+				set(layer[menu-head-3].visible,true);
+				set(layer[menu-head-3].html,get(skin_settings.menu_section_three_title));				
+				add(total_two, get(skin_settings.menu_section_one_num), get(skin_settings.menu_section_two_num) );
+								
+
+				if(i LT total_two, ,  
+				mul(menu_head_pos, get(total_two), 170 );
+				add(menu_head_pos, get(yoffset));  add(menu_head_pos, 100); add(mobilethumby, 50);    );
+				
+				set(layer[menu-head-3].y, get(menu_head_pos));				
+				
+				
+				
+				
+				if(skin_settings.menu_section_four_title == false,
+				
+				set(layer[menu-head-4].visible, false);
+				
+				,
+				set(layer[menu-head-4].visible,true);
+				set(layer[menu-head-4].html,get(skin_settings.menu_section_four_title));				
+				add(total_three, get(total_two), get(skin_settings.menu_section_three_num) );
+								
+
+				if(i LT total_three, ,  
+				mul(menu_head_pos, get(total_three), 170 );
+				add(menu_head_pos, get(yoffset));  add(menu_head_pos, 150); add(mobilethumby, 50);    );
+				
+				set(layer[menu-head-4].y, get(menu_head_pos));	
+
+				
+				
+				
+				if(skin_settings.menu_section_five_title == false,
+				
+				set(layer[menu-head-5].visible, false);
+				
+				,
+				set(layer[menu-head-5].visible,true);
+				set(layer[menu-head-5].html,get(skin_settings.menu_section_five_title));				
+				add(total_four, get(total_three), get(skin_settings.menu_section_four_num) );
+								
+
+				if(i LT total_four, ,  
+				mul(menu_head_pos, get(total_four), 170 );
+				add(menu_head_pos, get(yoffset));  add(menu_head_pos, 200); add(mobilethumby, 50);    );
+				
+				set(layer[menu-head-5].y, get(menu_head_pos));				
+				
+				
+				if(skin_settings.menu_section_six_title == false,
+				
+				set(layer[menu-head-6].visible, false);
+				
+				,
+				set(layer[menu-head-6].visible,true);
+				set(layer[menu-head-6].html,get(skin_settings.menu_section_six_title));				
+				add(total_five, get(total_four), get(skin_settings.menu_section_five_num) );
+								
+
+				if(i LT total_five, ,  
+				mul(menu_head_pos, get(total_five), 170 );
+				add(menu_head_pos, get(yoffset));  add(menu_head_pos, 250); add(mobilethumby, 50);    );
+				
+				set(layer[menu-head-6].y, get(menu_head_pos));
+
+
+				if(skin_settings.menu_section_seven_title == false,
+				
+				set(layer[menu-head-7].visible, false);
+				
+				,
+				set(layer[menu-head-7].visible,true);
+				set(layer[menu-head-7].html,get(skin_settings.menu_section_seven_title));				
+				add(total_six, get(total_five), get(skin_settings.menu_section_six_num) );
+								
+
+				if(i LT total_six, ,  
+				mul(menu_head_pos, get(total_six), 170 );
+				add(menu_head_pos, get(yoffset));  add(menu_head_pos, 300); add(mobilethumby, 50);    );
+				
+				set(layer[menu-head-7].y, get(menu_head_pos));		
+
+
+<!-- ==================================  Last section ==================================== -->
+
+				if(skin_settings.menu_section_eight_title == false,
+				
+				set(layer[menu-head-8].visible, false);
+				
+				,
+				set(layer[menu-head-8].visible,true);
+				set(layer[menu-head-8].html,get(skin_settings.menu_section_eight_title));				
+				add(total_seven, get(total_six), get(skin_settings.menu_section_seven_num) );
+								
+
+				if(i LT total_seven, ,  
+				mul(menu_head_pos, get(total_seven), 170 );
+				add(menu_head_pos, get(yoffset));  add(menu_head_pos, 350); add(mobilethumby, 50);    );
+				
+				set(layer[menu-head-8].y, get(menu_head_pos));				
+				
+				);	
+
+				
+				
+				);	
+				
+				
+				);	
+				
+				
+				);	
+				
+				
+				
+				
+				);				
+				
+				
+				);
+				
+				);
+				
+		);
+				copy(scene[get(i)].mobilethumby, 20);
+				add(scene[get(i)].mobilethumby, mobilethumby, mobilethumbycenter);				
+				copy(layer[get(mobilethumbname)].y, mobilethumby);
+				copy(layer[get(mobilethumbname)].x, 20);
+
+				set(layer[get(mobilethumbname)].linkedscene, get(scene[get(i)].name) );
+				set(layer[get(mobilethumbname)].onclick, copy(layer[skin_mobilethumbborder].parent, name); loadscene(get(linkedscene),null,get(skin_settings.loadscene_flags),get(skin_settings.loadscene_blend)); if(device.mobile, mobile-menu(); ); );
+			
+
+				  
+);
+
+	add(mobilethumby, 170);
+	copy(layer[skin_mobilethumb].height,mobilethumby);
+</action>
+<action name="skin_startup_custom">	
+			if(skin_settings.menu_btn, mobile_menu();  );
+			
+</action>		
+
+<action name="menuio">
+if(layer[mobile-thumbs-con].active LT 1,
+
+	tween(layer[mobile-thumbs-con].ox, get(skin_settings.menu_width));
+	close-anim_over();
+	,
+	tween(layer[mobile-thumbs-con].ox, 0);
+	close-anim_out();
+);
+	
+	
+</action>	
+
+
+
+
+
+	<action name="close-anim_over">
+	
+		tween(layer[close-bar-up].y,0,.25); tween(layer[close-bar-dwn].y,0,.25,linear);
+		tween(layer[close-bar-cntr].alpha,0,.25,linear ,
+		tween(layer[close-bar-up].rotate,45,.25); tween(layer[close-bar-dwn].rotate,-45,.25);
+		); 
+		
+		
+		
+	
+	
+	</action>
+	
+	<action name="close-anim_out">
+	delayedcall(.25,
+	tween(layer[close-bar-up].rotate,0,.25); tween(layer[close-bar-dwn].rotate,0,.25,linear,
+		 tween(layer[close-bar-up].y,10,.25); tween(layer[close-bar-dwn].y,-10,.25,linear );
+		tween(layer[close-bar-cntr].alpha,1,0.25,linear);
+		);
+	);	
+	
+	</action>
+	
+	<action name="setHStext" scope="local">
+	for(set(i,0), i LT hotspot.count, inc(i),
+	if(hotspot[get(i)].linkedscene,
+		txtadd(hsText,'spottext',get(i));
+		addhotspot(get(hsText));	
+		set(hotspot[get(hsText)].type,"text");
+		set(hotspot[get(hsText)].ath, get(hotspot[get(i)].ath));
+		set(hotspot[get(hsText)].atv, get(hotspot[get(i)].atv));
+		set(hotspot[get(hsText)].oy,"70");
+		set(hotspot[get(hsText)].padding,"5");
+		set(hotspot[get(hsText)].distorted,"true");
+		set(hotspot[get(hsText)].html,get(scene[get(hotspot[get(i)].linkedscene)].title));
+		
+		<!-- trace(scene[get(hotspot[get(i)].linkedscene)].title); -->
+		
+		);
+		);
+	<!--    trace(get(hotspot[spottext0].html)); --> 
+		
+	</action>
+	
+<action name="new_scene_update">
+		
+		setHStext();
+		set(layer[skin_num].html,get(scene[get(xml.scene)].index));
+		
+	trace(scene[get(xml.scene)].name); trace(scene[get(xml.scene)].index);
+	<!--
+	6 6-director-room
+	10 scene_7-1_class-room
+ 	11 scene_7-1_class-room-2	
+	29 scene_s0-inside2
+	30 scene_s0-inside3
+	31 scene_s0-inside4
+	37 scene_s1-inside2
+
+	
+	6 
+	10 
+ 	11
+	29
+	30 
+	31 
+	37 
+
+	-->
+
+		txtadd(mobilethumb_visit, skin_mobilethumb_visited_, get(scene[get(xml.scene)].index) );
+			tween(layer[get(mobilethumb_visit)].alpha, 1);
+</action>
+			
+</krpano>

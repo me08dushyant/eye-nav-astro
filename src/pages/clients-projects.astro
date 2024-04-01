@@ -14,7 +14,7 @@ import MoreProjects from "../components/MoreProjects.jsx";
 import Testimonial from "../components/Testimonial.astro";
 
 import _ from "lodash";
-import { projects } from "../store/data";
+import { projects, testimonials } from "../store/data";
 import VRHeader from "../components/VRHeader";
 const resortProjects = _.filter(projects, { cat: "resort" });
 const villaProjects = _.filter(projects, { cat: "villa" });
@@ -108,7 +108,7 @@ const parkProjects = _.filter(projects, { cat: "park" });
           ></path>
         </svg>
       </div>
-      <div @click="slide>=5 ?slide:slide++">
+      <div @click=`slide>=${testimonials.length} ?slide:slide++`>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -126,97 +126,31 @@ const parkProjects = _.filter(projects, { cat: "park" });
       </div>
     </div>
     <div class="pb-20">
-      <div x-show="slide === 1" x-transition>
-        <Testimonial>
-          <p class="text-right pt-5 font-bold" slot="author">
-            Marriott Manila General Manager - Richard M. Saul
-          </p>
-          <p class="font-text text-lg tracking-wide relative" slot="content">
-            Tom’s eyeNAV 360 photography showcases our facilities brilliantly
-            when doing sales presentations. He facilitated in getting our 360
-            photos on Booking.com and showed us how to post them on Facebook.
-            The fees are reasonable for the high quality of work
-          </p>
-        </Testimonial>
-      </div>
-      <div x-show="slide === 2" x-transition>
-        <Testimonial>
-          <p class="text-right pt-5 font-bold" slot="author">
-            BYD LOFTS: Owner - Alex Bressers
-          </p>
-          <p class="font-text text-lg tracking-wide relative" slot="content">
-            The quality and realism of the images that have been provided are a
-            credit to eyeNAV and a real asset for our online marketing. I have
-            no hesitation recommending eyeNAV for quality work that is also
-            affordable. Here is one of the typical guest comments we receive
-            referring to the helpfulness of these 360˚ Tours during the booking
-            process. Trip Advisor comment: “Excellent Hotel” I stayed at the BYD
-            lofts for two nights at the end of September, in the 2-bedroom
-            suite. The room (apartment) was pristine - it looks just like the
-            360 degree tour you can find on their website. I've been let down by
-            so many hotels in the past when I arrive and find out that the
-            pictures were taken at good angles and photoshopped. But in this
-            case, that was not the case! The room is shiny and bright.
-          </p>
-        </Testimonial>
-      </div>
-      <div x-show="slide === 3" x-transition>
-        <Testimonial>
-          <p class="text-right pt-5 font-bold" slot="author">
-            JW MARRIOTT HONG KONG <br />
-            Cherry Ko - E-Commerce Director
-          </p>
-          <p class="font-text text-lg tracking-wide relative" slot="content">
-            We're consistently using the eyeNAV 360 format and thanks for
-            updating our new logo. All the developed tools you provided help our
-            sales team to better sell the hotel and destination. Our Sales team
-            use the enhanced web tour a lot in their proposals to meeting/event
-            organizers, running it offline during Trade shows & wedding expos,
-            and we always include it on our email tagline, etc...
-          </p>
-        </Testimonial>
-      </div>
-      <div x-show="slide === 4" x-transition>
-        <Testimonial>
-          <p class="text-right pt-5 font-bold" slot="author">
-            JW Marriott Shanghai <br />
+      {
+        testimonials.map((data) => (
+          <div x-show=`slide === ${data.id}` x-transition>
+            <Testimonial>
+              <p class="text-right pt-5 font-bold" slot="author">
+                {data.user}
+              
+               
+              </p>
+              <p
+                class="font-text text-lg tracking-wide relative"
+                slot="content"
+              >
+                {data.review}
+              </p>
+            </Testimonial>
+          </div>
+        ))
+      }
 
-            Simon Dowell - Director of Sales & Marketing
-          </p>
-          <p class="font-text text-lg tracking-wide relative" slot="content">
-            Hi Franco and Wesley,   I know that you have been in contact Tom
-            Janzow of Eyenav 360 media regarding the possibility setting up a
-            similar presentation for the JW Beijing.  I just want to advise how
-            pleased I am with my product which has now been distributed to all
-            GSOs around the globe.  Its a fantastic sales vehicle which has
-            already assisted our hotel in closing some MICE bookings.  We have
-            featured a 5 minute city overview of Shanghai too, which was
-            provided by the Shanghai Tourism authorities.   If you need any
-            further information then just shout!   With thanks
-          </p>
-        </Testimonial>
-      </div>
-      <div x-show="slide === 5" x-transition>
-        <Testimonial>
-          <p class="text-right pt-5 font-bold" slot="author">
-            AURA HOTELS & RESORTS <br />
-
-            President / Senior Consultant – Etienne La’Brooy
-          </p>
-          <p class="font-text text-lg tracking-wide relative" slot="content">
-            Attention Hotel partners, Tom Janzow of eyeNAV is regarded as the
-            expert in Virtual 360 degree Tours, is travelling to Manila next
-            year. He did this work for all the El Nido Resorts I was managing
-            which helped us market the El Nido Resorts very successfully. Tom
-            would be available to make a competitive quotation and requires us
-            to make a draft shot list as the total production cost reflects how
-            many 360 photos we need in our presentation. E.g all room types,
-            event spaces and facilities.
-          </p>
-        </Testimonial>
-      </div>
+  
     </div>
   </div>
+
+  <div></div>
 
   <Footer />
   <Lightbox

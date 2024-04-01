@@ -70,7 +70,13 @@
 	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
 	 <include url="skin/vtourskin_design_ultra_light.xml" />
 	<action name="startup" autorun="onstart">
-		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
+	
+	set(val,0);
+	sub(counting, scene.count,1);
+	mul(val, random,counting);
+roundval(val);
+
+		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[get(val)].name); );
 		loadscene(get(startscene), null, MERGE);
 		if(startactions !== null, startactions() );
 	</action>

@@ -109,10 +109,7 @@ eyeNAV 360 sets the standard with professional 360° photography for luxury hote
 		</image>
 
 	</scene>
-
-	<scene name="scene_03image" title="Professional Presentation" caption="
-
-Engaging 360° views enhance our client's websites and we further develop cutting edge presentation tools for hotel and event sales professionals." onstart="" thumburl="panos/03image.tiles/thumb.jpg" lat="7.96410278" lng="98.45023000" heading="0.0">
+	<scene name="scene_04image" title="Tripod in the Sky" caption="Our world of aerial 360° photography started with Giant Kites and Helium Balloons in 2005. We're so passionate about our drone panoramas and detailed post-production to highlight layouts and location for our clients. " onstart="" thumburl="panos/04image.tiles/thumb.jpg" lat="" lng="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -126,13 +123,15 @@ Engaging 360° views enhance our client's websites and we further develop cuttin
 		</image>
 
 	</scene>
+	<scene name="scene_03image" title="Professional Presentation" caption="
 
-	<scene name="scene_04image" title="Tripod in the Sky" caption="Our world of aerial 360° photography started with Giant Kites and Helium Balloons in 2005. We're so passionate about our drone panoramas and detailed post-production to highlight layouts and location for our clients. " onstart="" thumburl="panos/04image.tiles/thumb.jpg" lat="" lng="" heading="">
+Engaging 360° views enhance our client's websites and we further develop cutting edge presentation tools for hotel and event sales professionals." onstart="" thumburl="panos/03image.tiles/thumb.jpg" lat="7.96410278" lng="98.45023000" heading="0.0">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="-71.358" vlookat="3.149" fovtype="MFOV" fov="111.456" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
+<view hlookat="-71.358" vlookat="3.149" fovtype="MFOV" fov="111.456" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		
 		<preview url="panos/04image.tiles/preview.jpg" />
 
 		<image>
@@ -141,6 +140,8 @@ Engaging 360° views enhance our client's websites and we further develop cuttin
 		</image>
 
 	</scene>
+
+
 
 	<scene name="scene_05image" title="Seeing is Believing " caption="
 

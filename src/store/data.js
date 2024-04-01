@@ -36,10 +36,31 @@ const projects = [
     type: "featured",
   },
   {
+    title: "Rang Noi Private Island",
+    bgImage: "/images/Rang-Noi-Private-Island.jpg",
+    projectLink: "https://www.eyenavphuket.com/jbs_rangnoi/",
+    webLink: "https://www.johnbsutherland.com/koh-rang-noi-island-phuket.html",
+    type: "featured",
+  },
+  {
     title: "Samujana Villas",
     bgImage: "/images/Samujana-Villas.jpg",
     projectLink: "https://eyenavthailand.com/samujana/villa12/",
     webLink: "https://samujana.com/villas/villa-12/",
+    type: "featured",
+  },
+  {
+    title: "The-Sarojin",
+    bgImage: "/images/The-Sarojin.jpg",
+    projectLink: "https://eyenavthailand.com/the_sarojin/",
+    webLink: "https://www.sarojin.com/en/khao-lak-resort-rooms/j-pool-suite/",
+    type: "featured",
+  },
+  {
+    title: "Villa Carmina Italy",
+    bgImage: "/images/Villa-Carmina-Italy.jpg",
+    projectLink: "https://eyenav.com/projects/villa_carmina/aerial_view.htm",
+    webLink: "https://secretretreat.com/properties/villa-carmina/",
     type: "featured",
   },
 
@@ -380,4 +401,226 @@ const projects = [
   },
 ];
 
-export { isPopVisible, setPopVisible, projects, PopIframeURL, setIframeURL };
+const clients = [
+  {
+    logo: "/images/clients/01JW-Marriott.png",
+    webLink: "https://www.eyenavphuket.com/jw_phuket/",
+  },
+  {
+    logo: "/images/clients/02LeMeridien.png",
+    webLink: "https://www.eyenavphuket.com/le_meridien/tour/index1.htm",
+  },
+  {
+    logo: "/images/clients/03Dusit-Hotels.png",
+    webLink: "https://www.dusit.com/dusitthani-krabibeachresort/dining/",
+  },
+  {
+    logo: "/images/clients/04InterContinental Hotels.png",
+    webLink: "https://eyenavasia.com/vietnam/ic_landmark72/embed.html",
+  },
+  {
+    logo: "/images/clients/05Crowne-Plaza.png",
+    webLink: "https://vientiane.crowneplaza.com/3-merchants",
+  },
+  {
+    logo: "/images/clients/06Holiday-Inn.png",
+    webLink: "https://eyenavthailand.com/hir_vananava/",
+  },
+  {
+    logo: "/images/clients/07Marriott.png",
+    webLink: "https://eyenavthailand.com/marriott_sukhumvit/",
+  },
+  {
+    logo: "/images/clients/08Ramada.png",
+    webLink: "https://eyenavthailand.com/ramada_khaolak/",
+  },
+  { logo: "/images/clients/09Sequoia-Lodge.png" },
+  { logo: "/images/clients/10OzoneKI.png" },
+  {
+    logo: "/images/clients/11ReefHouse.png",
+    webLink: "https://eyenavaustralia.com/reef_house/",
+  },
+  {
+    logo: "/images/clients/12DiamondCliff.png",
+    webLink: "https://eyenavphuket.com/diamond_cliff/",
+  },
+  { logo: "/images/clients/13MVC.png" },
+  {
+    logo: "/images/clients/14Samujana.png",
+    webLink: "https://eyenavthailand.com/samujana/villa12/",
+  },
+  {
+    logo: "/images/clients/14Wyndham.png",
+    webLink: "https://eyenavthailand.com/ramada_khaolak/",
+  },
+  {
+    logo: "/images/clients/16Thavorn.png",
+    webLink: "https://eyenavphuket.com/thavorn_beach/",
+  },
+];
+
+const testimonials = [
+  {
+    id: 1,
+    review:
+      "Tom’s eyeNAV 360 photography showcases our facilities brilliantly when doing sales presentations. He facilitated in getting our 360 photos on Booking.com and showed us how to post them on Facebook. The fees are reasonable for the high quality of work",
+    user: "Marriott Manila General Manager - Richard M. Saul ",
+  },
+  {
+    id: 2,
+    review:
+      "The quality and realism of the images that have been provided are a credit to eyeNAV and a real asset for our online marketing. I have no hesitation recommending eyeNAV for quality work that is also affordable. Here is one of the typical guest comments we receive referring to the helpfulness of these 360˚ Tours during the booking process. Trip Advisor comment: “Excellent Hotel” I stayed at the BYD lofts for two nights at the end of September, in the 2-bedroom suite. The room (apartment) was pristine - it looks just like the 360 degree tour you can find on their website. I've been let down by so many hotels in the past when I arrive and find out that the pictures were taken at good angles and photoshopped. But in this case, that was not the case! The room is shiny and bright.",
+    user: "BYD LOFTS: Owner - Alex Bressers",
+  },
+  {
+    id: 3,
+    review:
+      "We're consistently using the eyeNAV 360 format and thanks for updating our new logo. All the developed tools you provided help our sales team to better sell the hotel and destination. Our Sales team use the enhanced web tour a lot in their proposals to meeting/event organizers, running it offline during Trade shows & wedding expos, and we always include it on our email tagline, etc...",
+    user: "JW MARRIOTT HONG KONG  Cherry Ko - E-Commerce Director",
+  },
+  {
+    id: 4,
+    review:
+      "Hi Franco and Wesley,   I know that you have been in contact Tom Janzow of Eyenav 360 media regarding the possibility setting up a similar presentation for the JW Beijing.  I just want to advise how pleased I am with my product which has now been distributed to all GSOs around the globe.  Its a fantastic sales vehicle which has already assisted our hotel in closing some MICE bookings.  We have featured a 5 minute city overview of Shanghai too, which was provided by the Shanghai Tourism authorities.   If you need any further information then just shout!   With thanks",
+    user: "JW Marriott Shanghai Simon Dowell - Director of Sales & Marketing",
+  },
+  {
+    id: 5,
+    review:
+      "Attention Hotel partners, Tom Janzow of eyeNAV is regarded as the expert in Virtual 360 degree Tours, is travelling to Manila next year. He did this work for all the El Nido Resorts I was managing which helped us market the El Nido Resorts very successfully. Tom would be available to make a competitive quotation and requires us to make a draft shot list as the total production cost reflects how many 360 photos we need in our presentation. E.g all room types, event spaces and facilities.",
+    user: "AURA HOTELS & RESORTS President / Senior Consultant – Etienne La’Brooy",
+  },
+];
+
+const services = [
+  {
+    title: "Production Services",
+    slug: "production-services",
+    items: [
+      {
+        title: "360 Photography",
+        thumb: "/images/services/ps1.jpg",
+        link: "#360-photography",
+        face: "/images/services/ps1.jpg",
+        faceType: "image",
+        detail:
+          "<p>Our 360ﾟ photography sets out to represent a space or facility in its best light with WoW factor or careful setups which make consumers feel like being there. In the same way as professional hotel still photography is done, an eyeNAV360 shoot is all in the preparation and timing.</p><p>There's no Fuss & No extra lighting, we carefully plan the shots with our clients and make sure they feature their brand standard setups. We use natural ambient light and avoid harsh daytime sun, executing most of our shoots during at early mornings and early evenings.</p><p>Care is taken to ensure our scheduled photo shoots bring minimal challenges to your operations and no effect on guest experience.</p>       ",
+      },
+      {
+        title: "Drone Footage",
+        thumb: "/images/services/ps2.jpg",
+        link: "#360-photography",
+        face: "https://www.youtube.com/embed/wANrzz5NBf0?si=1afjvVpkPU7jpUev",
+        faceType: "video",
+        detail:
+          "<p>When capturing 360 degree views of locations and to showcase property layout from above, our drones become our tripod in the sky, perfectly steady hovering at an optimal position above.</p><p>We are passionate about our drone panorama capture and utilise this for showing layouts of resorts and venues from low altitudes which provides great detail. In depth post-production and re-touching is part of this skill set which ensures these interactive aerial scenes which often open our 360 presentations, look neat and tidy.</p><p>We consider ourselves lucky to adopt safe and reliable drones today because our Aerial 360° Photography days started with Giant Kites and Helium Balloons lifting heavy cameras in 2005.</p>",
+      },
+      {
+        title: "Hotel Brand Photography",
+        thumb: "/images/services/ps3.jpg",
+        link: "#360-photography",
+        face: "/images/services/ps3.jpg",
+        faceType: "image",
+        detail:
+          "<p>Refined Hotel Brand Photography & Photos for Sales Collateral are available by our experienced travel photographers as an additional service for your Sales & Marketing needs.</p><p>360 Capture - Due to the high quality of our 360ﾟ panorama construction we are also able to export still photos from our 360s. In many cases these images are adequate for the client's needs.</p>",
+      },
+      {
+        title: "Video Clipettes",
+        thumb: "/images/services/ps4.jpg",
+        link: "#360-photography",
+        face: "https://www.youtube.com/embed/vw04v57w6q4?si=fj7ACek-DaRQKJjt",
+        faceType: "video",
+        detail:
+          "<p>Did you know eyeNAV 360ﾟ photos can also be turned into super smooth HD video clips? We call these '360 clipettes' which usually show just the sweet spot of the 360° view.</p><p>The combination of drone clips and 360 clipettes makes valuable extra content for our clients to use on YouTube, and all social media channels and can be edited into online ads for TikTik and Facebook.</p>",
+      },
+      {
+        title: "Panos & Planets",
+        thumb: "/images/services/ps5.jpg",
+        link: "#360-photography",
+        face: "/images/services/ps5.jpg",
+        faceType: "image",
+        detail:
+          "<p>The art of 360° Photo production  is based on capturing the images with a fisheye lens.<br/>After stitching an equirectangular, spherical Panorama it can then be corrected and viewed as a rectilinear view on your screen. This little side hustle brings back the distortion with Stereophonic and hyperbolics....</p><p>Perhaps its easier just to call this our photo art section ...</p>",
+      },
+    ],
+  },
+
+  {
+    title: "Marketing Installations",
+    slug: "marketing-installations",
+    items: [
+      {
+        title: "Website Integration",
+        thumb: "/images/services/mi1.jpg",
+        link: "#360-photography",
+        face: "/images/services/mi1.jpg",
+        faceType: "image",
+        detail:
+          "<p>Our 360ﾟ photography sets out to represent a space or facility in its best light with WoW factor or careful setups which make consumers feel like being there. In the same way as professional hotel still photography is done, an eyeNAV360 shoot is all in the preparation and timing.</p><p>There's no Fuss & No extra lighting, we carefully plan the shots with our clients and make sure they feature their brand standard setups. We use natural ambient light and avoid harsh daytime sun, executing most of our shoots during at early mornings and early evenings.</p><p>Care is taken to ensure our scheduled photo shoots bring minimal challenges to your operations and no effect on guest experience.</p>",
+      },
+      {
+        title: "Google Integration",
+        thumb: "/images/services/mi2.jpg",
+        link: "#360-photography",
+        face: "/images/services/mi2.jpg",
+        faceType: "image",
+        detail:
+          "<h2>Precise 360° Photography</h2><p>Our 360ﾟ photography sets out to represent a space or facility in its best light with WoW factor or careful setups which make consumers feel like being there. In the same way as professional hotel still photography is done, an eyeNAV360 shoot is all in the preparation and timing.</p><p>There's no Fuss & No extra lighting, we carefully plan the shots with our clients and make sure they feature their brand standard setups. We use natural ambient light and avoid harsh daytime sun, executing most of our shoots during at early mornings and early evenings.</p><p>Care is taken to ensure our scheduled photo shoots bring minimal challenges to your operations and no effect on guest experience.</p>",
+      },
+      {
+        title: "Booking.com 360 Upload",
+        thumb: "/images/services/mi3.jpg",
+        link: "#360-photography",
+        face: "/images/services/mi3.jpg",
+        faceType: "image",
+        detail:
+          "<h2>Precise 360° Photography</h2><p>Our 360ﾟ photography sets out to represent a space or facility in its best light with WoW factor or careful setups which make consumers feel like being there. In the same way as professional hotel still photography is done, an eyeNAV360 shoot is all in the preparation and timing.</p><p>There's no Fuss & No extra lighting, we carefully plan the shots with our clients and make sure they feature their brand standard setups. We use natural ambient light and avoid harsh daytime sun, executing most of our shoots during at early mornings and early evenings.</p><p>Care is taken to ensure our scheduled photo shoots bring minimal challenges to your operations and no effect on guest experience.</p>",
+      },
+    ],
+  },
+
+  {
+    title: "Sales Team Support",
+    slug: "sales-team-support",
+    items: [
+      {
+        title: "Presentation Interface",
+        thumb: "/images/services/st1.jpg",
+        link: "#360-photography",
+        face: "/images/services/st1.jpg",
+        faceType: "image",
+        detail:
+          "<p>Our niche service is building unique, eye-catching presentations used as a visual aid for hotel sales teams.</p><p>Presenting your property with an eyeNAV 360 Presentation offers a ‘client centric’ experience,  meaning you can tailor your presentation to exactly what your client wants to see and in any order. This is a more memorable and interactive way of presenting in person, rather than  watching a linear video.</p><p>The main difference between a website 360 tour and a 360 sales presentation is integrating a client's existing sales materials into one seamless interface. Too often we see sales people have problems delivering a seamless presentation bnecause their fact sheet might be a PDF, the image galleries and hero shots are JPG inside a folder, a video clip which opens in windows media player, and a location map JPG and some slides in .PPTx</p><p>eyeNAV sales presentations solve this by integrating your favourite materials into the 360 presentation menu so you only need to run one file.</p><p>A popular feature is the PPT slides feature within the 360 presentation menu.</p><p> This enables the presenter to seamless toggle between image / text slides and 360° views which is an immersive way for the audience to learn aboiut that hotel/venue.</p>",
+      },
+      {
+        title: "Offline Mobile APP",
+        thumb: "/images/services/st2.jpg",
+        link: "#360-photography",
+        face: "/images/services/st2.jpg",
+        faceType: "image",
+        detail:
+          "<p><strong>iOS App Store</strong><br/>https://apps.apple.com/au/app/eyenav-360-asia-luxury-hotels/id1118731433</p><p><strong>Android Google Play Store</strong><br/>https://play.google.com/store/apps/details?id=com.eyenav.tours</p>",
+      },
+      {
+        title: "Direct 360 URLs",
+        thumb: "/images/services/st3.jpg",
+        link: "#360-photography",
+        face: "/images/services/st3.jpg",
+        faceType: "image",
+        detail:
+          "<p>The direct URL content offers information about the Dusit Krabi resort in Thailand, including its leisure facilities, dining outlets, accommodation options, and meeting/event spaces.</p><p><strong><a href='/images/Direct-360-URLs.pdf' download> Download PDF</a></strong></p>",
+      },
+    ],
+  },
+];
+
+export {
+  isPopVisible,
+  setPopVisible,
+  projects,
+  PopIframeURL,
+  setIframeURL,
+  clients,
+  testimonials,
+  services,
+};

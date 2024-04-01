@@ -7,16 +7,18 @@ html {
  
 
 @font-face {
-  font-family: lilitaa;
-  src: url("/public/fonts/Lilita_One/LilitaOne-Regular.ttf");
-}
-@font-face {
-font-family: nanum;
-src:url("/public/fonts/Nanum_Gothic/NanumGothic-Bold.ttf");
-}
-@font-face {
-  font-family: passion;
-  src:url("/public/fonts/Passion_One/P");
+  font-family: PTSansCaption;
+  src:url("/fonts/PTSansCaption/PTSansCaption-Bold.ttf");
+  font-weight: bold;
+  }
+
+  @font-face {
+    font-family: PTSansCaption;
+    src:url("/fonts/PTSansCaption/PTSansCaption-Regular.ttf");
+    font-weight: normal;
+    }
+  body{
+    font-family: PTSansCaption;
   }
 
   body::-webkit-scrollbar {

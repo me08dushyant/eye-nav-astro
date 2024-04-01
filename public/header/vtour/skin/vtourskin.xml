@@ -92,13 +92,29 @@
 	         />
 			 
 	<layer name="UI" type="container" width="100%" height="100%" align="lefttop" keep="true" >
-		<layer name="backBtn" url="vtourskin_light.png" crop="0|192|64|64" align="leftcenter" x="0" onclick="skin_nextscene_loop(-1);" />
-		<layer name="nextBtn" url="vtourskin_light.png" crop="64|192|64|64" align="rightcenter" x="0" onclick="skin_nextscene_loop(+1);" />
-		<layer  name="heading" type="text" html="Eye-Catching Scenes" align="center" bgalpha="0" css="color:#ffffff; font-size:70px; font-weight:bold  "   y="-20"  edge="centerbottom" />	
-		<layer  name="caption" type="text" bgalpha="0" width="80%" maxwidth="700" html="eyeNAV 360 sets the standard with professional 360° photography for luxury hotels and presentation tools for sales teams." css="color:#ffffff; font-size:26px; font-weight:semibold;  text-align:center;  " autoheight="true" align="center" edge="centertop"/>
+		<layer name="backBtn" url="vtourskin_light.png" crop="0|192|64|64" scale="1.5" align="leftcenter" x="0" onclick="skin_nextscene_loop(-1);" />
+		<layer name="nextBtn" url="vtourskin_light.png" crop="64|192|64|64" scale="1.5" align="rightcenter" x="0" onclick="skin_nextscene_loop(+1);" />
+		<layer  name="heading" type="text" html="Eye-Catching Scenes" align="center" bgalpha="0" css="font-family:PTSansCaption; color:#ffffff; font-size:70px; font-weight:bold  "   y="-35"  edge="centerbottom" />	
+		<layer  name="caption" type="text" bgalpha="0" width="80%" maxwidth="700" html="eyeNAV 360 sets the standard with professional 360° photography for luxury hotels and presentation tools for sales teams." css="font-family:PTSansCaption; color:#ffffff; font-size:26px; font-weight:semibold;  text-align:center;  " autoheight="true" align="center" edge="centertop">
+		<layer name="dragMe" url="drag-it.png" align="centercenter" y="150" x="0" alpha="0"  />
+		</layer>
 		
 	</layer>
+	
+	<action name="dragIt">
+	delayedcall(1,
+	tween(layer[dragMe].alpha,1);
+	delayedcall(.75,
+	tween(layer[dragMe].x,-100,1,easein,
+	tween(layer[dragMe].x,100,1,easein,
+	tween(layer[dragMe].x,0,1,easein,
+	tween(layer[dragMe].alpha,0,.5,easein
+	);
+	);
+	););););
 
+	
+	</action>
 
 	<!-- ensure stagescale 2x for mobile devices (regardless if mobilescale is 0.5 or 1.0) -->
 	<krpano stagescale="calc:stagescale * 2" if="stagescale LT 1.0" devices="mobile" />
@@ -415,6 +431,7 @@
 
 	<!-- skin actions -->
 	<action name="skin_startup" scope="local">
+	dragIt();
 
 		<!-- apply skin settings on startup -->
 		if(skin_settings.thumbs,
@@ -630,8 +647,8 @@
 		skin_arrange_buttons();
 		div(scaleNudgeDesktopW, area.pixelwidth, 1920);
 		mul(fontScale, 25, get(scaleNudgeDesktopW));
-		set(layer[heading].css,calc('color:#ffffff; font-size:'+ calc(fontScale*2 + 20) + 'px; font-weight:bold '));
-		set(layer[caption].css,calc('color:#ffffff; font-size:'+ calc(fontScale*.25 + 18) + 'px; font-weight:semibold;  text-align:center; '));
+		set(layer[heading].css,calc('font-family:PTSansCaption; color:#ffffff; font-size:'+ calc(fontScale*2 + 20) + 'px; font-weight:bold '));
+		set(layer[caption].css,calc('font-family:PTSansCaption; color:#ffffff; font-size:'+ calc(fontScale*.25 + 18) + 'px; font-weight:semibold;  text-align:center; '));
 
 		
 	</action>

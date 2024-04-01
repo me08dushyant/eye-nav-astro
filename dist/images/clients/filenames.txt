@@ -1,0 +1,29 @@
+01JW-Marriott.png
+02LeMeridien.png
+03Dusit-Hotels.png
+04InterContinental Hotels.png
+05Crowne-Plaza.png
+06Holiday-Inn.png
+07Marriott.png
+08Ramada.png
+09Sequoia-Lodge.png
+10OzoneKI.png
+11ReefHouse.png
+12DiamondCliff.png
+13MVC.png
+14Samujana.png
+14Wyndham.png
+16Thavorn.png
+Crowne-Plaza.png
+DiamondCliff.png
+Dusit-Hotels.png
+filenames.txt
+Holiday-Inn.png
+InterContinental Hotels.png
+JW-Marriott.png
+LeMeridien.png
+Marriott.png
+OzoneKI.png
+Ramada.png
+ReefHouse.png
+Sequoia-Lodge.png

@@ -18,9 +18,17 @@ import FullService from "../components/FullService.astro";
 ---
 
 <Layout title="Welcome to ">
-  <Nav fullscreen={true} isHeader={true} height="h-screen" dark={true}>
+  <Nav
+    fullscreen={true}
+    isHeader={true}
+    height="h-[70vh] md:h-screen"
+    dark={true}
+  >
     <VRHeader tourLink="/header/vtour/index.html" />
-    <a href="#main" class="w-8 h-8 absolute bottom-5 text-white animate-bounce">
+    <a
+      href="#main"
+      class="w-12 h-12 absolute bottom-5 text-white animate-bounce"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"

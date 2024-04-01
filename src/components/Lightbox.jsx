@@ -18,7 +18,7 @@ const Lightbox = ({ iframeURL }) => {
           isVisible.value ? "flex" : "hidden"
         } items-center justify-center`}
       >
-        <div class="bg-purple w-full h-full  rounded-xl drop-shadow-2xl ">
+        <div class="bg-purple w-full h-[70vh] md:h-full  rounded-xl drop-shadow-2xl ">
           {iframeURL && (
             <iframe
               class="w-full h-full rounded-xl overflow-hidden"
