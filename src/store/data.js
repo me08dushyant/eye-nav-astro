@@ -1,3 +1,8 @@
+// import PocketBase from "pocketbase";
+// import { authorizePB } from "../utils/pocket-base";
+
+// const pb = await authorizePB();
+
 import { atom } from "nanostores";
 const initPopVisible = { value: false };
 const isPopVisible = atom(initPopVisible);

@@ -80,7 +80,8 @@
 
 	
 	<scene name="scene_01image" title="Eye-Catching Scenes" caption="
-eyeNAV 360 sets the standard with professional 360° photography for luxury hotels and presentation tools for sales teams." onstart="" thumburl="panos/01image.tiles/thumb.jpg" lat="" lng="" heading="">
+eyeNAV 360 sets the standard with professional 360° photography for luxury hotels and presentation tools for sales teams." captionmobile="
+eyeNAV 360 sets the standard with professional 360° photography for luxury hotels." onstart="" thumburl="panos/01image.tiles/thumb.jpg" lat="" lng="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 

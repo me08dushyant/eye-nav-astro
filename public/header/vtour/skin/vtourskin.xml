@@ -92,10 +92,10 @@
 	         />
 			 
 	<layer name="UI" type="container" width="100%" height="100%" align="lefttop" keep="true" >
-		<layer name="backBtn" url="vtourskin_light.png" crop="0|192|64|64" scale="1.5" align="leftcenter" x="0" onclick="skin_nextscene_loop(-1);" />
-		<layer name="nextBtn" url="vtourskin_light.png" crop="64|192|64|64" scale="1.5" align="rightcenter" x="0" onclick="skin_nextscene_loop(+1);" />
-		<layer  name="heading" type="text" html="Eye-Catching Scenes" align="center" bgalpha="0" css="font-family:PTSansCaption; color:#ffffff; font-size:70px; font-weight:bold  "   y="-35"  edge="centerbottom" />	
-		<layer  name="caption" type="text" bgalpha="0" width="80%" maxwidth="700" html="eyeNAV 360 sets the standard with professional 360° photography for luxury hotels and presentation tools for sales teams." css="font-family:PTSansCaption; color:#ffffff; font-size:26px; font-weight:semibold;  text-align:center;  " autoheight="true" align="center" edge="centertop">
+		<layer name="backBtn" url="vtourskin_light.png" crop="0|192|64|64" scale="1.5" align="leftcenter" x="-10" onclick="skin_nextscene_loop(-1);" />
+		<layer name="nextBtn" url="vtourskin_light.png" crop="64|192|64|64" scale="1.5" align="rightcenter" x="-10" onclick="skin_nextscene_loop(+1);" />
+		<layer  name="heading" type="text" enabled="false" html="Eye-Catching Scenes" align="center" bgalpha="0" css="font-family:PTSansCaption; color:#ffffff; font-size:70px; font-weight:bold  "   y="-35"  edge="centerbottom" />	
+		<layer  name="caption" type="text" enabled="false" bgalpha="0" y="-20" width="80%" maxwidth="700" html="" css="font-family:PTSansCaption; color:#ffffff; font-size:26px; font-weight:semibold;  text-align:center;  " autoheight="true" align="center" edge="centertop">
 		<layer name="dragMe" url="drag-it.png" align="centercenter" y="150" x="0" alpha="0"  />
 		</layer>
 		
@@ -760,7 +760,18 @@
 	<action name="skin_update_scene_infos" scope="local">
 	
 		set(layer[heading].html, get(scene[get(xml.scene)].title) );
-		set(layer[caption].html, get(scene[get(xml.scene)].caption) );
+		if(device.mobile,
+			if(scene[get(xml.scene)].captionmobile,
+			
+			set(layer[caption].html, get(scene[get(xml.scene)].captionmobile) );
+			,
+			set(layer[caption].html, get(scene[get(xml.scene)].caption) );
+			
+			);
+			,
+			set(layer[caption].html, get(scene[get(xml.scene)].caption) );
+		);
+		
 		
 		set(layer[heading].x,20); set(layer[heading].alpha,0);
 	delayedcall(.2,	tween(layer[heading].x,0);tween(layer[heading].alpha,1); );
@@ -1193,11 +1204,12 @@
 	
 	<!-- autotour/autoplay support -->
 	<autorotate enabled="true"
-	            waittime="5.0"
-	            accel="0.7"
-	            speed="4.0"
+	            waittime="0.0"
+	            accel="1"
+	            speed="5.0"
+				horizon="25.0"
 	           
-	            oneroundrange="90"
+	            oneroundrange="45"
 	            />
 	
 	<events name="skin_autotour" keep="true"
