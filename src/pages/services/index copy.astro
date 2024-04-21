@@ -1,0 +1,57 @@
+---
+import "../../styles/globals.css";
+import Layout from "../../layouts/Layout.astro";
+import Card from "../../components/Card.astro";
+import Nav from "../../components/Nav.astro";
+import FeaturedProjects from "../../components/FeaturedProjects.jsx";
+import Clients from "../../components/Clients.astro";
+import WebsiteIntegration from "../../components/WebsiteIntegration.astro";
+import OfflineApp from "../../components/OfflineApp.astro";
+import Lightbox from "../../components/Lightbox.jsx";
+import AutoplaySlider from "../../components/AutoplaySlider.astro";
+import Gallery from "../../components/Gallery.astro";
+import Footer from "../../components/Footer.astro";
+import VRHeader from "../../components/VRHeader.jsx";
+import { services } from "../../store/data";
+---
+
+<Layout title="Welcome to ">
+  <Nav fullscreen={true} isHeader={true} height="[400px]" dark={true}>
+    <VRHeader tourLink="/header/sub/index.html" />
+    <h1 class="title absolute text-white font-bold text-5xl pt-12">
+      Production Services
+    </h1>
+  </Nav>
+
+  <main class="grow bg-purple/10">
+    {
+      services.map((data) => (
+        <div class="max-w-[1400px] px-[5vw] mx-auto pt-20 pb-20">
+          <h2 class="font-bold text-4xl md:text-5xl text-center mx-auto">
+            {data.title}
+          </h2>
+          <div class="flex flex-col md:flex-row md:flex-wrap gap-5 justify-center pt-10">
+            {data.items.map((item) => (
+              <div>
+                <div class="w-full md:w-96 aspect-[3/2] rounded-md bg-purple animated overflow-hidden">
+                  <a href=`/services/${data.slug}/#${item.title}` >
+                  <img
+                    class="h-full w-full  object-cover"
+                    class=""
+                    src={item.thumb}
+                  />
+                </a>
+                </div>
+                <h3 class="font-semibold text-center pt-2 text-lg">
+                  {item.title}
+                </h3>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))
+    }
+  </main>
+
+  <Footer />
+</Layout>

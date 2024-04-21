@@ -13,19 +13,70 @@ import Gallery from "../../components/Gallery.astro";
 import Footer from "../../components/Footer.astro";
 import VRHeader from "../../components/VRHeader.jsx";
 import { services } from "../../store/data";
+const selectedService = services[0]
 ---
 
 <Layout title="Welcome to ">
   <Nav fullscreen={true} isHeader={true} height="[400px]" dark={true}>
     <VRHeader tourLink="/header/sub/index.html" />
-    <h1 class="title absolute text-white font-bold text-5xl pt-12">
+    <h1 class="title absolute text-white font-bold text-center pointer-events-none text-5xl pt-12">
       Production Services
     </h1>
   </Nav>
+  <main class="grow bg-purple/10">
+    <div>
+      <div class="font-inter pb-20">
+        <div class="max-w-[1400px] mx-auto px-[5vw] font-inter items-center">
+          {
+            selectedService.items.map((item) => (
+              <>
+                <div
+                  id={item.title}
+                  class="grid md:flex even:flex-row-reverse  gap-10 pt-20"
+                >
+                  <div class="basis-1/2">
+                    {item.faceType === "image" && (
+                      <div class="w-full  aspect-[3/2] rounded-md bg-purple animated overflow-hidden">
+                        <img
+                          class="h-full w-full  object-cover"
+                          class=""
+                          src={item.face}
+                        />
+                      </div>
+                    )}
+                    {item.faceType === "video" && (
+                      <div class="w-full   rounded-md bg-purple animated overflow-hidden">
+                        <iframe
+                          class="w-full aspect-video animated"
+                          src={item.face}
+                          title="YouTube video player"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowfullscreen
+                        />
+                      </div>
+                    )}
+                  </div>
+                  <div class="basis-1/2">
+                    <h2 class=" text-4xl md:text-5xl font-extrabold mb-10 text-center md:text-left">
+                      {item.title}
+                    </h2>
 
+                    <div class="font-text text-lg  grid gap-5 text-md  leading-relaxed text-center md:text-left">
+                      <Fragment set:html={item.detail} />
+                    </div>
+                  </div>
+                </div>
+              </>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </main>
   <main class="grow bg-purple/10">
     {
-      services.map((data) => (
+      services.slice(1).map((data) => (
         <div class="max-w-[1400px] px-[5vw] mx-auto pt-20 pb-20">
           <h2 class="font-bold text-4xl md:text-5xl text-center mx-auto">
             {data.title}

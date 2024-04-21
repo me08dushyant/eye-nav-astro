@@ -29,7 +29,7 @@ const projects = [
   {
     title: "Ozone Hotel Kangaroo Island",
     bgImage: "/images/Ozone-Hotel-Kangaroo-Island.jpg",
-    projectLink: "https://eyenavaustralia.com/aurora_ozone/",
+    projectLink: "https://www.eyenavaustralia.com/aurora_ozone/index.html",
     webLink: "https://ozonehotelki.com.au/360-aurora-ozone-hotel-tour/",
     type: "featured",
   },

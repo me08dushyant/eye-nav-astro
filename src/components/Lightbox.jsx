@@ -16,9 +16,9 @@ const Lightbox = ({ iframeURL }) => {
       <div
         class={`fixed top-0 left-0 w-screen h-screen backdrop-blur-lg backdrop-brightness-50 z-50  p-[5px] pb-[20px] md:p-[20px]    ${
           isVisible.value ? "flex" : "hidden"
-        } items-center justify-center`}
+        } items-start md:items-center justify-center`}
       >
-        <div class="bg-purple w-full h-[70vh] md:h-full  rounded-xl drop-shadow-2xl ">
+        <div class="bg-purple w-full h-[80vh] md:h-full  rounded-xl drop-shadow-2xl ">
           {iframeURL && (
             <iframe
               class="w-full h-full rounded-xl overflow-hidden"
@@ -28,7 +28,7 @@ const Lightbox = ({ iframeURL }) => {
 
           <slot>
             <div
-              class="absolute w-10 h-10 right-1/2 -mr-5 md:mr-0  -bottom-3 md:bottom-3 md:-top-3 md:-right-3 bg-purple rounded-full p-2 pointer-events-auto"
+              class="absolute w-10 h-10 right-1/2 -mr-5 md:mr-0  -bottom-16 md:bottom-3 md:-top-3 md:-right-3 bg-purple rounded-full p-2 pointer-events-auto"
               onClick={() => setIframeURL({ url: "", visible: false })}
             >
               <svg

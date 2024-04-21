@@ -37,7 +37,9 @@ console.log(selectedService);
 <Layout title="Welcome to ">
   <Nav fullscreen={true} isHeader={true} height="[400px]" dark={true}>
     <VRHeader tourLink="/header/sub/index.html" />
-    <h1 class="title absolute text-white font-bold text-5xl pt-12">
+    <h1
+      class="title absolute text-white font-bold text-center pointer-events-none text-5xl pt-12"
+    >
       {selectedService.title}
     </h1>
   </Nav>
