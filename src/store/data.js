@@ -29,7 +29,7 @@ const projects = [
     type: "featured",
   },
   {
-    title: " Royal Phuket Marina",
+    title: "Krabi Resort",
     bgImage: "/images/projects/02Krabi-Resort.jpg",
     projectLink: "https://eyenavthailand.com/krabi_resort/",
     webLink: "https://eyenavthailand.com/krabi_resort/",
