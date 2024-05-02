@@ -1,8 +1,3 @@
-// import PocketBase from "pocketbase";
-// import { authorizePB } from "../utils/pocket-base";
-
-// const pb = await authorizePB();
-
 import { atom } from "nanostores";
 const initPopVisible = { value: false };
 const isPopVisible = atom(initPopVisible);
@@ -27,17 +22,17 @@ const projects = [
     type: "featured",
   },
   {
-    title: "Ozone Hotel Kangaroo Island",
-    bgImage: "/images/Ozone-Hotel-Kangaroo-Island.jpg",
-    projectLink: "https://www.eyenavaustralia.com/aurora_ozone/index.html",
-    webLink: "https://ozonehotelki.com.au/360-aurora-ozone-hotel-tour/",
+    title: "Le Meridien Phuket",
+    bgImage: "/images/projects/01Le-Meridien-Phuket.jpg",
+    projectLink: "https://www.eyenavphuket.com/le_meridien/tour/index1.htm",
+    webLink: "https://www.eyenavphuket.com/le_meridien/tour/index1.htm",
     type: "featured",
   },
   {
     title: " Royal Phuket Marina",
-    bgImage: "/images/Royal-Phuket-Marina.jpg",
-    projectLink: "https://eyenavphuket.com/royalphuketmarina/",
-    webLink: "https://www.royalphuketmarina.com/360-virtual-tour/",
+    bgImage: "/images/projects/02Krabi-Resort.jpg",
+    projectLink: "https://eyenavthailand.com/krabi_resort/",
+    webLink: "https://eyenavthailand.com/krabi_resort/",
     type: "featured",
   },
   {
@@ -504,9 +499,9 @@ const services = [
     items: [
       {
         title: "360 Photography",
-        thumb: "/images/services/ps1.jpg",
+        thumb: "/images/services/ps1.png",
         link: "#360-photography",
-        face: "/images/services/ps1.jpg",
+        face: "/images/services/ps1.png",
         faceType: "image",
         detail:
           "<p>Our 360ﾟ photography sets out to represent a space or facility in its best light with WoW factor or careful setups which make consumers feel like being there. In the same way as professional hotel still photography is done, an eyeNAV360 shoot is all in the preparation and timing.</p><p>There's no Fuss & No extra lighting, we carefully plan the shots with our clients and make sure they feature their brand standard setups. We use natural ambient light and avoid harsh daytime sun, executing most of our shoots during at early mornings and early evenings.</p><p>Care is taken to ensure our scheduled photo shoots bring minimal challenges to your operations and no effect on guest experience.</p>       ",
@@ -613,7 +608,7 @@ const services = [
         face: "/images/services/st3.jpg",
         faceType: "image",
         detail:
-          "<p>The direct URL content offers information about the Dusit Krabi resort in Thailand, including its leisure facilities, dining outlets, accommodation options, and meeting/event spaces.</p><p><strong><a href='/images/Direct-360-URLs.pdf' download> Download PDF</a></strong></p>",
+          "<p>The direct URL content offers information about the Dusit Krabi resort in Thailand, including its leisure facilities, dining outlets, accommodation options, and meeting/event spaces.</p><p><strong><a href='/images/Direct-360-URLs.pdf' target='_blank' >View Client PDF</a></strong></p>",
       },
     ],
   },

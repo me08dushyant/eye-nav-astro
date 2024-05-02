@@ -39,6 +39,7 @@ const FeaturedProjects = () => {
               <ProjectThumb
                 title={homeProjects[1].title}
                 bgImage={homeProjects[1].bgImage}
+                projectLink={homeProjects[1].projectLink}
                 webLink={homeProjects[1].webLink}
               />
             </div>
@@ -62,6 +63,7 @@ const FeaturedProjects = () => {
               <ProjectThumb
                 title={homeProjects[4].title}
                 bgImage={homeProjects[4].bgImage}
+                projectLink={homeProjects[5].projectLink}
                 webLink={homeProjects[4].webLink}
               />
             </div>
@@ -69,6 +71,7 @@ const FeaturedProjects = () => {
               <ProjectThumb
                 title={homeProjects[5].title}
                 bgImage={homeProjects[5].bgImage}
+                projectLink={homeProjects[5].projectLink}
                 webLink={homeProjects[5].webLink}
               />
             </div>
@@ -76,6 +79,7 @@ const FeaturedProjects = () => {
               <ProjectThumb
                 title={homeProjects[6].title}
                 bgImage={homeProjects[6].bgImage}
+                projectLink={homeProjects[6].projectLink}
                 webLink={homeProjects[6].webLink}
               />
             </div>
