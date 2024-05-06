@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/_astro/404.5ebd282d.css" /></head>
+  <link rel="stylesheet" href="/_astro/404.36d1b451.css" /></head>
   <body>
     <div class="flex flex-col min-h-screen">
       
@@ -30,7 +30,30 @@
               <a href="/clients-projects">Clients Portfolio</a>
             </li>
             <li class="user last:border p-3 last:border-1 rounded">
-              <a href="/services">What We Offer</a>
+              <div x-data="{ open: false }" @click.away="open = false" class="relative font-text text-lg">
+  <button @click="open = !open" class="inline-flex justify-center items-center px-4 py-2 leading-6 font-medium rounded-md font-text text-white transition ease-in-out duration-150">
+    What We Offer
+    <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414zM10 4a1 1 0 011 1v6a1 1 0 01-2 0V5a1 1 0 011-1z" clip-rule="evenodd"></path>
+    </svg>
+  </button>
+
+  <div x-show="open" x-transition:enter="transition ease-out duration-200 transform" x-transition:enter-start="opacity-0 translate-y-[-10%]" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-150 transform" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-[-10%]" class="unset md:absolute w-48 origin-top-right right-0 mt-2 rounded-md bg-purple focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+    <div class="" role="none">
+      <a href="/services/production-services" class="block px-4 py-2 font-text text-center hover:bg-gray-100/10" role="menuitem" tabindex="-1" id="menu-item-0">
+            Production Services
+          </a><a href="/services/marketing-installations" class="block px-4 py-2 font-text text-center hover:bg-gray-100/10" role="menuitem" tabindex="-1" id="menu-item-0">
+            Marketing Installations
+          </a><a href="/services/sales-team-support" class="block px-4 py-2 font-text text-center hover:bg-gray-100/10" role="menuitem" tabindex="-1" id="menu-item-0">
+            Sales Team Support
+          </a><a href="/services/birdeye-golf-interactive" class="block px-4 py-2 font-text text-center hover:bg-gray-100/10" role="menuitem" tabindex="-1" id="menu-item-0">
+            Birdeye Golf Interactive
+          </a><a href="/services/express350" class="block px-4 py-2 font-text text-center hover:bg-gray-100/10" role="menuitem" tabindex="-1" id="menu-item-0">
+            Express350
+          </a>
+    </div>
+  </div>
+</div>
             </li>
             <li class="user last:border p-3 last:border-1 rounded">
               <a href="/concept">Concept & History</a>
@@ -75,12 +98,35 @@
       </div>
     </div>
     <div class="grow flex items-center justify-center">
-      <ul class="flex flex-col sm:flex-row sm:flex-wrap items-center gap-1 font-text">
+      <ul class="flex flex-col sm:flex-row sm:flex-wrap items-center gap-1 font-text text-lg">
         <li class="user last:border p-3 last:border-1 rounded">
           <a href="/clients-projects">Clients Portfolio</a>
         </li>
         <li class="user last:border p-3 last:border-1 rounded">
-          <a href="/services">What We Offer</a>
+          <div x-data="{ open: false }" @click.away="open = false" class="relative font-text text-lg">
+  <button @click="open = !open" class="inline-flex justify-center items-center px-4 py-2 leading-6 font-medium rounded-md font-text text-white transition ease-in-out duration-150">
+    What We Offer
+    <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414zM10 4a1 1 0 011 1v6a1 1 0 01-2 0V5a1 1 0 011-1z" clip-rule="evenodd"></path>
+    </svg>
+  </button>
+
+  <div x-show="open" x-transition:enter="transition ease-out duration-200 transform" x-transition:enter-start="opacity-0 translate-y-[-10%]" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-150 transform" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-[-10%]" class="unset md:absolute w-48 origin-top-right right-0 mt-2 rounded-md bg-purple focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+    <div class="" role="none">
+      <a href="/services/production-services" class="block px-4 py-2 font-text text-center hover:bg-gray-100/10" role="menuitem" tabindex="-1" id="menu-item-0">
+            Production Services
+          </a><a href="/services/marketing-installations" class="block px-4 py-2 font-text text-center hover:bg-gray-100/10" role="menuitem" tabindex="-1" id="menu-item-0">
+            Marketing Installations
+          </a><a href="/services/sales-team-support" class="block px-4 py-2 font-text text-center hover:bg-gray-100/10" role="menuitem" tabindex="-1" id="menu-item-0">
+            Sales Team Support
+          </a><a href="/services/birdeye-golf-interactive" class="block px-4 py-2 font-text text-center hover:bg-gray-100/10" role="menuitem" tabindex="-1" id="menu-item-0">
+            Birdeye Golf Interactive
+          </a><a href="/services/express350" class="block px-4 py-2 font-text text-center hover:bg-gray-100/10" role="menuitem" tabindex="-1" id="menu-item-0">
+            Express350
+          </a>
+    </div>
+  </div>
+</div>
         </li>
         <li class="user last:border p-3 last:border-1 rounded">
           <a href="/concept">History</a>
@@ -212,6 +258,38 @@
                 </div>
                 <h3 class="font-semibold text-center pt-2 text-lg">
                   Direct 360 URLs
+                </h3>
+              </div>
+          </div>
+        </div><div class="max-w-[1400px] px-[5vw] mx-auto pt-20 pb-20">
+          <h2 class="font-bold text-4xl md:text-5xl text-center mx-auto">
+            Birdeye Golf Interactive
+          </h2>
+          <div class="flex flex-col md:flex-row md:flex-wrap gap-5 justify-center pt-10">
+            <div>
+                <div class="w-full md:w-96 aspect-[3/2] rounded-md bg-purple animated overflow-hidden">
+                  <a href="/services/birdeye-golf-interactive/#Presentation Interface">
+                  <img class="h-full w-full  object-cover" class="" src="/images/services/st1.jpg">
+                </a>
+                </div>
+                <h3 class="font-semibold text-center pt-2 text-lg">
+                  Presentation Interface
+                </h3>
+              </div>
+          </div>
+        </div><div class="max-w-[1400px] px-[5vw] mx-auto pt-20 pb-20">
+          <h2 class="font-bold text-4xl md:text-5xl text-center mx-auto">
+            Express350
+          </h2>
+          <div class="flex flex-col md:flex-row md:flex-wrap gap-5 justify-center pt-10">
+            <div>
+                <div class="w-full md:w-96 aspect-[3/2] rounded-md bg-purple animated overflow-hidden">
+                  <a href="/services/express350/#Lorem Impsum Express350">
+                  <img class="h-full w-full  object-cover" class="" src="/images/services/st1.jpg">
+                </a>
+                </div>
+                <h3 class="font-semibold text-center pt-2 text-lg">
+                  Lorem Impsum Express350
                 </h3>
               </div>
           </div>

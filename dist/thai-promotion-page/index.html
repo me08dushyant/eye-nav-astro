@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/_astro/404.5ebd282d.css" /></head>
+  <link rel="stylesheet" href="/_astro/404.36d1b451.css" /></head>
   <body>
     <div class="flex flex-col min-h-screen">
       
@@ -30,7 +30,30 @@
               <a href="/clients-projects">Clients Portfolio</a>
             </li>
             <li class="user last:border p-3 last:border-1 rounded">
-              <a href="/services">What We Offer</a>
+              <div x-data="{ open: false }" @click.away="open = false" class="relative font-text text-lg">
+  <button @click="open = !open" class="inline-flex justify-center items-center px-4 py-2 leading-6 font-medium rounded-md font-text text-white transition ease-in-out duration-150">
+    What We Offer
+    <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414zM10 4a1 1 0 011 1v6a1 1 0 01-2 0V5a1 1 0 011-1z" clip-rule="evenodd"></path>
+    </svg>
+  </button>
+
+  <div x-show="open" x-transition:enter="transition ease-out duration-200 transform" x-transition:enter-start="opacity-0 translate-y-[-10%]" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-150 transform" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-[-10%]" class="unset md:absolute w-48 origin-top-right right-0 mt-2 rounded-md bg-purple focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+    <div class="" role="none">
+      <a href="/services/production-services" class="block px-4 py-2 font-text text-center hover:bg-gray-100/10" role="menuitem" tabindex="-1" id="menu-item-0">
+            Production Services
+          </a><a href="/services/marketing-installations" class="block px-4 py-2 font-text text-center hover:bg-gray-100/10" role="menuitem" tabindex="-1" id="menu-item-0">
+            Marketing Installations
+          </a><a href="/services/sales-team-support" class="block px-4 py-2 font-text text-center hover:bg-gray-100/10" role="menuitem" tabindex="-1" id="menu-item-0">
+            Sales Team Support
+          </a><a href="/services/birdeye-golf-interactive" class="block px-4 py-2 font-text text-center hover:bg-gray-100/10" role="menuitem" tabindex="-1" id="menu-item-0">
+            Birdeye Golf Interactive
+          </a><a href="/services/express350" class="block px-4 py-2 font-text text-center hover:bg-gray-100/10" role="menuitem" tabindex="-1" id="menu-item-0">
+            Express350
+          </a>
+    </div>
+  </div>
+</div>
             </li>
             <li class="user last:border p-3 last:border-1 rounded">
               <a href="/concept">Concept & History</a>
@@ -76,12 +99,35 @@
       </div>
     </div>
     <div class="grow flex items-center justify-center">
-      <ul class="flex flex-col sm:flex-row sm:flex-wrap items-center gap-1 font-text">
+      <ul class="flex flex-col sm:flex-row sm:flex-wrap items-center gap-1 font-text text-lg">
         <li class="user last:border p-3 last:border-1 rounded">
           <a href="/clients-projects">Clients Portfolio</a>
         </li>
         <li class="user last:border p-3 last:border-1 rounded">
-          <a href="/services">What We Offer</a>
+          <div x-data="{ open: false }" @click.away="open = false" class="relative font-text text-lg">
+  <button @click="open = !open" class="inline-flex justify-center items-center px-4 py-2 leading-6 font-medium rounded-md font-text text-white transition ease-in-out duration-150">
+    What We Offer
+    <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414zM10 4a1 1 0 011 1v6a1 1 0 01-2 0V5a1 1 0 011-1z" clip-rule="evenodd"></path>
+    </svg>
+  </button>
+
+  <div x-show="open" x-transition:enter="transition ease-out duration-200 transform" x-transition:enter-start="opacity-0 translate-y-[-10%]" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-150 transform" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-[-10%]" class="unset md:absolute w-48 origin-top-right right-0 mt-2 rounded-md bg-purple focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+    <div class="" role="none">
+      <a href="/services/production-services" class="block px-4 py-2 font-text text-center hover:bg-gray-100/10" role="menuitem" tabindex="-1" id="menu-item-0">
+            Production Services
+          </a><a href="/services/marketing-installations" class="block px-4 py-2 font-text text-center hover:bg-gray-100/10" role="menuitem" tabindex="-1" id="menu-item-0">
+            Marketing Installations
+          </a><a href="/services/sales-team-support" class="block px-4 py-2 font-text text-center hover:bg-gray-100/10" role="menuitem" tabindex="-1" id="menu-item-0">
+            Sales Team Support
+          </a><a href="/services/birdeye-golf-interactive" class="block px-4 py-2 font-text text-center hover:bg-gray-100/10" role="menuitem" tabindex="-1" id="menu-item-0">
+            Birdeye Golf Interactive
+          </a><a href="/services/express350" class="block px-4 py-2 font-text text-center hover:bg-gray-100/10" role="menuitem" tabindex="-1" id="menu-item-0">
+            Express350
+          </a>
+    </div>
+  </div>
+</div>
         </li>
         <li class="user last:border p-3 last:border-1 rounded">
           <a href="/concept">History</a>
@@ -295,7 +341,7 @@
     </div>
   </div>
 </div>
-	<style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();;(()=>{var l;{let c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;let[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;let s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(let r of n){let i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of s){let i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}let a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){let s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{let n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(let d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}})();</script><astro-island uid="Er6iK" data-solid-render-id="s0" component-url="/_astro/Lightbox.64bd2c17.js" component-export="default" renderer-url="/_astro/client.30fe0f1d.js" props="{&quot;iframeURL&quot;:[0,&quot;https://eyenavthailand.com/samujana/villa12/&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;Lightbox&quot;,&quot;value&quot;:true}" await-children=""><div data-hk="s00-0" class="fixed top-0 left-0 w-screen h-screen backdrop-blur-lg backdrop-brightness-50 z-50  p-[5px] pb-[20px] md:p-[20px]    hidden items-start md:items-center justify-center"><div class="bg-purple w-full h-[80vh] md:h-full rounded-xl drop-shadow-2xl "><!--#--><iframe data-hk="s00-1" class="w-full h-full rounded-xl overflow-hidden" src=""></iframe><!--/--><slot><div class="absolute w-10 h-10 right-1/2 -mr-5 md:mr-0 -bottom-16 md:bottom-3 md:-top-3 md:-right-3 bg-purple rounded-full p-2 pointer-events-auto"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-Width="1.5" stroke="currentColor" class="w-6 h-6 text-white"><path stroke-Linecap="round" stroke-Linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg></div></slot></div></div></astro-island>
+	<style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();;(()=>{var l;{let c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;let[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;let s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(let r of n){let i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of s){let i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}let a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){let s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{let n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(let d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}})();</script><astro-island uid="Er6iK" data-solid-render-id="s0" component-url="/_astro/Lightbox.338dfe7a.js" component-export="default" renderer-url="/_astro/client.ab9a1550.js" props="{&quot;iframeURL&quot;:[0,&quot;https://eyenavthailand.com/samujana/villa12/&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;Lightbox&quot;,&quot;value&quot;:true}" await-children=""><div data-hk="s00-0" class="fixed top-0 left-0 w-screen h-screen backdrop-blur-lg backdrop-brightness-50 z-50  p-[5px] pb-[20px] md:p-[20px]    hidden items-start md:items-center justify-center"><div class="bg-purple w-full h-[80vh] md:h-full rounded-xl drop-shadow-2xl "><!--#--><iframe data-hk="s00-1" class="w-full h-full rounded-xl overflow-hidden" src=""></iframe><!--/--><slot><div class="absolute w-10 h-10 right-1/2 -mr-5 md:mr-0 -bottom-16 md:bottom-3 md:-top-3 md:-right-3 bg-purple rounded-full p-2 pointer-events-auto"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-Width="1.5" stroke="currentColor" class="w-6 h-6 text-white"><path stroke-Linecap="round" stroke-Linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg></div></slot></div></div></astro-island>
 
     </div>
   </body></html>
