@@ -7,6 +7,7 @@ export interface Props {
 }
 
 const { fullscreen, isHeader, height, dark } = Astro.props;
+import ServiceDropDown from "./ServiceDropDown.astro";
 ---
 
 <div
@@ -19,11 +20,7 @@ const { fullscreen, isHeader, height, dark } = Astro.props;
     }`}
   >
     <div class="backdrop-blur-2xl bg-white/10">
-      <div
-        class={`w-full max-w-[1600px] px-[5vw] py-5 mx-auto ${
-          dark ? "text-white" : "text-violet-950"
-        }`}
-      >
+      <div class="w-full max-w-[1600px] px-[5vw] py-5 mx-auto text-white">
         <div class="w-full flex justify-between text-lg items-center">
           <a href="/">
             <img class="w-[164px]" src="/images/eye-nav-logo.png" alt="" /></a
@@ -33,7 +30,7 @@ const { fullscreen, isHeader, height, dark } = Astro.props;
               <a href="/clients-projects">Clients Portfolio</a>
             </li>
             <li class="user last:border p-3 last:border-1 rounded">
-              <a href="/services">What We Offer</a>
+              <ServiceDropDown />
             </li>
             <li class="user last:border p-3 last:border-1 rounded">
               <a href="/concept">Concept & History</a>
@@ -108,13 +105,13 @@ const { fullscreen, isHeader, height, dark } = Astro.props;
     </div>
     <div class="grow flex items-center justify-center">
       <ul
-        class="flex flex-col sm:flex-row sm:flex-wrap items-center gap-1 font-text"
+        class="flex flex-col sm:flex-row sm:flex-wrap items-center gap-1 font-text text-lg"
       >
         <li class="user last:border p-3 last:border-1 rounded">
           <a href="/clients-projects">Clients Portfolio</a>
         </li>
         <li class="user last:border p-3 last:border-1 rounded">
-          <a href="/services">What We Offer</a>
+          <ServiceDropDown />
         </li>
         <li class="user last:border p-3 last:border-1 rounded">
           <a href="/concept">History</a>

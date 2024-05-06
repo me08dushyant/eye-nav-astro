@@ -1,0 +1,99 @@
+---
+export interface Props {
+  title: string;
+  images: [];
+}
+const { title, images } = Astro.props;
+const imagess = ["/images/services/ps1.jpg", "/images/services/ps2.jpg"];
+//['/images/services/ps1.jpg','/images/services/ps2.jpg']
+---
+
+<style>
+  /* Additional styles */
+  .gallery-overlay {
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+  }
+</style>
+
+<!-- Gallery container -->
+<div
+  x-init=`images = ${JSON.stringify(images)}`
+  x-data="{ isOpen: false, currentImage: '', currentIndex: 0, images:[]  }"
+>
+  <p @click="isOpen = true;  currentIndex = 0; currentImage = images[0]">
+    {title}
+  </p>
+  <!-- Gallery modal overlay -->
+  <div
+    x-show="isOpen"
+    @keydown.escape.window="isOpen = false"
+    class="fixed top-0 left-0 w-full h-full flex items-center justify-center gallery-overlay"
+  >
+    <!-- Gallery modal content -->
+    <div class="max-w-4xl w-full h-full relative">
+      <!-- Close button -->
+      <button
+        @click="isOpen = false"
+        class="absolute top-4 right-4 text-white text-2xl focus:outline-none"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-10 h-10"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18 18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+
+      <!-- Navigation arrows -->
+      <button
+        @click="currentIndex = (currentIndex - 1 + images.length) % images.length; currentImage = images[currentIndex]"
+        class="absolute top-1/2 left-4 transform -translate-y-1/2 text-white text-3xl focus:outline-none"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-10 h-10"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5 8.25 12l7.5-7.5"></path>
+        </svg>
+      </button>
+      <button
+        @click="currentIndex = (currentIndex + 1) % images.length; currentImage = images[currentIndex]"
+        class="absolute top-1/2 right-4 transform -translate-y-1/2 text-white text-3xl focus:outline-none"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-10 h-10"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
+        </svg>
+      </button>
+      <!-- Actual image -->
+      <div class="w-full h-full grid justify-center items-center">
+        <img
+          :src="currentImage"
+          alt="Gallery Image"
+          class="mx-auto max-w-full max-h-full"
+        />
+      </div>
+    </div>
+  </div>
+</div>

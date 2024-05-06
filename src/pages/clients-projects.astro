@@ -90,7 +90,7 @@ const parkProjects = _.filter(projects, { cat: "park" });
     <p></p>
     <div class="mx-auto flex gap-5 justify-center">
       <div
-        @click="slide<=1 ?slide:slide--"
+        @click=`slide<=1 ? slide=${testimonials.length}:slide--`
         :class="[{'bg-gray-200':slide ===1}]"
       >
         <svg
@@ -108,7 +108,7 @@ const parkProjects = _.filter(projects, { cat: "park" });
           ></path>
         </svg>
       </div>
-      <div @click=`slide>=${testimonials.length} ?slide:slide++`>
+      <div @click=`slide>=${testimonials.length} ?slide=1:slide++`>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

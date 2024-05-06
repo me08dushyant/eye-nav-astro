@@ -17,11 +17,8 @@ module.exports = {
       violet: colors.violet,
     },
     fontFamily: {
-      inter: ["Inter"],
-
-      lilita: ["Lilita-One"],
-      text: ["Poppins"],
-      heading: ["Inter"],
+      text: ["PTSansCaption"],
+      heading: ["PTSansCaption"],
     },
 
     extend: {},

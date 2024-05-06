@@ -505,6 +505,10 @@ const services = [
         faceType: "image",
         detail:
           "<p>Our 360ﾟ photography sets out to represent a space or facility in its best light with WoW factor or careful setups which make consumers feel like being there. In the same way as professional hotel still photography is done, an eyeNAV360 shoot is all in the preparation and timing.</p><p>There's no Fuss & No extra lighting, we carefully plan the shots with our clients and make sure they feature their brand standard setups. We use natural ambient light and avoid harsh daytime sun, executing most of our shoots during at early mornings and early evenings.</p><p>Care is taken to ensure our scheduled photo shoots bring minimal challenges to your operations and no effect on guest experience.</p>       ",
+        gallery: {
+          title: "Click here to view Gallery",
+          images: ["/images/services/ps3.jpg", "/images/services/ps4.jpg"],
+        },
       },
       {
         title: "Drone Footage",
@@ -523,6 +527,10 @@ const services = [
         faceType: "image",
         detail:
           "<p>Refined Hotel Brand Photography & Photos for Sales Collateral are available by our experienced travel photographers as an additional service for your Sales & Marketing needs.</p><p>360 Capture - Due to the high quality of our 360ﾟ panorama construction we are also able to export still photos from our 360s. In many cases these images are adequate for the client's needs.</p>",
+        gallery: {
+          title: "Click here to view Gallery",
+          images: ["/images/services/ps1.jpg", "/images/services/ps2.jpg"],
+        },
       },
       {
         title: "Video Clipettes",
@@ -609,6 +617,37 @@ const services = [
         faceType: "image",
         detail:
           "<p>The direct URL content offers information about the Dusit Krabi resort in Thailand, including its leisure facilities, dining outlets, accommodation options, and meeting/event spaces.</p><p><strong><a href='/images/Direct-360-URLs.pdf' target='_blank' >View Client PDF</a></strong></p>",
+      },
+    ],
+  },
+
+  {
+    title: "Birdeye Golf Interactive",
+    slug: "birdeye-golf-interactive",
+    items: [
+      {
+        title: "Presentation Interface",
+        thumb: "/images/services/st1.jpg",
+        link: "#360-photography",
+        face: "/images/services/st1.jpg",
+        faceType: "image",
+        detail:
+          "<p>eyeNAV 360 is proudly in partnership with and responsible for the co-development of Bird(e)ye Interactive.<br/> A visual presentation for destination golf courses, provide dedicated players with a combination of immersive 360° views, fly-throughs, hole maps and player tips.</p><p><a href='https://birdeye.golf' target='_blanket'>Check out birdeye.golf</a> </p>",
+      },
+    ],
+  },
+  {
+    title: "Express350",
+    slug: "express350",
+    items: [
+      {
+        title: "Lorem Impsum Express350",
+        thumb: "/images/services/st1.jpg",
+        link: "#360-photography",
+        face: "/images/services/st1.jpg",
+        faceType: "image",
+        detail:
+          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>",
       },
     ],
   },

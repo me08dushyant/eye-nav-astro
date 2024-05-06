@@ -13,6 +13,7 @@ import Gallery from "../../components/Gallery.astro";
 import Footer from "../../components/Footer.astro";
 import VRHeader from "../../components/VRHeader.jsx";
 import { services } from "../../store/data";
+import ViewGallery from "../../components/ViewGallery.astro";
 
 import _ from "lodash";
 
@@ -56,12 +57,20 @@ console.log(selectedService);
                 >
                   <div class="basis-1/2">
                     {item.faceType === "image" && (
-                      <div class="w-full  aspect-[3/2] rounded-md bg-purple animated overflow-hidden">
-                        <img
-                          class="h-full w-full  object-cover"
-                          class=""
-                          src={item.face}
-                        />
+                      <div>
+                        <div class="w-full  aspect-[3/2] rounded-md bg-purple animated overflow-hidden">
+                          <img
+                            class="h-full w-full  object-cover"
+                            class=""
+                            src={item.face}
+                          />
+                        </div>
+                        {item.gallery && (
+                          <ViewGallery
+                            title={item.gallery.title},
+                            images={item.gallery.images}
+                          />
+                        )}
                       </div>
                     )}
                     {item.faceType === "video" && (
