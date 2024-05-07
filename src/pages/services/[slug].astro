@@ -58,18 +58,20 @@ console.log(selectedService);
                   <div class="basis-1/2">
                     {item.faceType === "image" && (
                       <div>
-                        <div class="w-full  aspect-[3/2] rounded-md bg-purple animated overflow-hidden">
-                          <img
-                            class="h-full w-full  object-cover"
-                            class=""
-                            src={item.face}
-                          />
-                        </div>
-                        {item.gallery && (
+                        {item.gallery ? (
                           <ViewGallery
-                            title={item.gallery.title},
+                            title={item.gallery.title}
                             images={item.gallery.images}
+                            thumb={item.gallery.thumb}
                           />
+                        ) : (
+                          <div class="w-full  aspect-[3/2] rounded-md  animated overflow-hidden">
+                            <img
+                              class="h-full w-full  object-cover"
+                              class=""
+                              src={item.face}
+                            />
+                          </div>
                         )}
                       </div>
                     )}

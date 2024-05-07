@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/_astro/404.36d1b451.css" />
+  <link rel="stylesheet" href="/_astro/404.c362d1f8.css" />
 <link rel="stylesheet" href="/_astro/_slug_.5dc5b8c2.css" /></head>
   <body>
     <div class="flex flex-col min-h-screen">
@@ -148,15 +148,15 @@
                 <div id="360 Photography" class="grid md:flex even:flex-row-reverse  gap-10 pt-20">
                   <div class="basis-1/2">
                     <div>
-                        <div class="w-full  aspect-[3/2] rounded-md bg-purple animated overflow-hidden">
-                          <img class="h-full w-full  object-cover" class="" src="/images/services/ps1.png">
-                        </div>
                         
 
 <!-- Gallery container -->
 <div x-init="images = [&#34;/images/services/ps3.jpg&#34;,&#34;/images/services/ps4.jpg&#34;]" x-data="{ isOpen: false, currentImage: '', currentIndex: 0, images:[]  }" class="astro-6TTP2C4U">
-  <p @click="isOpen = true;  currentIndex = 0; currentImage = images[0]" class="astro-6TTP2C4U">
-    Click here to view Gallery
+  <div @click="isOpen = true;  currentIndex = 0; currentImage = images[0]" class="w-full aspect-[3/2] rounded-md animated overflow-hidden astro-6TTP2C4U">
+    <img class="h-full w-full object-cover astro-6TTP2C4U" class="" src="/images/services/ps1.png">
+  </div>
+  <p @click="isOpen = true;  currentIndex = 0; currentImage = images[0]" class="uppercase font-text font-bold text-orange text-right text-lg p-5 astro-6TTP2C4U">
+    View Images
   </p>
   <!-- Gallery modal overlay -->
   <div x-show="isOpen" @keydown.escape.window="isOpen = false" class="fixed top-0 left-0 w-full h-full flex items-center justify-center gallery-overlay astro-6TTP2C4U">
@@ -178,8 +178,14 @@
         </svg>
       </button>
       <!-- Actual image -->
-      <div class="w-full h-full grid justify-center items-center astro-6TTP2C4U">
-        <img :src="currentImage" alt="Gallery Image" class="mx-auto max-w-full max-h-full astro-6TTP2C4U">
+      <div class="grid grid-cols-2 w-full h-full justify-center items-center astro-6TTP2C4U">
+        <div class="col-span-full row-span-full w-full h-full grid justify-center items-center astro-6TTP2C4U">
+          <img :src="currentImage" alt="Gallery Image" class="mx-auto max-w-full max-h-full astro-6TTP2C4U">
+        </div>
+        <div class="row-span-full col-start-1 w-full h-full astro-6TTP2C4U" @click="currentIndex = (currentIndex - 1 + images.length) % images.length; currentImage = images[currentIndex]">
+        </div>
+        <div class="row-span-full col-start-2 w-full h-full astro-6TTP2C4U" @click="currentIndex = (currentIndex + 1) % images.length; currentImage = images[currentIndex]">
+        </div>
       </div>
     </div>
   </div>
@@ -219,14 +225,14 @@
                 <div id="Hotel Brand Photography" class="grid md:flex even:flex-row-reverse  gap-10 pt-20">
                   <div class="basis-1/2">
                     <div>
-                        <div class="w-full  aspect-[3/2] rounded-md bg-purple animated overflow-hidden">
-                          <img class="h-full w-full  object-cover" class="" src="/images/services/ps3.jpg">
-                        </div>
                         
 
 <!-- Gallery container -->
 <div x-init="images = [&#34;/images/services/ps1.jpg&#34;,&#34;/images/services/ps2.jpg&#34;]" x-data="{ isOpen: false, currentImage: '', currentIndex: 0, images:[]  }" class="astro-6TTP2C4U">
-  <p @click="isOpen = true;  currentIndex = 0; currentImage = images[0]" class="astro-6TTP2C4U">
+  <div @click="isOpen = true;  currentIndex = 0; currentImage = images[0]" class="w-full aspect-[3/2] rounded-md animated overflow-hidden astro-6TTP2C4U">
+    <img class="h-full w-full object-cover astro-6TTP2C4U" class="" src="/images/services/ps3.jpg">
+  </div>
+  <p @click="isOpen = true;  currentIndex = 0; currentImage = images[0]" class="uppercase font-text font-bold text-orange text-right text-lg p-5 astro-6TTP2C4U">
     Click here to view Gallery
   </p>
   <!-- Gallery modal overlay -->
@@ -249,8 +255,14 @@
         </svg>
       </button>
       <!-- Actual image -->
-      <div class="w-full h-full grid justify-center items-center astro-6TTP2C4U">
-        <img :src="currentImage" alt="Gallery Image" class="mx-auto max-w-full max-h-full astro-6TTP2C4U">
+      <div class="grid grid-cols-2 w-full h-full justify-center items-center astro-6TTP2C4U">
+        <div class="col-span-full row-span-full w-full h-full grid justify-center items-center astro-6TTP2C4U">
+          <img :src="currentImage" alt="Gallery Image" class="mx-auto max-w-full max-h-full astro-6TTP2C4U">
+        </div>
+        <div class="row-span-full col-start-1 w-full h-full astro-6TTP2C4U" @click="currentIndex = (currentIndex - 1 + images.length) % images.length; currentImage = images[currentIndex]">
+        </div>
+        <div class="row-span-full col-start-2 w-full h-full astro-6TTP2C4U" @click="currentIndex = (currentIndex + 1) % images.length; currentImage = images[currentIndex]">
+        </div>
       </div>
     </div>
   </div>
@@ -290,10 +302,9 @@
                 <div id="Panos &#38; Planets" class="grid md:flex even:flex-row-reverse  gap-10 pt-20">
                   <div class="basis-1/2">
                     <div>
-                        <div class="w-full  aspect-[3/2] rounded-md bg-purple animated overflow-hidden">
-                          <img class="h-full w-full  object-cover" class="" src="/images/services/ps5.jpg">
-                        </div>
-                        
+                        <div class="w-full  aspect-[3/2] rounded-md  animated overflow-hidden">
+                            <img class="h-full w-full  object-cover" class="" src="/images/services/ps5.jpg">
+                          </div>
                       </div>
                     
                   </div>

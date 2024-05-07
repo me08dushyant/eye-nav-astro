@@ -2,8 +2,9 @@
 export interface Props {
   title: string;
   images: [];
+  thumb: string;
 }
-const { title, images } = Astro.props;
+const { title, images, thumb } = Astro.props;
 const imagess = ["/images/services/ps1.jpg", "/images/services/ps2.jpg"];
 //['/images/services/ps1.jpg','/images/services/ps2.jpg']
 ---
@@ -21,7 +22,16 @@ const imagess = ["/images/services/ps1.jpg", "/images/services/ps2.jpg"];
   x-init=`images = ${JSON.stringify(images)}`
   x-data="{ isOpen: false, currentImage: '', currentIndex: 0, images:[]  }"
 >
-  <p @click="isOpen = true;  currentIndex = 0; currentImage = images[0]">
+  <div
+    @click="isOpen = true;  currentIndex = 0; currentImage = images[0]"
+    class="w-full aspect-[3/2] rounded-md animated overflow-hidden"
+  >
+    <img class="h-full w-full object-cover" class="" src={thumb} />
+  </div>
+  <p
+    @click="isOpen = true;  currentIndex = 0; currentImage = images[0]"
+    class="uppercase font-text font-bold text-orange text-right text-lg p-5"
+  >
     {title}
   </p>
   <!-- Gallery modal overlay -->
@@ -87,12 +97,26 @@ const imagess = ["/images/services/ps1.jpg", "/images/services/ps2.jpg"];
         </svg>
       </button>
       <!-- Actual image -->
-      <div class="w-full h-full grid justify-center items-center">
-        <img
-          :src="currentImage"
-          alt="Gallery Image"
-          class="mx-auto max-w-full max-h-full"
-        />
+      <div class="grid grid-cols-2 w-full h-full justify-center items-center">
+        <div
+          class="col-span-full row-span-full w-full h-full grid justify-center items-center"
+        >
+          <img
+            :src="currentImage"
+            alt="Gallery Image"
+            class="mx-auto max-w-full max-h-full"
+          />
+        </div>
+        <div
+          class="row-span-full col-start-1 w-full h-full"
+          @click="currentIndex = (currentIndex - 1 + images.length) % images.length; currentImage = images[currentIndex]"
+        >
+        </div>
+        <div
+          class="row-span-full col-start-2 w-full h-full"
+          @click="currentIndex = (currentIndex + 1) % images.length; currentImage = images[currentIndex]"
+        >
+        </div>
       </div>
     </div>
   </div>

@@ -506,7 +506,8 @@ const services = [
         detail:
           "<p>Our 360ﾟ photography sets out to represent a space or facility in its best light with WoW factor or careful setups which make consumers feel like being there. In the same way as professional hotel still photography is done, an eyeNAV360 shoot is all in the preparation and timing.</p><p>There's no Fuss & No extra lighting, we carefully plan the shots with our clients and make sure they feature their brand standard setups. We use natural ambient light and avoid harsh daytime sun, executing most of our shoots during at early mornings and early evenings.</p><p>Care is taken to ensure our scheduled photo shoots bring minimal challenges to your operations and no effect on guest experience.</p>       ",
         gallery: {
-          title: "Click here to view Gallery",
+          thumb: "/images/services/ps1.png",
+          title: "View Images",
           images: ["/images/services/ps3.jpg", "/images/services/ps4.jpg"],
         },
       },
@@ -528,6 +529,7 @@ const services = [
         detail:
           "<p>Refined Hotel Brand Photography & Photos for Sales Collateral are available by our experienced travel photographers as an additional service for your Sales & Marketing needs.</p><p>360 Capture - Due to the high quality of our 360ﾟ panorama construction we are also able to export still photos from our 360s. In many cases these images are adequate for the client's needs.</p>",
         gallery: {
+          thumb: "/images/services/ps3.jpg",
           title: "Click here to view Gallery",
           images: ["/images/services/ps1.jpg", "/images/services/ps2.jpg"],
         },
