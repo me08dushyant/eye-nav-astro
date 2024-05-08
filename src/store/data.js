@@ -404,19 +404,17 @@ const projects = [
 const clients = [
   {
     logo: "/images/clients/01JW-Marriott.png",
-    webLink: "https://www.eyenavphuket.com/jw_phuket/",
   },
   {
     logo: "/images/clients/02LeMeridien.png",
-    webLink: "https://www.eyenavphuket.com/le_meridien/tour/index1.htm",
   },
   {
     logo: "/images/clients/03Dusit-Hotels.png",
-    webLink: "https://www.dusit.com/dusitthani-krabibeachresort/dining/",
+    webLink: "https://www.dusit.com/dusitthani-krabibeachresort/meetings/",
   },
   {
     logo: "/images/clients/04InterContinental Hotels.png",
-    webLink: "https://eyenavasia.com/vietnam/ic_landmark72/embed.html",
+    webLink: "https://phuquoc.intercontinental.com/meetings-events",
   },
   {
     logo: "/images/clients/05Crowne-Plaza.png",
@@ -424,38 +422,53 @@ const clients = [
   },
   {
     logo: "/images/clients/06Holiday-Inn.png",
-    webLink: "https://eyenavthailand.com/hir_vananava/",
+    webLink: "https://vananavahuahin.holidayinnresorts.com/",
   },
   {
     logo: "/images/clients/07Marriott.png",
-    webLink: "https://eyenavthailand.com/marriott_sukhumvit/",
   },
   {
     logo: "/images/clients/08Ramada.png",
-    webLink: "https://eyenavthailand.com/ramada_khaolak/",
+    webLink:
+      "https://www.ramadakhaolak.com/rooms-villas/private-pool-villa.html",
   },
-  { logo: "/images/clients/09Sequoia-Lodge.png" },
-  { logo: "/images/clients/10OzoneKI.png" },
+  {
+    logo: "/images/clients/09Sequoia-Lodge.png",
+    webLink: "https://www.sequoialodge.com.au/sequoia-suites/ ",
+  },
+  {
+    logo: "/images/clients/10OzoneKI.png",
+    webLink: "https://ozonehotelki.com.au/360-aurora-ozone-hotel-tour/",
+  },
   {
     logo: "/images/clients/11ReefHouse.png",
-    webLink: "https://eyenavaustralia.com/reef_house/",
+    webLink:
+      "https://www.reefhouse.com.au/villa-casablanca-4-bedroom-spa-plunge-pool/",
   },
   {
     logo: "/images/clients/12DiamondCliff.png",
-    webLink: "https://eyenavphuket.com/diamond_cliff/",
+    webLink: "https://www.diamondcliff.com/",
   },
   { logo: "/images/clients/13MVC.png" },
   {
     logo: "/images/clients/14Samujana.png",
-    webLink: "https://eyenavthailand.com/samujana/villa12/",
+    webLink: "https://samujana.com/villas/villa-28/",
   },
   {
     logo: "/images/clients/14Wyndham.png",
-    webLink: "https://eyenavthailand.com/ramada_khaolak/",
+    webLink: "https://www.wyndhamgrandphuket.com/rooms",
   },
   {
     logo: "/images/clients/16Thavorn.png",
-    webLink: "https://eyenavphuket.com/thavorn_beach/",
+    webLink: "https://www.thavornbeachvillage.com/360-overview",
+  },
+  {
+    logo: "/images/clients/17LadyBayResort.png",
+    webLink: "https://linksladybay.com.au/",
+  },
+  {
+    logo: "/images/clients/18KrabiResort.png",
+    webLink: "https://www.krabiresort.net/tropical-pool-villa.php 	",
   },
 ];
 
