@@ -48,6 +48,13 @@ console.log(selectedService);
     <div>
       <div class="font-inter pb-20">
         <div class="max-w-[1400px] mx-auto px-[5vw] font-inter items-center">
+          <div class="pt-20 font-text text-lg flex flex-col gap-5">
+            {
+              selectedService.detail && (
+                <Fragment set:html={selectedService.detail} />
+              )
+            }
+          </div>
           {
             selectedService.items.map((item) => (
               <>

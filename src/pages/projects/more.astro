@@ -1,0 +1,36 @@
+---
+import "../../styles/globals.css";
+import Layout from "../../layouts/Layout.astro";
+import Card from "../../components/Card.astro";
+import Nav from "../../components/Nav.astro";
+import FeaturedProjects from "../../components/FeaturedProjects.jsx";
+import Clients from "../../components/Clients.astro";
+import WebsiteIntegration from "../../components/WebsiteIntegration.astro";
+import OfflineApp from "../../components/OfflineApp.astro";
+import Lightbox from "../../components/Lightbox.jsx";
+import AutoplaySlider from "../../components/AutoplaySlider.astro";
+import Footer from "../../components/Footer.astro";
+import MoreProjects from "../../components/MoreProjects.jsx";
+import VRHeader from "../../components/VRHeader.jsx";
+import _ from "lodash";
+import { projects } from "../../store/data";
+const moreProjects = _.filter(projects, { type: "more" });
+---
+
+<Layout title="Welcome to ">
+  <Nav fullscreen={true} isHeader={true} height="[400px]" dark={true}>
+    <VRHeader tourLink="/header/sub/index.html" />
+    <h1 class="title absolute text-white font-bold text-5xl pt-12">
+      More Projects
+    </h1>
+  </Nav>
+
+  <main class="grow bg-purple/10">
+    <MoreProjects projectData={moreProjects} client:load showall={true} />
+  </main>
+  <Footer />
+  <Lightbox
+    iframeURL="https://eyenavthailand.com/samujana/villa12/"
+    client:load
+  />
+</Layout>

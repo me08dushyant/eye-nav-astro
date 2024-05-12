@@ -16,6 +16,11 @@ import Testimonial from "../components/Testimonial.astro";
 import _ from "lodash";
 import { projects, testimonials } from "../store/data";
 import VRHeader from "../components/VRHeader";
+const catprojects = _.filter(projects,(o) => o.cat);
+let cats = _.map(catprojects, (data) => data.cat);
+ cats = _.uniq(cats);
+const sortCat = _.map(cats,(o)=> _.filter(projects,{ cat: o}));
+console.log(sortCat);
 const resortProjects = _.filter(projects, { cat: "resort" });
 const villaProjects = _.filter(projects, { cat: "villa" });
 const venueProjects = _.filter(projects, { cat: "venue" });
@@ -53,27 +58,14 @@ const parkProjects = _.filter(projects, { cat: "park" });
     </div>
   </Nav>
   <main class="grow bg-purple/10">
-    <h2 class="font-heading text-5xl font-black text-purple text-center mt-10">
-      Resorts
+    {sortCat.map((data)=>(
+     
+ <h2 class="font-heading text-5xl font-black text-purple text-center mt-10">
+      {data[0].grpName} 
     </h2>
-    <MoreProjects projectData={resortProjects} client:load />
-    <h2 class="font-heading text-5xl font-black text-purple text-center mt-10">
-      Villas & Property
-    </h2>
-    <MoreProjects projectData={villaProjects} client:load />
-
-    <h2 class="font-heading text-5xl font-black text-purple text-center mt-10">
-      Venues & Restaurants
-    </h2>
-    <MoreProjects projectData={venueProjects} client:load />
-    <h2 class="font-heading text-5xl font-black text-purple text-center mt-10">
-      Yachts & Marinas
-    </h2>
-    <MoreProjects projectData={yachtProjects} client:load />
-    <h2 class="font-heading text-5xl font-black text-purple text-center mt-10">
-      Parks & Councils
-    </h2>
-    <MoreProjects projectData={parkProjects} client:load />
+    <MoreProjects projectData={data} showall={false} url={`/projects/${data[0].cat}/`} client:load  />
+    ))}
+    
   </main>
 
   <div x-data="{ slide: 1, maxSlides: 3 }">

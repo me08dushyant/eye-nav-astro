@@ -14,8 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/_astro/404.fb3065f4.css" />
-<link rel="stylesheet" href="/_astro/_slug_.5dc5b8c2.css" /></head>
+  <link rel="stylesheet" href="/_astro/404.a6216928.css" />
+<link rel="stylesheet" href="/_astro/_slug_.2eb13f4a.css" /></head>
   <body>
     <div class="flex flex-col min-h-screen">
       
@@ -144,6 +144,9 @@
     <div>
       <div class="font-inter pb-20">
         <div class="max-w-[1400px] mx-auto px-[5vw] font-inter items-center">
+          <div class="pt-20 font-text text-lg flex flex-col gap-5">
+            <p>Installation of our 360° URLs into our client’s websites is a vital component of our service where we liaise directly with their website manager. We provide embed code, customization of 360 URLs & technical guidance. We also point out the advantages of featuring specific 360° views on various subpages of a website to increase conversion. </p><p>Some of our VIP clients are unable to feature their eyeNAV 360 presentations on their corporate brand.com websites. Ironically these clients are some of our most active users of  eyeNAV 360 URLs, being a vital component of their sales activities, especially group proposals and event sales.</p><p>Our complete solution enables eyeNAV 360 photos & URLs to be adopted for all of these Sales & Marketing channels</p><ul><li>Existing & new websites</li><li>E-newsletters</li><li>Facebook Posts / Ads</li><li>Google Business Profile</li><li>Booking.com</li><li>360 QR Codes </li><li>Off-line Presentation APP </li></ul>
+          </div>
           
                 <div id="Website Integration" class="grid md:flex even:flex-row-reverse  gap-10 pt-20">
                   <div class="basis-1/2">
@@ -168,9 +171,50 @@
                 <div id="Google Integration" class="grid md:flex even:flex-row-reverse  gap-10 pt-20">
                   <div class="basis-1/2">
                     <div>
-                        <div class="w-full  aspect-[3/2] rounded-md  animated overflow-hidden">
-                            <img class="h-full w-full  object-cover" class="" src="/images/services/mi2.jpg">
-                          </div>
+                        
+
+<!-- Gallery container -->
+<div x-init="images = [&#34;/images/services/s2/g2/img1.jpg&#34;,&#34;/images/services/s2/g2/img2.jpg&#34;,&#34;/images/services/s2/g2/img3.jpg&#34;,&#34;/images/services/s2/g2/img4.jpg&#34;,&#34;/images/services/s2/g2/img5.jpg&#34;,&#34;/images/services/s2/g2/img6.jpg&#34;,&#34;/images/services/s2/g2/img7.jpg&#34;,&#34;/images/services/s2/g2/img8.jpg&#34;];" x-data="{ isOpen: false, currentImage: '', currentIndex: 0, images:[] }" class="astro-6TTP2C4U">
+  <div @click="isOpen = true; currentIndex = 0;  currentImage = images[0] " class="w-full aspect-[3/2] rounded-md animated overflow-hidden astro-6TTP2C4U">
+    <img class="h-full w-full object-cover astro-6TTP2C4U" class="" src="/images/services/ps5.jpg">
+  </div>
+  <p @click="isOpen = true;  currentIndex = 0; currentImage = images[0]" class="uppercase font-text font-bold text-orange text-right text-lg p-5 astro-6TTP2C4U">
+    View Images
+  </p>
+  <!-- Gallery modal overlay -->
+  <div x-show="isOpen" @keydown.escape.window="isOpen = false" class="fixed top-0 left-0 w-full h-full flex items-center justify-center gallery-overlay astro-6TTP2C4U">
+    <div @click="isOpen = false" class="absolute top-0 left-0 w-full h-full bg-[black]/90 astro-6TTP2C4U">
+    </div>
+    <!-- Gallery modal content -->
+    <div class="max-w-4xl w-full h-full relative astro-6TTP2C4U">
+      <!-- Close button -->
+      <button @click="isOpen = false" class="absolute top-4 right-4 text-white text-2xl focus:outline-none astro-6TTP2C4U"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 astro-6TTP2C4U">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" class="astro-6TTP2C4U"></path>
+        </svg>
+      </button>
+
+      <!-- Navigation arrows -->
+      <button @click="currentIndex = (currentIndex - 1 + images.length) % images.length; currentImage = images[currentIndex]" class="absolute top-1/2 left-4 transform -translate-y-1/2 text-white text-3xl focus:outline-none astro-6TTP2C4U"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 astro-6TTP2C4U">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" class="astro-6TTP2C4U"></path>
+        </svg>
+      </button>
+      <button @click="currentIndex = (currentIndex + 1 + images.length) % images.length; currentImage = images[currentIndex]" class="absolute top-1/2 right-4 transform -translate-y-1/2 text-white text-3xl focus:outline-none astro-6TTP2C4U"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 astro-6TTP2C4U">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" class="astro-6TTP2C4U"></path>
+        </svg>
+      </button>
+      <!-- Actual image -->
+      <div class="grid grid-cols-2 w-full h-full justify-center items-center astro-6TTP2C4U">
+        <div class="col-span-full row-span-full w-full h-full grid justify-center items-center astro-6TTP2C4U">
+          <img :src="currentImage" alt="Gallery Image" class="mx-auto max-w-full max-h-full astro-6TTP2C4U">
+        </div>
+        <div class="row-span-full col-start-1 w-full h-full astro-6TTP2C4U" @click="currentIndex = (currentIndex - 1 + images.length) % images.length; currentImage = images[currentIndex]">
+        </div>
+        <div class="row-span-full col-start-2 w-full h-full astro-6TTP2C4U" @click="currentIndex = (currentIndex + 1) % images.length; currentImage = images[currentIndex]">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
                       </div>
                     
                   </div>
@@ -187,12 +231,10 @@
               
                 <div id="Booking.com 360 Upload" class="grid md:flex even:flex-row-reverse  gap-10 pt-20">
                   <div class="basis-1/2">
-                    <div>
-                        <div class="w-full  aspect-[3/2] rounded-md  animated overflow-hidden">
-                            <img class="h-full w-full  object-cover" class="" src="/images/services/mi3.jpg">
-                          </div>
-                      </div>
                     
+                    <div class="w-full   rounded-md bg-purple animated overflow-hidden">
+                        <iframe class="w-full aspect-video animated" src="https://www.youtube.com/embed/z5TB_7l4a64?si=8vc4AYzz-J26AJBM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                      </div>
                   </div>
                   <div class="basis-1/2">
                     <h2 class=" text-4xl md:text-5xl font-extrabold mb-10 text-center md:text-left">
@@ -201,6 +243,66 @@
 
                     <div class="font-text text-lg  grid gap-5 text-md  leading-relaxed text-center md:text-left">
                       <h2>Precise 360° Photography</h2><p>Our 360ﾟ photography sets out to represent a space or facility in its best light with WoW factor or careful setups which make consumers feel like being there. In the same way as professional hotel still photography is done, an eyeNAV360 shoot is all in the preparation and timing.</p><p>There's no Fuss & No extra lighting, we carefully plan the shots with our clients and make sure they feature their brand standard setups. We use natural ambient light and avoid harsh daytime sun, executing most of our shoots during at early mornings and early evenings.</p><p>Care is taken to ensure our scheduled photo shoots bring minimal challenges to your operations and no effect on guest experience.</p>
+                    </div>
+                  </div>
+                </div>
+              
+                <div id="Facebook 360 Posts" class="grid md:flex even:flex-row-reverse  gap-10 pt-20">
+                  <div class="basis-1/2">
+                    <div>
+                        <div class="w-full  aspect-[3/2] rounded-md  animated overflow-hidden">
+                            <img class="h-full w-full  object-cover" class="" src="https://www.ciobulletin.com/assets/home_image/ciobulletin-upload-a-new-360-degree-cover-photo-on-facebook-using-facebook-app.jpg">
+                          </div>
+                      </div>
+                    
+                  </div>
+                  <div class="basis-1/2">
+                    <h2 class=" text-4xl md:text-5xl font-extrabold mb-10 text-center md:text-left">
+                      Facebook 360 Posts
+                    </h2>
+
+                    <div class="font-text text-lg  grid gap-5 text-md  leading-relaxed text-center md:text-left">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                  </div>
+                </div>
+              
+                <div id="QR360 Codes for Print" class="grid md:flex even:flex-row-reverse  gap-10 pt-20">
+                  <div class="basis-1/2">
+                    <div>
+                        <div class="w-full  aspect-[3/2] rounded-md  animated overflow-hidden">
+                            <img class="h-full w-full  object-cover" class="" src="https://s3-eu-west-2.amazonaws.com/techtrail-s3/2023/11/3D-Printed-QR-Codes.webp">
+                          </div>
+                      </div>
+                    
+                  </div>
+                  <div class="basis-1/2">
+                    <h2 class=" text-4xl md:text-5xl font-extrabold mb-10 text-center md:text-left">
+                      QR360 Codes for Print
+                    </h2>
+
+                    <div class="font-text text-lg  grid gap-5 text-md  leading-relaxed text-center md:text-left">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                  </div>
+                </div>
+              
+                <div id="360 Tour Hosting Service" class="grid md:flex even:flex-row-reverse  gap-10 pt-20">
+                  <div class="basis-1/2">
+                    <div>
+                        <div class="w-full  aspect-[3/2] rounded-md  animated overflow-hidden">
+                            <img class="h-full w-full  object-cover" class="" src="data:image/jpeg;base64,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">
+                          </div>
+                      </div>
+                    
+                  </div>
+                  <div class="basis-1/2">
+                    <h2 class=" text-4xl md:text-5xl font-extrabold mb-10 text-center md:text-left">
+                      360 Tour Hosting Service
+                    </h2>
+
+                    <div class="font-text text-lg  grid gap-5 text-md  leading-relaxed text-center md:text-left">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                     </div>
                   </div>
                 </div>
@@ -370,16 +472,23 @@
       </div>
     </div>
 
-    <div class="flex flex-col md:flex-row justify-between items-center gap-7 py-5 border-t border-t-gray/20 mt-5">
-      <div class="flex gap-5 items-center">
+    <div class="flex flex-col md:flex-row justify-between md:items-center gap-7 py-5 border-t border-t-gray/20 mt-5">
+      <div class="md:flex gap-5 items-center">
         <p class="text-2xl font-bold text-purple">Follow Us On</p>
         <ul class="text-lg flex gap-5">
-          <li>Facebook</li>
-          <li>Instagram</li>
-          <li>Youtube</li>
+          <li>
+            <a href="https://www.facebook.com/eyenav360/" target="_blank">
+              Facebook</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/eye.nav/" target="_blank">Instagram</a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/user/eyenav" target="_blank">Youtube</a>
+          </li>
         </ul>
       </div>
-      <div class="text-gray-500">
+      <div class="text-black">
         All rights reserved | eyeNAV 360 MULTIMEDIA | 2024
       </div>
     </div>

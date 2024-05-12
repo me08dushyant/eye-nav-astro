@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Astro description">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="generator" content="Astro v2.5.6">
+    <title>Welcome to </title>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/_astro/404.a6216928.css" /></head>
+  <body>
+    <div class="flex flex-col min-h-screen">
+      
+  <div x-data="{ open: false }" @resize.window.debounce.100="width = window.innerWidth;  open =  width < 0 ">
+  <div class=" relative w-full z-20 min-h-[400px] [400px]">
+    <div class="backdrop-blur-2xl bg-white/10">
+      <div class="w-full max-w-[1600px] px-[5vw] py-5 mx-auto text-white">
+        <div class="w-full flex justify-between text-lg items-center">
+          <a href="/">
+            <img class="w-[164px]" src="/images/eye-nav-logo.png" alt=""></a>
+          <ul class="hidden md:flex items-center gap-10 font-text">
+            <li class="user last:border p-3 last:border-1 rounded">
+              <a href="/clients-projects">Clients Portfolio</a>
+            </li>
+            <li class="user last:border p-3 last:border-1 rounded">
+              <div x-data="{ open: false }" @click.away="open = false" class="relative font-text text-lg">
+  <button @click="open = !open" class="inline-flex justify-center items-center px-4 py-2 leading-6 font-medium rounded-md font-text text-white transition ease-in-out duration-150">
+    What We Offer
+    <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414zM10 4a1 1 0 011 1v6a1 1 0 01-2 0V5a1 1 0 011-1z" clip-rule="evenodd"></path>
+    </svg>
+  </button>
+
+  <div x-show="open" x-transition:enter="transition ease-out duration-200 transform" x-transition:enter-start="opacity-0 translate-y-[-10%]" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-150 transform" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-[-10%]" class="unset md:absolute w-48 origin-top-right right-0 mt-2 rounded-md bg-purple focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+    <div class="" role="none">
+      <a href="/services/production-services" class="block px-4 py-2 font-text text-center hover:bg-gray-100/10" role="menuitem" tabindex="-1" id="menu-item-0">
+            Production Services
+          </a><a href="/services/marketing-installations" class="block px-4 py-2 font-text text-center hover:bg-gray-100/10" role="menuitem" tabindex="-1" id="menu-item-0">
+            Marketing Installations
+          </a><a href="/services/sales-team-support" class="block px-4 py-2 font-text text-center hover:bg-gray-100/10" role="menuitem" tabindex="-1" id="menu-item-0">
+            Sales Team Support
+          </a><a href="/services/birdeye-golf-interactive" class="block px-4 py-2 font-text text-center hover:bg-gray-100/10" role="menuitem" tabindex="-1" id="menu-item-0">
+            Birdeye Golf Interactive
+          </a><a href="/services/express350" class="block px-4 py-2 font-text text-center hover:bg-gray-100/10" role="menuitem" tabindex="-1" id="menu-item-0">
+            Express350
+          </a>
+    </div>
+  </div>
+</div>
+            </li>
+            <li class="user last:border p-3 last:border-1 rounded">
+              <a href="/concept">Concept & History</a>
+            </li>
+
+            <li class="user last:border p-3 last:border-1 rounded">
+              <a href="/request-qoute">Contact Request Quote</a>
+            </li>
+          </ul>
+
+          <div class="relative md:hidden">
+            <button x-on:click="open = ! open">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-Width="1.5" stroke="currentColor" class="w-8 h-8 block md:hidden">
+                <path stroke-Linecap="round" stroke-Linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+              </svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class=" w-full overflow-hidden flex justify-center items-center  absolute top-0 -z-10 [400px]">
+          
+    <iframe data-hk="0-0" class="h-full w-full min-h-[400px] " src="/header/sub/index.html">VR HEader</iframe>
+    <h1 class="title absolute text-white font-bold text-5xl pt-12">
+      Resorts
+    </h1>
+  
+        </div>
+  </div>
+  <div x-show="open" class="fixed top-0 left-0 flex flex-col w-screen h-screen max-w-[1600px] px-[5vw] py-5 mx-auto bg-purple text-white z-20">
+    <div class="flex justify-between text-sm items-center">
+      <a href="/">
+        <img class="w-[164px]" src="/images/eye-nav-logo.png" alt="">
+      </a>
+
+      <div>
+        <button x-on:click="open = ! open">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-Width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-Linecap="round" stroke-Linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="grow flex items-center justify-center">
+      <ul class="flex flex-col sm:flex-row sm:flex-wrap items-center gap-1 font-text text-lg">
+        <li class="user last:border p-3 last:border-1 rounded">
+          <a href="/clients-projects">Clients Portfolio</a>
+        </li>
+        <li class="user last:border p-3 last:border-1 rounded">
+          <div x-data="{ open: false }" @click.away="open = false" class="relative font-text text-lg">
+  <button @click="open = !open" class="inline-flex justify-center items-center px-4 py-2 leading-6 font-medium rounded-md font-text text-white transition ease-in-out duration-150">
+    What We Offer
+    <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414zM10 4a1 1 0 011 1v6a1 1 0 01-2 0V5a1 1 0 011-1z" clip-rule="evenodd"></path>
+    </svg>
+  </button>
+
+  <div x-show="open" x-transition:enter="transition ease-out duration-200 transform" x-transition:enter-start="opacity-0 translate-y-[-10%]" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-150 transform" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-[-10%]" class="unset md:absolute w-48 origin-top-right right-0 mt-2 rounded-md bg-purple focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+    <div class="" role="none">
+      <a href="/services/production-services" class="block px-4 py-2 font-text text-center hover:bg-gray-100/10" role="menuitem" tabindex="-1" id="menu-item-0">
+            Production Services
+          </a><a href="/services/marketing-installations" class="block px-4 py-2 font-text text-center hover:bg-gray-100/10" role="menuitem" tabindex="-1" id="menu-item-0">
+            Marketing Installations
+          </a><a href="/services/sales-team-support" class="block px-4 py-2 font-text text-center hover:bg-gray-100/10" role="menuitem" tabindex="-1" id="menu-item-0">
+            Sales Team Support
+          </a><a href="/services/birdeye-golf-interactive" class="block px-4 py-2 font-text text-center hover:bg-gray-100/10" role="menuitem" tabindex="-1" id="menu-item-0">
+            Birdeye Golf Interactive
+          </a><a href="/services/express350" class="block px-4 py-2 font-text text-center hover:bg-gray-100/10" role="menuitem" tabindex="-1" id="menu-item-0">
+            Express350
+          </a>
+    </div>
+  </div>
+</div>
+        </li>
+        <li class="user last:border p-3 last:border-1 rounded">
+          <a href="/concept">History</a>
+        </li>
+
+        <li class="user last:border p-3 last:border-1 rounded">
+          <a href="/request-qoute">Contact Request Quote</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <main class="grow bg-purple/10">
+    <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();;(()=>{var l;{let c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;let[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;let s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(let r of n){let i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of s){let i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}let a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){let s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{let n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(let d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}})();</script><astro-island uid="EPzsn" data-solid-render-id="s0" component-url="/_astro/MoreProjects.73a5c701.js" component-export="default" renderer-url="/_astro/client.30fe0f1d.js" props="{&quot;projectData&quot;:[1,&quot;[[0,{\&quot;title\&quot;:[0,\&quot;Anantara Riverside Bangkok Resort\&quot;],\&quot;bgImage\&quot;:[0,\&quot;/images/projects/Anantara_Riverside.jpg\&quot;],\&quot;projectLink\&quot;:[0,\&quot;https://www.anantara.com/en/riverside-bangkok/virtual-tour\&quot;],\&quot;grpName\&quot;:[0,\&quot;Resorts\&quot;],\&quot;cat\&quot;:[0,\&quot;resort\&quot;]}],[0,{\&quot;title\&quot;:[0,\&quot;Aurora Ozone Hotel\&quot;],\&quot;bgImage\&quot;:[0,\&quot;/images/projects/Aurora_Ozone.jpg\&quot;],\&quot;projectLink\&quot;:[0,\&quot;https://eyenavaustralia.com/aurora_ozone/\&quot;],\&quot;grpName\&quot;:[0,\&quot;Resorts\&quot;],\&quot;cat\&quot;:[0,\&quot;resort\&quot;]}],[0,{\&quot;title\&quot;:[0,\&quot;Bandara Suites Silom Bangkok\&quot;],\&quot;bgImage\&quot;:[0,\&quot;/images/projects/Bandara_Silom.jpg\&quot;],\&quot;projectLink\&quot;:[0,\&quot;https://www.eyenavthailand.com/bandara_bangkok/\&quot;],\&quot;grpName\&quot;:[0,\&quot;Resorts\&quot;],\&quot;cat\&quot;:[0,\&quot;resort\&quot;]}],[0,{\&quot;title\&quot;:[0,\&quot;Crowne Plaza Vientiane \&quot;],\&quot;bgImage\&quot;:[0,\&quot;/images/projects/Crowne_Plaza_Vientiane.jpg\&quot;],\&quot;projectLink\&quot;:[0,\&quot;https://www.eyenavasia.com/laos/cp_vientiane/tour/index1.html\&quot;],\&quot;grpName\&quot;:[0,\&quot;Resorts\&quot;],\&quot;cat\&quot;:[0,\&quot;resort\&quot;]}],[0,{\&quot;title\&quot;:[0,\&quot;Diamond Cliff Resort &amp; Spa Phuket\&quot;],\&quot;bgImage\&quot;:[0,\&quot;/images/projects/Diamond_Cliff_Resort.jpg\&quot;],\&quot;projectLink\&quot;:[0,\&quot;https://eyenavphuket.com/diamond_cliff/\&quot;],\&quot;grpName\&quot;:[0,\&quot;Resorts\&quot;],\&quot;cat\&quot;:[0,\&quot;resort\&quot;]}],[0,{\&quot;title\&quot;:[0,\&quot;Dusit Krabi Beach Resort\&quot;],\&quot;bgImage\&quot;:[0,\&quot;/images/projects/Dusit_Krabi.jpg\&quot;],\&quot;projectLink\&quot;:[0,\&quot;https://eyenavthailand.com/dusit_krabi/\&quot;],\&quot;grpName\&quot;:[0,\&quot;Resorts\&quot;],\&quot;cat\&quot;:[0,\&quot;resort\&quot;]}],[0,{\&quot;title\&quot;:[0,\&quot;Holiday Inn Vana Nava Hua Hin\&quot;],\&quot;bgImage\&quot;:[0,\&quot;/images/projects/Holiday_Inn_Vana_Nava.jpg\&quot;],\&quot;projectLink\&quot;:[0,\&quot;https://eyenavthailand.com/hir_vananava/\&quot;],\&quot;grpName\&quot;:[0,\&quot;Resorts\&quot;],\&quot;cat\&quot;:[0,\&quot;resort\&quot;]}],[0,{\&quot;title\&quot;:[0,\&quot;InterContinental Hanoi Landmark 72\&quot;],\&quot;bgImage\&quot;:[0,\&quot;/images/projects/InterContinental_Hanoi.jpg\&quot;],\&quot;projectLink\&quot;:[0,\&quot;https://eyenavasia.com/vietnam/ic_landmark72/embed.html\&quot;],\&quot;grpName\&quot;:[0,\&quot;Resorts\&quot;],\&quot;cat\&quot;:[0,\&quot;resort\&quot;]}],[0,{\&quot;title\&quot;:[0,\&quot;JW Marriott Phuket Resort &amp; Spa\&quot;],\&quot;bgImage\&quot;:[0,\&quot;/images/projects/Villa-Carmina-Italy.jpg\&quot;],\&quot;projectLink\&quot;:[0,\&quot;https://www.eyenavphuket.com/jw_phuket/\&quot;],\&quot;grpName\&quot;:[0,\&quot;Resorts\&quot;],\&quot;cat\&quot;:[0,\&quot;resort\&quot;]}],[0,{\&quot;title\&quot;:[0,\&quot;Krabi Resort\&quot;],\&quot;bgImage\&quot;:[0,\&quot;/images/projects/Dusit_Krabi.jpg\&quot;],\&quot;projectLink\&quot;:[0,\&quot;https://eyenavthailand.com/krabi_resort/\&quot;],\&quot;grpName\&quot;:[0,\&quot;Resorts\&quot;],\&quot;cat\&quot;:[0,\&quot;resort\&quot;]}],[0,{\&quot;title\&quot;:[0,\&quot;Le Meridien Phuket Beach Resort\&quot;],\&quot;bgImage\&quot;:[0,\&quot;/images/projects/LeMeridien_Phuket.jpg\&quot;],\&quot;projectLink\&quot;:[0,\&quot;https://www.eyenavphuket.com/le_meridien/tour/index1.htm\&quot;],\&quot;grpName\&quot;:[0,\&quot;Resorts\&quot;],\&quot;cat\&quot;:[0,\&quot;resort\&quot;]}],[0,{\&quot;title\&quot;:[0,\&quot;Marriott Bangkok Sukhumvit\&quot;],\&quot;bgImage\&quot;:[0,\&quot;/images/projects/Marriott_Sukhumvit.jpg\&quot;],\&quot;projectLink\&quot;:[0,\&quot;https://eyenavthailand.com/marriott_sukhumvit/\&quot;],\&quot;grpName\&quot;:[0,\&quot;Resorts\&quot;],\&quot;cat\&quot;:[0,\&quot;resort\&quot;]}],[0,{\&quot;title\&quot;:[0,\&quot;Mount Lofty House\&quot;],\&quot;bgImage\&quot;:[0,\&quot;/images/projects/Mt_Lofty_House.jpg\&quot;],\&quot;projectLink\&quot;:[0,\&quot;https://eyenavaustralia.com/mtlofty_house/\&quot;],\&quot;grpName\&quot;:[0,\&quot;Resorts\&quot;],\&quot;cat\&quot;:[0,\&quot;resort\&quot;]}],[0,{\&quot;title\&quot;:[0,\&quot;InterContinental Phu Quoc Long Beach Resort\&quot;],\&quot;bgImage\&quot;:[0,\&quot;/images/projects/Phu_Quoc_InterContinental.jpg\&quot;],\&quot;projectLink\&quot;:[0,\&quot;https://www.eyenavasia.com/vietnam/ic_phuquoc/embed.htm\&quot;],\&quot;grpName\&quot;:[0,\&quot;Resorts\&quot;],\&quot;cat\&quot;:[0,\&quot;resort\&quot;]}],[0,{\&quot;title\&quot;:[0,\&quot;Ramada Resort By Wyndham Khao Lak\&quot;],\&quot;bgImage\&quot;:[0,\&quot;/images/projects/Ramada_Khao_Lak.jpg\&quot;],\&quot;projectLink\&quot;:[0,\&quot;https://eyenavthailand.com/ramada_khaolak/\&quot;],\&quot;grpName\&quot;:[0,\&quot;Resorts\&quot;],\&quot;cat\&quot;:[0,\&quot;resort\&quot;]}],[0,{\&quot;title\&quot;:[0,\&quot;The Reef House\&quot;],\&quot;bgImage\&quot;:[0,\&quot;/images/projects/Reef_House.jpg\&quot;],\&quot;projectLink\&quot;:[0,\&quot;https://eyenavaustralia.com/reef_house/\&quot;],\&quot;grpName\&quot;:[0,\&quot;Resorts\&quot;],\&quot;cat\&quot;:[0,\&quot;resort\&quot;]}],[0,{\&quot;title\&quot;:[0,\&quot;Thavorn Beach Village Resort\&quot;],\&quot;bgImage\&quot;:[0,\&quot;/images/projects/Thavorn_Beach.jpg\&quot;],\&quot;projectLink\&quot;:[0,\&quot;https://eyenavphuket.com/thavorn_beach/\&quot;],\&quot;grpName\&quot;:[0,\&quot;Resorts\&quot;],\&quot;cat\&quot;:[0,\&quot;resort\&quot;]}],[0,{\&quot;title\&quot;:[0,\&quot;Villa Carmina Italy\&quot;],\&quot;bgImage\&quot;:[0,\&quot;/images/projects/Villa_Carmina.jpg\&quot;],\&quot;projectLink\&quot;:[0,\&quot;https://eyenav.com/projects/villa_carmina/aerial_view.htm\&quot;],\&quot;grpName\&quot;:[0,\&quot;Resorts\&quot;],\&quot;cat\&quot;:[0,\&quot;resort\&quot;]}]]&quot;],&quot;showall&quot;:[0,true]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;MoreProjects&quot;,&quot;value&quot;:true}" await-children=""><div data-hk="s00-0" class="mb-20"><div class="text-white "><div class="max-w-[1400px] px-[5vw] mx-auto pt-10 "><div class="grid md:grid-rows-2 grid-cols-1 md:grid-cols-3 gap-7"><div data-hk="s00-1" class=" aspect-video w-full h-full "><div data-hk="s00-2-0" class="grid bg-gray-100/50 rounded bg-cover bg-center w-full h-full animated " style="background-image: url(/images/projects/Anantara_Riverside.jpg)"><div class="col-span-full row-span-full flex justify-start items-end p-3"><div class="flex items-center gap-5"><div class="bg-purple p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"></path></svg></div><h6 class="font-inter drop-shadow-lg">Anantara Riverside Bangkok Resort</h6></div></div><div class="hidden md:block col-span-full row-span-full z-10"></div><a class="block md:hidden col-span-full row-span-full z-10" href="https://www.anantara.com/en/riverside-bangkok/virtual-tour" target="_blank"></a></div></div><div data-hk="s00-3" class=" aspect-video w-full h-full "><div data-hk="s00-4-0" class="grid bg-gray-100/50 rounded bg-cover bg-center w-full h-full animated " style="background-image: url(/images/projects/Aurora_Ozone.jpg)"><div class="col-span-full row-span-full flex justify-start items-end p-3"><div class="flex items-center gap-5"><div class="bg-purple p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"></path></svg></div><h6 class="font-inter drop-shadow-lg">Aurora Ozone Hotel</h6></div></div><div class="hidden md:block col-span-full row-span-full z-10"></div><a class="block md:hidden col-span-full row-span-full z-10" href="https://eyenavaustralia.com/aurora_ozone/" target="_blank"></a></div></div><div data-hk="s00-5" class=" aspect-video w-full h-full "><div data-hk="s00-6-0" class="grid bg-gray-100/50 rounded bg-cover bg-center w-full h-full animated " style="background-image: url(/images/projects/Bandara_Silom.jpg)"><div class="col-span-full row-span-full flex justify-start items-end p-3"><div class="flex items-center gap-5"><div class="bg-purple p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"></path></svg></div><h6 class="font-inter drop-shadow-lg">Bandara Suites Silom Bangkok</h6></div></div><div class="hidden md:block col-span-full row-span-full z-10"></div><a class="block md:hidden col-span-full row-span-full z-10" href="https://www.eyenavthailand.com/bandara_bangkok/" target="_blank"></a></div></div><div data-hk="s00-7" class=" aspect-video w-full h-full "><div data-hk="s00-8-0" class="grid bg-gray-100/50 rounded bg-cover bg-center w-full h-full animated " style="background-image: url(/images/projects/Crowne_Plaza_Vientiane.jpg)"><div class="col-span-full row-span-full flex justify-start items-end p-3"><div class="flex items-center gap-5"><div class="bg-purple p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"></path></svg></div><h6 class="font-inter drop-shadow-lg">Crowne Plaza Vientiane </h6></div></div><div class="hidden md:block col-span-full row-span-full z-10"></div><a class="block md:hidden col-span-full row-span-full z-10" href="https://www.eyenavasia.com/laos/cp_vientiane/tour/index1.html" target="_blank"></a></div></div><div data-hk="s00-9" class=" aspect-video w-full h-full "><div data-hk="s00-10-0" class="grid bg-gray-100/50 rounded bg-cover bg-center w-full h-full animated " style="background-image: url(/images/projects/Diamond_Cliff_Resort.jpg)"><div class="col-span-full row-span-full flex justify-start items-end p-3"><div class="flex items-center gap-5"><div class="bg-purple p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"></path></svg></div><h6 class="font-inter drop-shadow-lg">Diamond Cliff Resort &amp; Spa Phuket</h6></div></div><div class="hidden md:block col-span-full row-span-full z-10"></div><a class="block md:hidden col-span-full row-span-full z-10" href="https://eyenavphuket.com/diamond_cliff/" target="_blank"></a></div></div><div data-hk="s00-11" class=" aspect-video w-full h-full "><div data-hk="s00-12-0" class="grid bg-gray-100/50 rounded bg-cover bg-center w-full h-full animated " style="background-image: url(/images/projects/Dusit_Krabi.jpg)"><div class="col-span-full row-span-full flex justify-start items-end p-3"><div class="flex items-center gap-5"><div class="bg-purple p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"></path></svg></div><h6 class="font-inter drop-shadow-lg">Dusit Krabi Beach Resort</h6></div></div><div class="hidden md:block col-span-full row-span-full z-10"></div><a class="block md:hidden col-span-full row-span-full z-10" href="https://eyenavthailand.com/dusit_krabi/" target="_blank"></a></div></div><div data-hk="s00-13" class=" aspect-video w-full h-full "><div data-hk="s00-14-0" class="grid bg-gray-100/50 rounded bg-cover bg-center w-full h-full animated " style="background-image: url(/images/projects/Holiday_Inn_Vana_Nava.jpg)"><div class="col-span-full row-span-full flex justify-start items-end p-3"><div class="flex items-center gap-5"><div class="bg-purple p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"></path></svg></div><h6 class="font-inter drop-shadow-lg">Holiday Inn Vana Nava Hua Hin</h6></div></div><div class="hidden md:block col-span-full row-span-full z-10"></div><a class="block md:hidden col-span-full row-span-full z-10" href="https://eyenavthailand.com/hir_vananava/" target="_blank"></a></div></div><div data-hk="s00-15" class=" aspect-video w-full h-full "><div data-hk="s00-16-0" class="grid bg-gray-100/50 rounded bg-cover bg-center w-full h-full animated " style="background-image: url(/images/projects/InterContinental_Hanoi.jpg)"><div class="col-span-full row-span-full flex justify-start items-end p-3"><div class="flex items-center gap-5"><div class="bg-purple p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"></path></svg></div><h6 class="font-inter drop-shadow-lg">InterContinental Hanoi Landmark 72</h6></div></div><div class="hidden md:block col-span-full row-span-full z-10"></div><a class="block md:hidden col-span-full row-span-full z-10" href="https://eyenavasia.com/vietnam/ic_landmark72/embed.html" target="_blank"></a></div></div><div data-hk="s00-17" class=" aspect-video w-full h-full "><div data-hk="s00-18-0" class="grid bg-gray-100/50 rounded bg-cover bg-center w-full h-full animated " style="background-image: url(/images/projects/Villa-Carmina-Italy.jpg)"><div class="col-span-full row-span-full flex justify-start items-end p-3"><div class="flex items-center gap-5"><div class="bg-purple p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"></path></svg></div><h6 class="font-inter drop-shadow-lg">JW Marriott Phuket Resort &amp; Spa</h6></div></div><div class="hidden md:block col-span-full row-span-full z-10"></div><a class="block md:hidden col-span-full row-span-full z-10" href="https://www.eyenavphuket.com/jw_phuket/" target="_blank"></a></div></div><div data-hk="s00-19" class=" aspect-video w-full h-full "><div data-hk="s00-20-0" class="grid bg-gray-100/50 rounded bg-cover bg-center w-full h-full animated " style="background-image: url(/images/projects/Dusit_Krabi.jpg)"><div class="col-span-full row-span-full flex justify-start items-end p-3"><div class="flex items-center gap-5"><div class="bg-purple p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"></path></svg></div><h6 class="font-inter drop-shadow-lg">Krabi Resort</h6></div></div><div class="hidden md:block col-span-full row-span-full z-10"></div><a class="block md:hidden col-span-full row-span-full z-10" href="https://eyenavthailand.com/krabi_resort/" target="_blank"></a></div></div><div data-hk="s00-21" class=" aspect-video w-full h-full "><div data-hk="s00-22-0" class="grid bg-gray-100/50 rounded bg-cover bg-center w-full h-full animated " style="background-image: url(/images/projects/LeMeridien_Phuket.jpg)"><div class="col-span-full row-span-full flex justify-start items-end p-3"><div class="flex items-center gap-5"><div class="bg-purple p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"></path></svg></div><h6 class="font-inter drop-shadow-lg">Le Meridien Phuket Beach Resort</h6></div></div><div class="hidden md:block col-span-full row-span-full z-10"></div><a class="block md:hidden col-span-full row-span-full z-10" href="https://www.eyenavphuket.com/le_meridien/tour/index1.htm" target="_blank"></a></div></div><div data-hk="s00-23" class=" aspect-video w-full h-full "><div data-hk="s00-24-0" class="grid bg-gray-100/50 rounded bg-cover bg-center w-full h-full animated " style="background-image: url(/images/projects/Marriott_Sukhumvit.jpg)"><div class="col-span-full row-span-full flex justify-start items-end p-3"><div class="flex items-center gap-5"><div class="bg-purple p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"></path></svg></div><h6 class="font-inter drop-shadow-lg">Marriott Bangkok Sukhumvit</h6></div></div><div class="hidden md:block col-span-full row-span-full z-10"></div><a class="block md:hidden col-span-full row-span-full z-10" href="https://eyenavthailand.com/marriott_sukhumvit/" target="_blank"></a></div></div><div data-hk="s00-25" class=" aspect-video w-full h-full "><div data-hk="s00-26-0" class="grid bg-gray-100/50 rounded bg-cover bg-center w-full h-full animated " style="background-image: url(/images/projects/Mt_Lofty_House.jpg)"><div class="col-span-full row-span-full flex justify-start items-end p-3"><div class="flex items-center gap-5"><div class="bg-purple p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"></path></svg></div><h6 class="font-inter drop-shadow-lg">Mount Lofty House</h6></div></div><div class="hidden md:block col-span-full row-span-full z-10"></div><a class="block md:hidden col-span-full row-span-full z-10" href="https://eyenavaustralia.com/mtlofty_house/" target="_blank"></a></div></div><div data-hk="s00-27" class=" aspect-video w-full h-full "><div data-hk="s00-28-0" class="grid bg-gray-100/50 rounded bg-cover bg-center w-full h-full animated " style="background-image: url(/images/projects/Phu_Quoc_InterContinental.jpg)"><div class="col-span-full row-span-full flex justify-start items-end p-3"><div class="flex items-center gap-5"><div class="bg-purple p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"></path></svg></div><h6 class="font-inter drop-shadow-lg">InterContinental Phu Quoc Long Beach Resort</h6></div></div><div class="hidden md:block col-span-full row-span-full z-10"></div><a class="block md:hidden col-span-full row-span-full z-10" href="https://www.eyenavasia.com/vietnam/ic_phuquoc/embed.htm" target="_blank"></a></div></div><div data-hk="s00-29" class=" aspect-video w-full h-full "><div data-hk="s00-30-0" class="grid bg-gray-100/50 rounded bg-cover bg-center w-full h-full animated " style="background-image: url(/images/projects/Ramada_Khao_Lak.jpg)"><div class="col-span-full row-span-full flex justify-start items-end p-3"><div class="flex items-center gap-5"><div class="bg-purple p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"></path></svg></div><h6 class="font-inter drop-shadow-lg">Ramada Resort By Wyndham Khao Lak</h6></div></div><div class="hidden md:block col-span-full row-span-full z-10"></div><a class="block md:hidden col-span-full row-span-full z-10" href="https://eyenavthailand.com/ramada_khaolak/" target="_blank"></a></div></div><div data-hk="s00-31" class=" aspect-video w-full h-full "><div data-hk="s00-32-0" class="grid bg-gray-100/50 rounded bg-cover bg-center w-full h-full animated " style="background-image: url(/images/projects/Reef_House.jpg)"><div class="col-span-full row-span-full flex justify-start items-end p-3"><div class="flex items-center gap-5"><div class="bg-purple p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"></path></svg></div><h6 class="font-inter drop-shadow-lg">The Reef House</h6></div></div><div class="hidden md:block col-span-full row-span-full z-10"></div><a class="block md:hidden col-span-full row-span-full z-10" href="https://eyenavaustralia.com/reef_house/" target="_blank"></a></div></div><div data-hk="s00-33" class=" aspect-video w-full h-full "><div data-hk="s00-34-0" class="grid bg-gray-100/50 rounded bg-cover bg-center w-full h-full animated " style="background-image: url(/images/projects/Thavorn_Beach.jpg)"><div class="col-span-full row-span-full flex justify-start items-end p-3"><div class="flex items-center gap-5"><div class="bg-purple p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"></path></svg></div><h6 class="font-inter drop-shadow-lg">Thavorn Beach Village Resort</h6></div></div><div class="hidden md:block col-span-full row-span-full z-10"></div><a class="block md:hidden col-span-full row-span-full z-10" href="https://eyenavphuket.com/thavorn_beach/" target="_blank"></a></div></div><div data-hk="s00-35" class=" aspect-video w-full h-full "><div data-hk="s00-36-0" class="grid bg-gray-100/50 rounded bg-cover bg-center w-full h-full animated " style="background-image: url(/images/projects/Villa_Carmina.jpg)"><div class="col-span-full row-span-full flex justify-start items-end p-3"><div class="flex items-center gap-5"><div class="bg-purple p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"></path></svg></div><h6 class="font-inter drop-shadow-lg">Villa Carmina Italy</h6></div></div><div class="hidden md:block col-span-full row-span-full z-10"></div><a class="block md:hidden col-span-full row-span-full z-10" href="https://eyenav.com/projects/villa_carmina/aerial_view.htm" target="_blank"></a></div></div></div></div></div><div class="flex justify-center items-center"></div></div><div data-hk="s00-37" class="mb-20 hidden"><div class="text-white "><div class="max-w-[1400px] px-[5vw] mx-auto pt-10 "><div class="grid md:grid-rows-2 grid-cols-1 md:grid-cols-3 gap-7"><div data-hk="s00-38" class=" aspect-video w-full h-full "><div data-hk="s00-39-0" class="grid bg-gray-100/50 rounded bg-cover bg-center w-full h-full animated " style="background-image: url(/images/projects/Anantara_Riverside.jpg)"><div class="col-span-full row-span-full flex justify-start items-end p-3"><div class="flex items-center gap-5"><div class="bg-purple p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"></path></svg></div><h6 class="font-inter drop-shadow-lg">Anantara Riverside Bangkok Resort</h6></div></div><div class="hidden md:block col-span-full row-span-full z-10"></div><a class="block md:hidden col-span-full row-span-full z-10" href="https://www.anantara.com/en/riverside-bangkok/virtual-tour" target="_blank"></a></div></div><div data-hk="s00-40" class=" aspect-video w-full h-full "><div data-hk="s00-41-0" class="grid bg-gray-100/50 rounded bg-cover bg-center w-full h-full animated " style="background-image: url(/images/projects/Aurora_Ozone.jpg)"><div class="col-span-full row-span-full flex justify-start items-end p-3"><div class="flex items-center gap-5"><div class="bg-purple p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"></path></svg></div><h6 class="font-inter drop-shadow-lg">Aurora Ozone Hotel</h6></div></div><div class="hidden md:block col-span-full row-span-full z-10"></div><a class="block md:hidden col-span-full row-span-full z-10" href="https://eyenavaustralia.com/aurora_ozone/" target="_blank"></a></div></div><div data-hk="s00-42" class=" aspect-video w-full h-full "><div data-hk="s00-43-0" class="grid bg-gray-100/50 rounded bg-cover bg-center w-full h-full animated " style="background-image: url(/images/projects/Bandara_Silom.jpg)"><div class="col-span-full row-span-full flex justify-start items-end p-3"><div class="flex items-center gap-5"><div class="bg-purple p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"></path></svg></div><h6 class="font-inter drop-shadow-lg">Bandara Suites Silom Bangkok</h6></div></div><div class="hidden md:block col-span-full row-span-full z-10"></div><a class="block md:hidden col-span-full row-span-full z-10" href="https://www.eyenavthailand.com/bandara_bangkok/" target="_blank"></a></div></div><div data-hk="s00-44" class=" aspect-video w-full h-full "><div data-hk="s00-45-0" class="grid bg-gray-100/50 rounded bg-cover bg-center w-full h-full animated " style="background-image: url(/images/projects/Crowne_Plaza_Vientiane.jpg)"><div class="col-span-full row-span-full flex justify-start items-end p-3"><div class="flex items-center gap-5"><div class="bg-purple p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"></path></svg></div><h6 class="font-inter drop-shadow-lg">Crowne Plaza Vientiane </h6></div></div><div class="hidden md:block col-span-full row-span-full z-10"></div><a class="block md:hidden col-span-full row-span-full z-10" href="https://www.eyenavasia.com/laos/cp_vientiane/tour/index1.html" target="_blank"></a></div></div><div data-hk="s00-46" class=" aspect-video w-full h-full "><div data-hk="s00-47-0" class="grid bg-gray-100/50 rounded bg-cover bg-center w-full h-full animated " style="background-image: url(/images/projects/Diamond_Cliff_Resort.jpg)"><div class="col-span-full row-span-full flex justify-start items-end p-3"><div class="flex items-center gap-5"><div class="bg-purple p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"></path></svg></div><h6 class="font-inter drop-shadow-lg">Diamond Cliff Resort &amp; Spa Phuket</h6></div></div><div class="hidden md:block col-span-full row-span-full z-10"></div><a class="block md:hidden col-span-full row-span-full z-10" href="https://eyenavphuket.com/diamond_cliff/" target="_blank"></a></div></div><div data-hk="s00-48" class=" aspect-video w-full h-full "><div data-hk="s00-49-0" class="grid bg-gray-100/50 rounded bg-cover bg-center w-full h-full animated " style="background-image: url(/images/projects/Dusit_Krabi.jpg)"><div class="col-span-full row-span-full flex justify-start items-end p-3"><div class="flex items-center gap-5"><div class="bg-purple p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"></path></svg></div><h6 class="font-inter drop-shadow-lg">Dusit Krabi Beach Resort</h6></div></div><div class="hidden md:block col-span-full row-span-full z-10"></div><a class="block md:hidden col-span-full row-span-full z-10" href="https://eyenavthailand.com/dusit_krabi/" target="_blank"></a></div></div></div></div></div><div class="flex justify-center items-center"><div data-hk="s00-50" class="px-8 py-3 font-text text-gray-800 mt-10 font-bold border border-gray-800 rounded">Load More</div></div></div></astro-island>
+  </main>
+  <div class="bg-violet-50/50 hidden">
+  <div class="max-w-[1400px] mx-auto px-[5vw] font-text text-sm">
+    <div class="pt-10 flex flex-wrap justify-between gap-10">
+      <div class="w-full md:w-[40%] flex flex-col gap-5">
+        <div>
+           
+          <div>
+            <a href="/">
+              <img class="w-[164px]" src="/images/eye-nav-logo.png" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <p class="text-gray-700 font-bold mb-2">Contact Details:</p>
+          <p class="text-gray-700">Email: sales@eyenav.com</p>
+
+          <script type="text/javascript">
+            window.onload = function () {
+              (function (d, script) {
+                script = d.createElement("script");
+                script.type = "text/javascript";
+                script.async = true;
+                script.src = "https://w.app/widget-v1/1U2vF6.js";
+                d.getElementsByTagName("head")[0].appendChild(script);
+              })(document);
+            };
+          </script>
+
+          <p class="text-gray-700">
+            WhatsApp Link: 
+            <a class="text-blue-500 font-semibold" href="https://w.app/eyeNAV360Birdeye">
+              +61 4489 375 782
+            </a>
+          </p>
+          <p class="text-gray-700">LINE ID: eyenav360</p>
+        </div>
+        <div>
+          <a href="https://w.app/eyeNAV360Birdeye">
+            <img class="w-32" src="/images/TomJanzow.png" alt="">
+          </a>
+        </div>
+        <div class="font-inter text-purple font-semibold">
+          <p>
+            <a href="https://goo.gl/maps/cqt1ryPWGake5ini8" target="_blank">
+              eyeNAV 360 Multimedia (Asia)
+            </a>
+          </p>
+          <p class="mt-2">
+             
+            <a href="https://goo.gl/maps/DFtR5jhw4s8gjZS18" target="_blank">
+              eyeNAV 360 Australia
+            </a>
+          </p>
+        </div>
+        <ul class="flex gap-5">
+          <li class="border-2 rounded-full p-2 bg-gray-50 hover:invert">
+            <img class="w-[15px]" src="/images/facebook.svg" alt="">
+          </li>
+          <li class="border-2 rounded-full p-2 bg-gray-50 hover:invert">
+            <img class="w-[15px]" src="/images/yt.svg" alt="">
+          </li>
+          <li class="border-2 rounded-full p-2 bg-gray-50 hover:invert">
+            <img class="w-[15px]" src="/images/instagram.svg" alt="">
+          </li>
+        </ul>
+      </div>
+      <div class="w-full md:w-[50%] flex justify-end gap-5 md:gap-10 font-text font-semibold text-purple">
+        <div class="flex flex-col gap-7 font-semibold text-purple">
+          <a href="/thai-promotion-page">
+            <img src="/images/thailand.jpg" alt="">
+          </a>
+          <p>Thai Promo Page</p>
+        </div>
+        <div class="flex flex-col gap-7">
+          <a href="https://birdeye.golf/mt_osmond" target="_blank">
+             
+            <img src="/images/golf.jpg" alt=""> 
+          </a>
+          <p>Proudly Affiliated with Birdeye Golf</p>
+        </div>
+      </div>
+    </div>
+    <div class="py-5 md:py-10"></div>
+    <div class="flex flex-col md:flex-row justify-between items-center gap-7 py-10 border-t border-t-gray/20">
+      <div class="text-gray-500">
+        All rights reserved | eyeNAV 360 MULTIMEDIA | 2023
+      </div>
+      <ul class="flex justify-center gap-5 text-purple font-semibold">
+        <li>Australian Business Number: 69965604985</li>
+        <li>หมายเลขประจำตัวผู้เสียภาษีบริษัทในประเทศไทย : 3930100135273</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="bg-violet-50/50 font-text">
+  <div class="max-w-[1400px] mx-auto px-[5vw] font-text text-sm mb-5 pt-10">
+    <div class="md:flex">
+      <div class="basis-2/3">
+        <div>
+          <a href="/">
+            <img class="w-[164px]" src="/images/eye-nav-logo.png" alt="">
+          </a>
+        </div>
+        <h4 class="text-2xl font-bold text-purple mt-5">
+          eyeNAV 360° Multimedia
+        </h4>
+        <p class="text-lg">
+          Please contact us directly with any questions or <a href="/request-qoute" class="text-orange">Request a Quote HERE</a>
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 mt-5 gap-5">
+          <div>
+            <p class="text-2xl font-bold text-purple">Email</p>
+            <ul class="text-lg pl-2">
+              <li>sales@eyenav.com</li>
+              <li>support@eyenav.com</li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-2xl font-bold text-purple">Call</p>
+            <ul class="text-lg pl-2">
+              <li>+66 62 605 1933</li>
+              <li>+61 448 375 782</li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="text-2xl font-bold text-purple">Connect</p>
+            <ul class="text-lg flex gap-5 pl-2">
+              <li>Linkedin</li>
+              <li>Google Listing</li>
+            </ul>
+          </div>
+
+          <div>
+            <img class="w-64" src="/images/Link-to-Google-Listing-(asia).jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="basis-1/3">
+        <p class="text-2xl font-bold text-purple mt-5 md:mt-0">Chat</p>
+        <ul class="text-lg pl-2">
+          <li>WhatsApp: +66 62 605 1933</li>
+          <li>LINE ID: eyenav360</li>
+        </ul>
+        <div class="flex flex-wrap w-64">
+          <div class="basis-1/2 p-2">
+            <img src="/images/WhattsApp QR.png" alt="">
+          </div>
+          <div class="basis-1/2 p-2">
+            <img src="/images/TOM - eyeNAV 360 LINE ID QR code.jpg" alt="">
+          </div>
+          <div class="p-2">
+            <img src="/images/Link-to-Google-Listing-(australia).jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row justify-between md:items-center gap-7 py-5 border-t border-t-gray/20 mt-5">
+      <div class="md:flex gap-5 items-center">
+        <p class="text-2xl font-bold text-purple">Follow Us On</p>
+        <ul class="text-lg flex gap-5">
+          <li>
+            <a href="https://www.facebook.com/eyenav360/" target="_blank">
+              Facebook</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/eye.nav/" target="_blank">Instagram</a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/user/eyenav" target="_blank">Youtube</a>
+          </li>
+        </ul>
+      </div>
+      <div class="text-black">
+        All rights reserved | eyeNAV 360 MULTIMEDIA | 2024
+      </div>
+    </div>
+  </div>
+</div>
+  <astro-island uid="ZOTb21" data-solid-render-id="s1" component-url="/_astro/Lightbox.82e62541.js" component-export="default" renderer-url="/_astro/client.30fe0f1d.js" props="{&quot;iframeURL&quot;:[0,&quot;https://eyenavthailand.com/samujana/villa12/&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;Lightbox&quot;,&quot;value&quot;:true}" await-children=""><div data-hk="s10-0" class="fixed top-0 left-0 w-screen h-screen backdrop-blur-lg backdrop-brightness-50 z-50  p-[5px] pb-[20px] md:p-[20px]    hidden items-start md:items-center justify-center"><div class="bg-purple w-full h-[80vh] md:h-full rounded-xl drop-shadow-2xl "><!--#--><iframe data-hk="s10-1" class="w-full h-full rounded-xl overflow-hidden" src=""></iframe><!--/--><slot><div class="absolute w-10 h-10 right-1/2 -mr-5 md:mr-0 -bottom-16 md:bottom-3 md:-top-3 md:-right-3 bg-purple rounded-full p-2 pointer-events-auto"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-Width="1.5" stroke="currentColor" class="w-6 h-6 text-white"><path stroke-Linecap="round" stroke-Linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg></div></slot></div></div></astro-island>
+
+    </div>
+  </body></html>

@@ -19,7 +19,7 @@ const FeaturedProjects = () => {
             </p>
             <div class="grow hidden md:flex justify-end">
               <a
-                href="/projects"
+                href="/projects/more"
                 class="bg-orange text-white font-text font-semibold px-5 py-5 rounded-md"
               >
                 See More Projects
@@ -85,7 +85,7 @@ const FeaturedProjects = () => {
             </div>
           </div>
           <div class="flex md:hidden justify-center mt-10">
-            <a href="/projects" class="w-full inline-block">
+            <a href="/projects/more" class="w-full inline-block">
               <button class="bg-orange text-white font-text font-semibold px-5 py-5 rounded-md w-full">
                 See More Projects
               </button>

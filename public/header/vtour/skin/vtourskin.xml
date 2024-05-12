@@ -648,7 +648,10 @@
 		div(scaleNudgeDesktopW, area.pixelwidth, 1920);
 		mul(fontScale, 25, get(scaleNudgeDesktopW));
 		set(layer[heading].css,calc('font-family:PTSansCaption; color:#ffffff; font-size:'+ calc(fontScale*2 + 20) + 'px; font-weight:bold '));
+		if(device.mobile,
+		set(layer[caption].css,calc('font-family:PTSansCaption; color:#ffffff; font-size:'+ calc(fontScale*.25 + 15) + 'px; font-weight:semibold;  text-align:center; '));,
 		set(layer[caption].css,calc('font-family:PTSansCaption; color:#ffffff; font-size:'+ calc(fontScale*.25 + 18) + 'px; font-weight:semibold;  text-align:center; '));
+		)
 
 		
 	</action>
